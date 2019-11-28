@@ -31,3 +31,16 @@ export class ItemDetailModel {
   image?: string;
   date?: string;
 }
+
+export class LinkListModel {
+  title?: string;
+  subtitle?: string;
+  icon?: string;
+  path?: string;
+}
+
+export class MinimizedViewModel {
+  title?: string;
+  subtitle?: string;
+  url?: string;
+}

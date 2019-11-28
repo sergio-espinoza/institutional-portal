@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ItemDetailComponent } from './shared/components';
-import { InfoModel, NotificationItemModel, ItemDetailModel } from './shared/models';
+import { InfoModel, NotificationItemModel, LinkListModel } from './shared/models';
 
 @Component({
   selector: 'app-root',
@@ -37,6 +37,12 @@ export class AppComponent {
         This is a Amazing Background in format Gift.
         `
     }
+  ];
+
+  linkLists: LinkListModel[] = [
+    { title: 'GitHub', subtitle: 'GitHub WebSite', icon: 'person', path: 'https://www.github.com/48479567' },
+    { title: 'Google', subtitle: 'Google Link', icon: 'email', path: 'https://www.google.com' },
+    { title: 'Facebook', subtitle: 'Facebook WebSite', icon: 'notifications_active', path: 'https://www.facebook.com' }
   ];
 
   constructor(

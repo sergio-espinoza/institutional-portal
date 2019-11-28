@@ -7,15 +7,28 @@ import {
   InfoComponent,
   NotificationComponent,
   ItemDetailComponent,
-  MenuBasicComponent
+  MenuBasicComponent,
+  LinkListComponent,
+  MinimizedViewComponent
 } from './components';
+
+import {
+  SatinizerPipe
+} from './pipes';
 
 
 const COMPONENTS = [
   InfoComponent,
   NotificationComponent,
   ItemDetailComponent,
-  MenuBasicComponent
+  MenuBasicComponent,
+  LinkListComponent,
+  MinimizedViewComponent,
+
+];
+
+const PIPES = [
+  SatinizerPipe,
 ];
 
 const ENTRY_COMPONENTS = [
@@ -29,8 +42,8 @@ const ENTRY_COMPONENTS = [
     ReactiveFormsModule,
 
   ],
-  exports: [MaterialModule, ...COMPONENTS, ReactiveFormsModule, FormsModule],
-  declarations: [...COMPONENTS],
+  exports: [MaterialModule, ...COMPONENTS, ...PIPES, ReactiveFormsModule, FormsModule],
+  declarations: [...COMPONENTS, ...PIPES],
   entryComponents: [...ENTRY_COMPONENTS],
   providers: [],
 })

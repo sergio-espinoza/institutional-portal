@@ -1,0 +1,13 @@
+
+mat-list {
+  width: 95%;
+}
+
+mat-list-item {
+  margin: 0;
+}
+
+.mat-list-icon {
+  color: rgba(0, 0, 0, 0.54);
+}
+

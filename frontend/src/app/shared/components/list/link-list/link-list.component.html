@@ -1,0 +1,10 @@
+<mat-list>
+  <h3 mat-subheader>{{ title }}</h3>
+  <mat-list-item *ngFor="let item of listLinks">
+    <mat-icon mat-list-icon>{{ item.icon }}</mat-icon>
+    <h4 mat-line>
+      <a [href]="item.path">{{ item.title }}</a>
+    </h4>
+    <p mat-line> {{ item.subtitle }}</p>
+  </mat-list-item>
+</mat-list>
