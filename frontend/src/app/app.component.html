@@ -1,0 +1,9 @@
+<app-menu-basic></app-menu-basic>
+<app-info [infoData]="infoData"></app-info>
+<app-notification
+  *ngFor="let item of notificationItemData; index as i"
+  [notificationItemData]="item">
+  <button mat-button (click)="openDetail(i)">DETAIL</button>
+  <button mat-button>CANCEL</button>
+</app-notification>
+<router-outlet></router-outlet>

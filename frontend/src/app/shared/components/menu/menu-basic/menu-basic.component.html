@@ -1,0 +1,54 @@
+<mat-toolbar color="primary">
+	<mat-toolbar-row>
+		<button mat-icon-button>
+      <mat-icon>home</mat-icon>
+    </button>
+		<button mat-button [matMenuTriggerFor]="info">
+      Informacion Institucional</button>
+		<button mat-button [matMenuTriggerFor]="management">Gerencias y Oficinas</button>
+		<button mat-button [matMenuTriggerFor]="services">Servicios en Linea</button>
+		<button mat-button [matMenuTriggerFor]="image">Imagen Institucional</button>
+	</mat-toolbar-row>
+</mat-toolbar>
+<mat-menu #info="matMenu">
+	<button mat-menu-item>Mision y Vision</button>
+	<button mat-menu-item>Símbolos Oficiales</button>
+	<button mat-menu-item>Estructura Organica</button>
+	<button mat-menu-item>Gobernador Regional</button>
+	<button mat-menu-item [matMenuTriggerFor]="coordinacion">Consejo Regional</button>
+	<button mat-menu-item>Consejo de Coordinacion Regional</button>
+	<button mat-menu-item>Agendas Regionales</button>
+</mat-menu>
+<mat-menu #management="matMenu">
+	<button mat-menu-item>Gerencia General Regional</button>
+	<button mat-menu-item>Gerencias Regionales</button>
+	<button mat-menu-item>Procuraduría Pública Regional</button>
+	<button mat-menu-item>Direcciones Regionales</button>
+	<button mat-menu-item>Directorio Regional</button>
+</mat-menu>
+<mat-menu #services="matMenu">
+	<button mat-menu-item>Oportunidades Laborales</button>
+	<button mat-menu-item>Servidor de Documentos</button>
+	<button mat-menu-item>Consulta Expediente SIAF</button>
+	<button mat-menu-item [matMenuTriggerFor]="system">Sistemas Internos</button>
+</mat-menu>
+<mat-menu #image="matMenu">
+	<button mat-menu-item>Manual de Identidad Corporativa</button>
+	<button mat-menu-item>Archivo de Noticias</button>
+	<button mat-menu-item>Videos</button>
+	<button mat-menu-item>Galerías Fotográficas</button>
+</mat-menu>
+<mat-menu #coordinacion="matMenu" class="bg-primary">
+	<button mat-menu-item>Directorio de Consejeros Regionales</button>
+	<button mat-menu-item>Reglamento Interno de Consejo Regional</button>
+	<button mat-menu-item>Ordenanzas Regionales</button>
+	<button mat-menu-item>Acuerdos Regionales</button>
+	<button mat-menu-item>Actas de Sesiones Ordinarias</button>
+	<button mat-menu-item>Actas de Sesiones Extraordinarias</button>
+	<button mat-menu-item>Agenda de Sesiones Ordinarias</button>
+	<button mat-menu-item>Agenda de Sesiones Extraordinarias</button>
+</mat-menu>
+<mat-menu #system="matMenu" class="bg-primary">
+	<button mat-menu-item>InfoSIAF</button>
+	<button mat-menu-item>Control de Asistencia</button>
+</mat-menu>

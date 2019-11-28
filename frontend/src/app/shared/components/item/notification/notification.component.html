@@ -1,0 +1,27 @@
+<div [className]="notificationItemData?.className">
+  <mat-card class="notification-card">
+    <mat-card-header>
+      <div mat-card-avatar class="notification-header-image"
+        [style.backgroundImage]="'url('+notificationItemData?.avatar+')'"
+      ></div>
+      <mat-card-title>{{ notificationItemData?.title }}</mat-card-title>
+      <mat-card-subtitle>{{ notificationItemData?.subtitle }}</mat-card-subtitle>
+    </mat-card-header>
+    <div class="relative">
+      <img mat-card-image
+        [src]="notificationItemData?.image"
+        alt="Image Notification Item" />
+      <mat-chip class="date-sticker" *ngIf="notificationItemData.date">
+        <mat-icon class="pl-5">schedule</mat-icon>
+        {{ notificationItemData?.date | date: 'medium' }}</mat-chip>
+    </div>
+    <mat-card-content>
+      <p>
+        {{ notificationItemData?.description }}
+      </p>
+    </mat-card-content>
+    <mat-card-actions [align]="alignAction">
+      <ng-content></ng-content>
+    </mat-card-actions>
+  </mat-card>
+</div>

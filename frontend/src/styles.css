@@ -1,0 +1,16 @@
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.bg-primary {
+  background-color: #3f51b5;
+  /* background-color: #673AB7; */
+}
+.bg-primary button {
+  color: #ffffff;
+}
+
+.complete {
+  width: 100% !important;
+  height: 95% !important;
+
+}
