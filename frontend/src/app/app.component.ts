@@ -45,6 +45,14 @@ export class AppComponent {
     { title: 'Facebook', subtitle: 'Facebook WebSite', icon: 'notifications_active', path: 'https://www.facebook.com' }
   ];
 
+  dataSource: any[] = [
+    { name: 'Document 1', size: '350 KB', createdat: new Date() },
+    { name: 'Document 2', size: '1500 KB', createdat: new Date() },
+    { name: 'Document 3', size: '450 KB', createdat: new Date() },
+  ];
+
+  displayedColumns: string[] = [ 'name', 'size' ];
+
   constructor(
     public dialog: MatDialog
   ) {}

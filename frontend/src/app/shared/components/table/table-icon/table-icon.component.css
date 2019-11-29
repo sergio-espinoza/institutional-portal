@@ -1,0 +1,49 @@
+:host {
+  width: 90%;
+  height: 88%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  overflow: auto;
+
+}
+
+div {
+  width: 90%;
+  height: 80%;
+  margin: auto;
+  overflow-x: auto;
+}
+
+.mat-table {
+  border-spacing: 5px;
+}
+
+table {
+  width: 100%;
+  overflow-x: auto;
+}
+
+mat-paginator {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+}
+
+mat-card {
+  padding: 0;
+  height: initial;
+}
+
+mat-card-content {
+  width: 100%;
+}
+
+mat-form-field {
+  width: 100%;
+  padding: 0;
+}
+
+.mat-form-field-wrapper {
+  padding: 0;
+}

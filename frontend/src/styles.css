@@ -2,7 +2,7 @@ html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .bg-primary {
-  background-color: #3f51b5;
+  background-color: #0f3a4c;
   /* background-color: #673AB7; */
 }
 .bg-primary button {
@@ -14,6 +14,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   height: 95% !important;
 
 }
+
 
 /* ::-webkit-scrollbar {
   width: 8px;

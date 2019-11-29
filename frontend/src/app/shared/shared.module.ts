@@ -3,13 +3,16 @@ import { MaterialModule } from './material.module';
 
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { PdfViewerModule } from 'ng2-pdf-viewer';
 import {
   InfoComponent,
   NotificationComponent,
   ItemDetailComponent,
   MenuBasicComponent,
   LinkListComponent,
-  MinimizedViewComponent
+  MinimizedViewComponent,
+  TableIconComponent,
+  PdfViewComponent
 } from './components';
 
 import {
@@ -24,6 +27,8 @@ const COMPONENTS = [
   MenuBasicComponent,
   LinkListComponent,
   MinimizedViewComponent,
+  TableIconComponent,
+  PdfViewComponent
 
 ];
 
@@ -32,7 +37,8 @@ const PIPES = [
 ];
 
 const ENTRY_COMPONENTS = [
-  ItemDetailComponent
+  ItemDetailComponent,
+  PdfViewComponent
 ];
 
 @NgModule({
@@ -40,9 +46,10 @@ const ENTRY_COMPONENTS = [
     MaterialModule,
     CommonModule,
     ReactiveFormsModule,
+    PdfViewerModule
 
   ],
-  exports: [MaterialModule, ...COMPONENTS, ...PIPES, ReactiveFormsModule, FormsModule],
+  exports: [MaterialModule, ...COMPONENTS, ...PIPES, ReactiveFormsModule, FormsModule, PdfViewerModule],
   declarations: [...COMPONENTS, ...PIPES],
   entryComponents: [...ENTRY_COMPONENTS],
   providers: [],

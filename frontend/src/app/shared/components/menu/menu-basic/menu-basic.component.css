@@ -2,9 +2,12 @@ mat-toolbar {
   display: flex;
   justify-content: center;
   flex-flow: column wrap;
-  padding: 5px 0;
-  border-radius: 15px;
   width: 50%;
+}
+
+mat-toolbar-row {
+  border-radius: 15px;
+  padding: 5px 0;
 }
 
 mat-toolbar mat-toolbar-row {
