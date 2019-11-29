@@ -1,0 +1,25 @@
+<app-menu-basic></app-menu-basic>
+<router-outlet></router-outlet>
+<app-info [infoData]="infoData"></app-info>
+<app-notification
+  *ngFor="let item of notificationItemData; index as i"
+  [notificationItemData]="item">
+  <button mat-button (click)="openDetail(i)">DETAIL</button>
+  <button mat-button>CANCEL</button>
+</app-notification>
+<app-link-list
+  title="Social Links"
+  [listLinks]="linkLists"
+></app-link-list>
+<app-minimized-view
+  [minimizedViewData]="{
+    title: 'Unity',
+    subtitle: 'Unity Social View',
+    url: 'https://www.facebook.com/unity3d',
+    type: 'page'
+  }"
+></app-minimized-view>
+<app-table-icon
+  [dataSource]="dataSource"
+  [displayedColumns]="displayedColumns"></app-table-icon>
+

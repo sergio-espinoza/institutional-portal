@@ -11,13 +11,13 @@
 	</mat-toolbar-row>
 </mat-toolbar>
 <mat-menu #info="matMenu">
-	<button mat-menu-item>Mision y Vision</button>
-	<button mat-menu-item>Símbolos Oficiales</button>
-	<button mat-menu-item>Estructura Organica</button>
-	<button mat-menu-item>Gobernador Regional</button>
+	<button mat-menu-item (click)="navigateTo('/main/document')">Mision y Vision</button>
+	<button mat-menu-item (click)="navigateTo('/main/group')">Símbolos Oficiales</button>
+	<button mat-menu-item (click)="navigateTo('/main/news')">Estructura Organica</button>
+	<button mat-menu-item (click)="navigateTo('/main/page')">Gobernador Regional</button>
 	<button mat-menu-item [matMenuTriggerFor]="coordinacion">Consejo Regional</button>
-	<button mat-menu-item>Consejo de Coordinacion Regional</button>
-	<button mat-menu-item>Agendas Regionales</button>
+	<button mat-menu-item (click)="navigateTo('/main/schedule')">Consejo de Coordinacion Regional</button>
+	<button mat-menu-item (click)="navigateTo('/auth')">Agendas Regionales</button>
 </mat-menu>
 <mat-menu #management="matMenu">
 	<button mat-menu-item>Gerencia General Regional</button>

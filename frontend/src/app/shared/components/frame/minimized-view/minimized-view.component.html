@@ -5,13 +5,13 @@
     </mat-card-header>
     <mat-card-content>
       <div
-        class="fb-page"
+        [class]="'fb-'+minimizedViewData.type"
         [attr.data-href]="minimizedViewData.url"
         data-tabs="timeline"
         data-small-header="false"
-        data-adapt-container-width="true"
+        data-adapt-container-width="false"
         data-hide-cover="false"
-        data-show-facepile="true">
+        data-show-facepile="false">
         <blockquote [attr.cite]="minimizedViewData.url" class="fb-xfbml-parse-ignore">
           <a [href]="minimizedViewData.url">Link Social</a></blockquote></div>
     </mat-card-content>

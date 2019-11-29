@@ -43,4 +43,5 @@ export class MinimizedViewModel {
   title?: string;
   subtitle?: string;
   url?: string;
+  type?: 'post' | 'page' | 'button';
 }
