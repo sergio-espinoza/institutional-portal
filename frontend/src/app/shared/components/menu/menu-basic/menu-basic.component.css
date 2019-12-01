@@ -1,8 +1,17 @@
 mat-toolbar {
   display: flex;
   justify-content: center;
+  background: 0 0 !important;
   flex-flow: column wrap;
-  width: 50%;
+  font: 500 20px/32px Montserrat;
+}
+
+button {
+  text-transform: uppercase;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 0 5px;
 }
 
 mat-toolbar-row {
@@ -19,7 +28,3 @@ mat-toolbar mat-toolbar-row {
   height: 100%
 }
 
-button {
-  font-size: 11px;
-  padding: 0 5px;
-}

@@ -1,10 +1,7 @@
-<div [className]="infoData.className">
-  <mat-chip-list>
-    <mat-chip [color]="infoData.color">
-      <mat-icon>{{ infoData.icon }}</mat-icon>
-      <span>
-        {{ infoData.title }}
-      </span>
-    </mat-chip>
-  </mat-chip-list>
-</div>
+<mat-chip-list>
+  <mat-chip [color]="infoData.color" class="date-sticker">
+    <mat-icon>{{ infoData.icon }}</mat-icon>{{ infoData.title }}
+  </mat-chip>
+</mat-chip-list>
+
+

@@ -13,7 +13,6 @@ export class MainComponent implements OnInit {
   infoData: InfoModel = {
     title: 'Data 1',
     icon: 'email',
-    color: ''
   };
   notificationItemData: NotificationItemModel[] = [
     {
