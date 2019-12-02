@@ -12,7 +12,8 @@ import {
   LinkListComponent,
   MinimizedViewComponent,
   TableIconComponent,
-  PdfViewComponent
+  PdfViewComponent,
+  LinkComponent
 } from './components';
 
 import {
@@ -28,8 +29,8 @@ const COMPONENTS = [
   LinkListComponent,
   MinimizedViewComponent,
   TableIconComponent,
-  PdfViewComponent
-
+  PdfViewComponent,
+  LinkComponent
 ];
 
 const PIPES = [
@@ -47,7 +48,6 @@ const ENTRY_COMPONENTS = [
     CommonModule,
     ReactiveFormsModule,
     PdfViewerModule
-
   ],
   exports: [MaterialModule, ...COMPONENTS, ...PIPES, ReactiveFormsModule, FormsModule, PdfViewerModule],
   declarations: [...COMPONENTS, ...PIPES],

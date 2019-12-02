@@ -1,1 +1,11 @@
-<mat-toolbar></mat-toolbar>
+<mat-toolbar>
+  <mat-toolbar-row>
+      <div class="item" *ngFor="let headerLink of headerLinks">
+        <mat-icon>{{ headerLink.icon }}</mat-icon>
+        <span>{{ headerLink.title }}</span>
+      </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<!-- <app-info *ngFor="let headerLink of headerLinks"
+  [infoData]="headerLink"></app-info> -->

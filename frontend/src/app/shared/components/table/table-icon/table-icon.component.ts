@@ -53,7 +53,7 @@ export class TableIconComponent implements OnInit {
     const dialogRef = this.dialog.open(PdfViewComponent, {
       panelClass: 'complete',
       data: {
-        url: 'https://eloquentjavascript.net/Eloquent_JavaScript.pdf'
+        url: 'https://drive.google.com/file/d/1DHNsNjrVUIIWiTsHg3uUKftHtcbQnB_qfRuFtVrRhNM/preview'
       }
     });
   }
