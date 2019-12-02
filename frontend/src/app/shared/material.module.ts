@@ -23,9 +23,11 @@ import {
   MatSnackBarModule,
   MatCheckboxModule,
   MatDatepickerModule,
-  MatRadioModule
+  MatRadioModule,
 
 } from '@angular/material';
+
+import { ScrollingModule } from '@angular/cdk/scrolling';
 
 
 @NgModule({
@@ -54,7 +56,8 @@ import {
     MatSnackBarModule,
     MatCheckboxModule,
     MatDatepickerModule,
-    MatRadioModule
+    MatRadioModule,
+    ScrollingModule
 
   ],
   providers: [],

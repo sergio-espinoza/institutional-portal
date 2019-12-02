@@ -7,6 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./menu-basic.component.css']
 })
 export class MenuBasicComponent implements OnInit {
+  classSticky = '';
 
   constructor(
     private router: Router,

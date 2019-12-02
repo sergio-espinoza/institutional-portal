@@ -1,0 +1,27 @@
+.content-main {
+  position: relative;
+  z-index: 1;
+  height: 600px;
+  overflow: hidden;
+}
+
+.main {
+  position: absolute;
+  top: 0;
+  background-image: url("https://material.angular.io/assets/img/examples/shiba2.jpg");
+  height: 600px;
+  width: 110%;
+  background-size: 110% 600px;
+  filter: brightness(50%);
+  animation: pendulum 15s infinite;
+  animation-direction: alternate;
+}
+
+@keyframes pendulum {
+  from { transform: translateX(0); }
+  to { transform: translateX(-7%); }
+}
+
+
+
+

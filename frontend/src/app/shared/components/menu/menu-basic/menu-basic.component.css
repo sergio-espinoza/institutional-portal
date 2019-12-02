@@ -1,12 +1,27 @@
-
 mat-toolbar {
-  background: 0;
-  position: sticky;
-  top: 0;
   z-index: 15;
-  background: #ffffff;
-  min-height: auto;
   padding: 15px 0;
+  color: #ffffff;
+}
+
+.no-sticky {
+  background: 0;
+  z-index: 15;
+  color: #ffffff;
+}
+
+.no-sticky mat-toolbar-row {
+  padding: 15px 0;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 0;
+  background: #ffffff;
+  color: #262626;
+  z-index: 15;
 }
 
 button {
@@ -21,14 +36,10 @@ button {
 mat-toolbar-row {
   border-radius: 15px;
   padding: 5px 0;
-}
-
-mat-toolbar mat-toolbar-row {
   display: flex;
   padding: 0;
   margin: 0;
   justify-content: space-around;
   flex-flow: row wrap;
-  height: 100%
 }
 

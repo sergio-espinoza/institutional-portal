@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, HostListener } from '@angular/core';
 import { InfoModel, NotificationItemModel, LinkListModel } from '../../shared/models';
 import { MatDialog } from '@angular/material';
-import { ItemDetailComponent } from '../../shared/components';
+import { ItemDetailComponent, MenuBasicComponent } from '../../shared/components';
 
 @Component({
   selector: 'app-main',
@@ -9,6 +9,8 @@ import { ItemDetailComponent } from '../../shared/components';
   styleUrls: ['./main.component.css']
 })
 export class MainComponent implements OnInit {
+  scEl = 'scrollingElement';
+
 
   infoData: InfoModel = {
     title: 'Data 1',
@@ -38,6 +40,7 @@ export class MainComponent implements OnInit {
         `
     }
   ];
+  @ViewChild(MenuBasicComponent, { static: true }) menuBasic: MenuBasicComponent;
 
   linkLists: LinkListModel[] = [
     { title: 'GitHub', subtitle: 'GitHub WebSite', icon: 'person', path: 'https://www.github.com/48479567' },
@@ -54,11 +57,19 @@ export class MainComponent implements OnInit {
   displayedColumns: string[] = [ 'name', 'size' ];
 
   constructor(
-    public dialog: MatDialog
-  ) { }
+    public dialog: MatDialog,
+  ) {
+  }
 
   ngOnInit() {
+  }
 
+  @HostListener('window:scroll', ['$event']) actionInScroll($event: Event) {
+    if ($event.target[this.scEl].scrollTop >= 300) {
+      this.menuBasic.classSticky = 'sticky';
+    } else {
+      this.menuBasic.classSticky = 'no-sticky';
+    }
   }
 
   openDetail(index: number): void {
