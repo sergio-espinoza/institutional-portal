@@ -1,19 +1,27 @@
-<app-header></app-header>
-<div class="content-main">
-  <app-menu-basic></app-menu-basic>
-  <div class="main"></div>
-</div>
-<router-outlet></router-outlet>
-<app-info [infoData]="infoData"></app-info>
-<app-notification *ngFor="let item of notificationItemData; index as i" [notificationItemData]="item">
-  <button mat-button (click)="openDetail(i)">DETAIL</button>
-  <button mat-button>CANCEL</button>
-</app-notification>
-<app-link-list title="Social Links" [listLinks]="linkLists"></app-link-list>
-<app-minimized-view [minimizedViewData]="{
-        title: 'Unity',
-        subtitle: 'Unity Social View',
-        url: 'https://www.facebook.com/unity3d',
-        type: 'page'
-      }"></app-minimized-view>
-<app-table-icon [dataSource]="dataSource" [displayedColumns]="displayedColumns"></app-table-icon>
+<mat-drawer-container>
+  <mat-drawer #drawer mode="over" position="end">
+    <app-sidebar></app-sidebar>
+  </mat-drawer>
+  <mat-drawer-content>
+      <app-header></app-header>
+      <button mat-mini-fab class="notifications" (click)="drawer.toggle()"><mat-icon>notifications</mat-icon></button>
+      <div class="content-main">
+        <app-menu-basic></app-menu-basic>
+        <div class="main"></div>
+      </div>
+      <router-outlet></router-outlet>
+      <app-info [infoData]="infoData"></app-info>
+      <app-notification *ngFor="let item of notificationItemData; index as i" [notificationItemData]="item">
+        <button mat-button (click)="openDetail(i)">DETAIL</button>
+        <button mat-button>CANCEL</button>
+      </app-notification>
+      <app-link-list title="Social Links" [listLinks]="linkLists"></app-link-list>
+      <app-minimized-view [minimizedViewData]="{
+              title: 'Unity',
+              subtitle: 'Unity Social View',
+              url: 'https://www.facebook.com/unity3d',
+              type: 'page'
+            }"></app-minimized-view>
+      <app-table-icon [dataSource]="dataSource" [displayedColumns]="displayedColumns"></app-table-icon>
+  </mat-drawer-content>
+</mat-drawer-container>
