@@ -5,7 +5,7 @@
   <mat-icon class="navigate" (click)="before()">navigate_before</mat-icon>
 </button>
   <mat-chip class="date-sticker" *ngIf="data.items[currentIndex].date">
-    <mat-icon class="pl-5">schedule</mat-icon>
+    <mat-icon>schedule</mat-icon>
     {{ data.items[currentIndex]?.date | date: 'medium' }}</mat-chip>
 <button mat-button class="right" color="primary">
   <mat-icon class="navigate" (click)="next()">navigate_next</mat-icon>

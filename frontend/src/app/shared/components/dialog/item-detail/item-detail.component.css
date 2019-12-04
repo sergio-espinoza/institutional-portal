@@ -22,15 +22,16 @@ button {
   font-size:48px !important;
 }
 
-.pl-5 {
-  padding-right: 5px;
-}
 
 .date-sticker {
   position: absolute;
   top: 15px;
   right: -15px;
   font-size: 11px;
+}
+
+.date-sticker mat-icon {
+  padding-right: 5px;
 }
 
 .description {

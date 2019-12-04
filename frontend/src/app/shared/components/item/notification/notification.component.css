@@ -5,6 +5,10 @@
   max-width: 400px;
 }
 
+mat-card-header {
+  padding-bottom: 15px;
+}
+
 .date-sticker {
   position: absolute;
   bottom: 35px;
@@ -12,11 +16,10 @@
   font-size: 11px;
 }
 
-.pl-5 {
+.date-sticker mat-icon {
   padding-right: 5px;
 }
 
 .relative {
   position: relative;
-  padding-top: 15px;
 }

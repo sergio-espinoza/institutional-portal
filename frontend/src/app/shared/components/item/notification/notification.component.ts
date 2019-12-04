@@ -9,6 +9,7 @@ import { NotificationItemModel } from '../../../models';
 export class NotificationComponent implements OnInit {
   @Input() notificationItemData: NotificationItemModel;
   @Input() alignAction: 'end' | 'start' = 'end';
+  @Input() showHeader = true;
 
 
   constructor() { }

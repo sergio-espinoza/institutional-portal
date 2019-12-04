@@ -7,7 +7,6 @@
 
 mat-drawer {
   width: 300px;
-  max-height: 90%;
 }
 
 .notifications {
@@ -15,12 +14,31 @@ mat-drawer {
   top: 40%;
   right: 0;
   z-index: 20;
+  border-radius: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+app-notification {
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.notifications mat-icon {
+  font-size: 24px;
+  color: #ffffff;
+  animation: 8s linear infinite spin;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .main {
   position: absolute;
   top: 0;
-  background-image: url("https://material.angular.io/assets/img/examples/shiba2.jpg");
+  background-image: url("https://i.imgur.com/BnsAZig.jpg");
   height: 600px;
   width: 110%;
   background-size: 110% 600px;

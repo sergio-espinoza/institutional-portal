@@ -1,0 +1,29 @@
+:host {
+  position: fixed;
+  top: 0;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h2 {
+  font-size: 20px;
+  display: inline-block;
+  padding: 5px 15px;
+}
+
+h4  {
+  font-size: 15px;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 300px;
+}
+
+.space-between {
+  justify-content: space-between;
+}
