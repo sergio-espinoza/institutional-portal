@@ -5,15 +5,15 @@ import { AppComponent } from './app.component';
 
 const routes: Routes = [
   {
-    path: '', redirectTo: 'main', pathMatch: 'full'
-  },
-  {
     path: 'main',
     loadChildren: () => import('./modules/main/main.module').then(m => m.MainModule)
   },
   { path: 'auth',
-    loadChildren: () => import('./modules/auth/auth.module').then(m => m.AuthModule)
-  }
+  loadChildren: () => import('./modules/auth/auth.module').then(m => m.AuthModule)
+  },
+  {
+    path: '', redirectTo: 'main', pathMatch: 'full'
+  },
 ];
 
 @NgModule({

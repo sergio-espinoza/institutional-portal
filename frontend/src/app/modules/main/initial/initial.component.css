@@ -1,0 +1,71 @@
+.content-main {
+  position: relative;
+  z-index: 1;
+  height: 800px;
+  overflow: hidden;
+}
+
+mat-drawer {
+  width: 300px;
+}
+
+.notifications {
+  position: fixed;
+  top: 40%;
+  right: 0;
+  z-index: 20;
+  border-radius: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+app-notification {
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.notifications mat-icon {
+  font-size: 24px;
+  color: #ffffff;
+  animation: 8s linear infinite spin;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.main {
+  position: absolute;
+  top: 0;
+  /* background-image: url("https://i.imgur.com/BnsAZig.jpg"); */
+  background-image: url("http://www.regionjunin.gob.pe//data/banner/nodata.jpg");
+  height: 800px;
+  width: 110%;
+  background-size: 100% 100%;
+  filter: brightness(70%);
+  animation: pendulum 15s infinite;
+  animation-direction: alternate;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h1 + p {
+  font-size: 28px;
+}
+
+@keyframes pendulum {
+  from { transform: translateX(0); }
+  to { transform: translateX(-7%); }
+}
+
+
+
+

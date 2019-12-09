@@ -7,19 +7,7 @@
       <button mat-icon-button class="notifications" (click)="drawer.toggle()">
         <mat-icon>settings</mat-icon>
       </button>
-      <div class="content-main">
-        <app-menu-basic></app-menu-basic>
-        <div class="main"></div>
-        <div style="position:absolute;top:40%;width:100%;color:#ffffff;display:flex;flex-direction:column;justify-content:center;align-items:center;">
-          <h1>SANTA BÁRBARA DE CARHUACAYÁN</h1>
-          <p><i>Gestión 2019 - 2022</i></p>
-          <mat-card style="width:50%;">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti delectus nam voluptatum consequatur, odio porro, asperiores aliquid veniam cumque unde rerum! Aliquid impedit facilis optio dicta blanditiis, voluptas assumenda porro?
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, totam expedita? Pariatur veniam, excepturi est error delectus quos at, ipsam possimus deserunt impedit, quod ratione fugiat maxime praesentium nemo repellat!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit consectetur minima temporibus et, hic tenetur consequatur molestias ab natus illo alias, vel impedit delectus reprehenderit nesciunt dolorem odio inventore quos!
-          </mat-card>
-        </div>
-      </div>
+      <app-menu-basic></app-menu-basic>
       <router-outlet></router-outlet>
       <app-info [infoData]="infoData"></app-info>
       <app-notification *ngFor="let item of notificationItemData; index as i"

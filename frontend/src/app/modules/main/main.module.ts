@@ -7,10 +7,16 @@ import { SharedModule } from 'src/app/shared/shared.module';
 import { HeaderComponent } from './partials/header/header.component';
 import { SidebarComponent } from './partials/sidebar/sidebar.component';
 import { FooterComponent } from './partials/footer/footer.component';
+import { InitialComponent } from './initial/initial.component';
 
 
 @NgModule({
-  declarations: [MainComponent, HeaderComponent, SidebarComponent, FooterComponent],
+  declarations: [
+    MainComponent,
+    HeaderComponent,
+    SidebarComponent,
+    FooterComponent,
+    InitialComponent],
   imports: [
     CommonModule,
     SharedModule,

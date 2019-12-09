@@ -1,11 +1,16 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { MainComponent } from './main.component';
+import { InitialComponent } from './initial/initial.component';
 
 
 const routes: Routes = [
   { path: '', component: MainComponent,
     children: [
+      {
+        path: '',
+        component: InitialComponent
+      },
       { path: 'document',
         loadChildren: () => import('./document/document.module').then(m => m.DocumentModule)
       },
