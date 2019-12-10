@@ -13,7 +13,9 @@ import {
   MinimizedViewComponent,
   TableIconComponent,
   PdfViewComponent,
-  LinkComponent
+  LinkComponent,
+  LogoComponent,
+  BannerComponent
 } from './components';
 
 import {
@@ -30,7 +32,9 @@ const COMPONENTS = [
   MinimizedViewComponent,
   TableIconComponent,
   PdfViewComponent,
-  LinkComponent
+  LinkComponent,
+  LogoComponent,
+  BannerComponent
 ];
 
 const PIPES = [
