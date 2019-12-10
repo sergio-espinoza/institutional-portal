@@ -15,7 +15,8 @@ import {
   PdfViewComponent,
   LinkComponent,
   LogoComponent,
-  BannerComponent
+  BannerComponent,
+  SectionComponent
 } from './components';
 
 import {
@@ -34,6 +35,7 @@ const COMPONENTS = [
   PdfViewComponent,
   LinkComponent,
   LogoComponent,
+  SectionComponent,
   BannerComponent
 ];
 
