@@ -1,3 +1,5 @@
-<button mat-button>
-  <app-icon></app-icon>
-</button>
+<div [className]="className">
+  <button mat-raised-button [style.backgroundColor]="properties.color">
+    <ng-content></ng-content>
+  </button>
+</div>

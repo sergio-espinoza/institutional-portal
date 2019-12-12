@@ -1,9 +1,14 @@
 <mat-toolbar>
   <mat-toolbar-row>
-      <div class="item" *ngFor="let headerLink of headerLinks">
-        <mat-icon>{{ headerLink.icon }}</mat-icon>
-        <span>{{ headerLink.title }}</span>
-      </div>
+    <div class="item" *ngFor="let headerLink of headerLinks">
+      <mat-icon>{{ headerLink.icon }}</mat-icon>
+      <span>{{ headerLink.title }}</span>
+    </div>
+    <div class="social-links">
+      <app-link className="icon" *ngFor="let linkIcon of linkIcons">
+        <app-icon [pathProperties]="linkIcon"></app-icon>
+      </app-link>
+    </div>
   </mat-toolbar-row>
 </mat-toolbar>
 

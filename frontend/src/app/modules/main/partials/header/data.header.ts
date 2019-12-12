@@ -1,4 +1,4 @@
-import { InfoModel } from 'src/app/shared/models';
+import { InfoModel } from '../../../../shared/models';
 
 export const headerLinks: InfoModel[] = [
   { title: '(+51) 935 003 576', icon: 'phone', path: '/main' },

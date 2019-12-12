@@ -10,6 +10,18 @@ mat-toolbar {
   min-height: 0;
 }
 
+.social-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-grow: 1;
+  padding-right: 15px;
+}
+
+.social-links app-link {
+  padding: 0 2px;
+}
+
 mat-toolbar-row {
   height: 32px;
   background: #1976d2;
@@ -29,16 +41,8 @@ mat-toolbar-row {
   padding: 0 15px;
 }
 
-.item:last-child{
+.item:last-of-type {
   border-right: none;
-}
-
-
-.item-separator {
-  background-color: rgba(227,242,253,.2);
-  width: 1px;
-  height: 26px;
-  margin: 0 16px;
 }
 
 mat-toolbar-row {
