@@ -16,7 +16,8 @@ import {
   LinkComponent,
   LogoComponent,
   BannerComponent,
-  SectionComponent
+  SectionComponent,
+  IconComponent
 } from './components';
 
 import {
@@ -36,7 +37,8 @@ const COMPONENTS = [
   LinkComponent,
   LogoComponent,
   SectionComponent,
-  BannerComponent
+  BannerComponent,
+  IconComponent
 ];
 
 const PIPES = [

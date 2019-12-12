@@ -7,7 +7,12 @@
       Informacion Institucional</button>
 		<button mat-button [matMenuTriggerFor]="management">Gerencias y Oficinas</button>
 		<button mat-button [matMenuTriggerFor]="services">Servicios en Linea</button>
-		<button mat-button [matMenuTriggerFor]="image">Imagen Institucional</button>
+    <button mat-button [matMenuTriggerFor]="image">Imagen Institucional</button>
+    <button mat-button>
+      <app-icon></app-icon>
+    </button>
+    <app-link></app-link>
+
 	</mat-toolbar-row>
 	<mat-menu #info="matMenu">
 		<button mat-menu-item (click)="navigateTo('/main/document')">Mision y Vision</button>
