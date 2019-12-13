@@ -2,8 +2,8 @@ import { NgModule } from '@angular/core';
 import { MaterialModule } from './material.module';
 
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { PdfViewerModule } from 'ng2-pdf-viewer';
 import {
   InfoComponent,
   NotificationComponent,
@@ -23,7 +23,6 @@ import {
 import {
   SatinizerPipe
 } from './pipes';
-
 
 const COMPONENTS = [
   InfoComponent,
@@ -55,9 +54,9 @@ const ENTRY_COMPONENTS = [
     MaterialModule,
     CommonModule,
     ReactiveFormsModule,
-    PdfViewerModule
+    RouterModule
   ],
-  exports: [MaterialModule, ...COMPONENTS, ...PIPES, ReactiveFormsModule, FormsModule, PdfViewerModule],
+  exports: [MaterialModule, ...COMPONENTS, ...PIPES, ReactiveFormsModule, FormsModule],
   declarations: [...COMPONENTS, ...PIPES],
   entryComponents: [...ENTRY_COMPONENTS],
   providers: [],

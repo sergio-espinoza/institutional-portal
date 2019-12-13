@@ -9,7 +9,9 @@
       </button>
       <app-menu-basic></app-menu-basic>
       <router-outlet></router-outlet>
+    <app-section>
       <app-info [infoData]="infoData"></app-info>
+    </app-section>
       <app-notification *ngFor="let item of notificationItemData; index as i"
         [notificationItemData]="item"
         [showHeader]="false">

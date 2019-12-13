@@ -10,14 +10,10 @@ export class MenuBasicComponent implements OnInit {
   classSticky = 'no-sticky';
 
   constructor(
-    private router: Router,
   ) { }
 
   ngOnInit() {
   }
 
-  navigateTo(path: string) {
-    this.router.navigate([path]);
-  }
 
 }
