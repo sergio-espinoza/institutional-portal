@@ -8,7 +8,7 @@ import { HeaderComponent } from './partials/header/header.component';
 import { SidebarComponent } from './partials/sidebar/sidebar.component';
 import { FooterComponent } from './partials/footer/footer.component';
 import { InitialComponent } from './initial/initial.component';
-
+import { TransparencyDocumentComponent } from './initial/transparency-document/transparency-document.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +16,9 @@ import { InitialComponent } from './initial/initial.component';
     HeaderComponent,
     SidebarComponent,
     FooterComponent,
-    InitialComponent],
+    InitialComponent,
+    TransparencyDocumentComponent
+  ],
   imports: [
     CommonModule,
     SharedModule,

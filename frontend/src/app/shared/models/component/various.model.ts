@@ -45,3 +45,9 @@ export class MinimizedViewModel {
   url?: string;
   type?: 'post' | 'page' | 'button';
 }
+
+export class ExpansionModel {
+  title?: string;
+  description?: string;
+  icon?: string;
+}

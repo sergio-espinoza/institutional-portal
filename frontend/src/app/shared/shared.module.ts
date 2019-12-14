@@ -17,7 +17,8 @@ import {
   LogoComponent,
   BannerComponent,
   SectionComponent,
-  IconComponent
+  IconComponent,
+  ExpansionComponent
 } from './components';
 
 import {
@@ -37,7 +38,8 @@ const COMPONENTS = [
   LogoComponent,
   SectionComponent,
   BannerComponent,
-  IconComponent
+  IconComponent,
+  ExpansionComponent
 ];
 
 const PIPES = [

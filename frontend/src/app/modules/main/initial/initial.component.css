@@ -49,6 +49,13 @@ h1 {
 
 .description-initial mat-card {
   width: 75%;
+  border-top: 5px solid #1976d2;
+}
+
+mat-card-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 p i {

@@ -11,7 +11,6 @@ import { ItemDetailComponent, MenuBasicComponent } from '../../shared/components
 export class MainComponent implements OnInit {
   scEl = 'scrollingElement';
 
-
   infoData: InfoModel = {
     title: 'Data 1',
     icon: 'email',
