@@ -18,7 +18,8 @@ import {
   BannerComponent,
   SectionComponent,
   IconComponent,
-  ExpansionComponent
+  ExpansionComponent,
+  BottomSheetComponent
 } from './components';
 
 import {
@@ -39,7 +40,8 @@ const COMPONENTS = [
   SectionComponent,
   BannerComponent,
   IconComponent,
-  ExpansionComponent
+  ExpansionComponent,
+  BottomSheetComponent
 ];
 
 const PIPES = [

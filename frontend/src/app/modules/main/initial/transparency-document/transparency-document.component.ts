@@ -7,6 +7,7 @@ import { ExpansionModel } from 'src/app/shared/models';
 })
 
 export class TransparencyDocumentComponent implements OnInit {
+
   transparencyData: ExpansionModel[] = [
     { title: 'TRANSPARENCIA',
       description: 'Total 10 de esta Sección',

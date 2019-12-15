@@ -19,6 +19,9 @@ import { TransparencyDocumentComponent } from './initial/transparency-document/t
     InitialComponent,
     TransparencyDocumentComponent
   ],
+  entryComponents: [
+    TransparencyDocumentComponent
+  ],
   imports: [
     CommonModule,
     SharedModule,

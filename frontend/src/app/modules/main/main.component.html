@@ -7,6 +7,13 @@
       <button mat-icon-button class="notifications" (click)="drawer.toggle()">
         <mat-icon>settings</mat-icon>
       </button>
+      <button
+        *ngIf="!view"
+        mat-icon-button
+        class="transparency"
+        (click)="openMenuTransparency()">
+        <mat-icon>keyboard_arrow_up</mat-icon>
+      </button>
       <app-menu-basic></app-menu-basic>
       <router-outlet></router-outlet>
     <app-section>

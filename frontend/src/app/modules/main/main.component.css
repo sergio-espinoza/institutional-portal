@@ -14,13 +14,20 @@ app-menu-basic {
   width: 100%;
 }
 
-.notifications {
+.notifications, .transparency {
   position: fixed;
-  top: 40%;
-  right: 0;
   z-index: 20;
   border-radius: 0;
   background-color: rgba(0, 0, 0, 0.6);
+}
+
+.notifications {
+  top: 40%;
+  right: 0;
+}
+.transparency {
+  bottom: 0;
+  left: calc(50% - 20px);
 }
 
 app-notification {
@@ -38,4 +45,17 @@ app-notification {
   100% {
     transform: rotate(360deg);
   }
+}
+
+.transparency mat-icon {
+  font-size: 24px;
+  color: #ffffff;
+  animation: 4s linear infinite updown;
+}
+
+@keyframes updown {
+  0% { opacity: 1; transform: translateY(0px) scale(1); }
+  25% { opacity: 0; transform: translateY(-10px) scale(0.9); }
+  26% { opacity: 0; transform: translateY(10px) scale(0.9); }
+  55% { opacity: 1; transform: translateY(0px) scale(1); }
 }

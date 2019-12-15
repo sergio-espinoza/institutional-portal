@@ -24,6 +24,7 @@ import {
   MatCheckboxModule,
   MatDatepickerModule,
   MatRadioModule,
+  MatBottomSheetModule,
 
 } from '@angular/material';
 
@@ -57,7 +58,8 @@ import { ScrollingModule } from '@angular/cdk/scrolling';
     MatCheckboxModule,
     MatDatepickerModule,
     MatRadioModule,
-    ScrollingModule
+    ScrollingModule,
+    MatBottomSheetModule
 
   ],
   providers: [],

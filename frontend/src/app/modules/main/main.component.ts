@@ -1,7 +1,10 @@
-import { Component, OnInit, ViewChild, HostListener } from '@angular/core';
+import { Component, OnInit, ViewChild, HostListener, AfterViewChecked } from '@angular/core';
 import { InfoModel, NotificationItemModel, LinkListModel } from '../../shared/models';
-import { MatDialog } from '@angular/material';
+import { MatDialog, MatBottomSheet } from '@angular/material';
 import { ItemDetailComponent, MenuBasicComponent } from '../../shared/components';
+import { TransparencyDocumentComponent } from './initial/transparency-document/transparency-document.component';
+import { MainGeneralService } from 'src/app/core/services/main/general.service';
+import { InitialComponent } from './initial/initial.component';
 
 @Component({
   selector: 'app-main',
@@ -10,6 +13,8 @@ import { ItemDetailComponent, MenuBasicComponent } from '../../shared/components
 })
 export class MainComponent implements OnInit {
   scEl = 'scrollingElement';
+
+  @ViewChild(InitialComponent, { static: true }) view: InitialComponent;
 
   infoData: InfoModel = {
     title: 'Data 1',
@@ -57,10 +62,12 @@ export class MainComponent implements OnInit {
 
   constructor(
     public dialog: MatDialog,
+    private bottomSheet: MatBottomSheet,
   ) {
   }
 
   ngOnInit() {
+    console.log(this.view);
   }
 
   @HostListener('window:scroll', ['$event']) actionInScroll($event: Event) {
@@ -81,6 +88,10 @@ export class MainComponent implements OnInit {
         selectedIndex: number,
         items: NotificationItemModel[] }
     });
+  }
+
+  openMenuTransparency() {
+    this.bottomSheet.open(TransparencyDocumentComponent);
   }
 
 }
