@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ExpansionModel } from 'src/app/shared/models';
+import { ExpansionModel, InfoModel } from 'src/app/shared/models';
+
+import { infoDataTransparency } from './infoDataTransparency';
 
 @Component({
   selector: 'app-transparency-document',
@@ -25,8 +27,10 @@ export class TransparencyDocumentComponent implements OnInit {
       description: 'Total 9 de esta Sección',
       icon: 'post_add' },
   ];
+  infoDataTransparency: InfoModel[][] = infoDataTransparency;
 
   constructor() { }
 
-  ngOnInit() { }
+  ngOnInit() {
+  }
 }

@@ -1,7 +1,15 @@
 mat-icon {
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 .date-sticker {
-  font-size: 11px;
+  font-size: 10px;
 }
+
+.date-sticker mat-icon {
+  font-size: 20px;
+}
+
+.info-active {
+  border: 3px solid #19d389;
+} 

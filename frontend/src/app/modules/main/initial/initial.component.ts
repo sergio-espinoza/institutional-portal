@@ -1,5 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { MainGeneralService } from 'src/app/core/services/main/general.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-initial',
@@ -9,7 +10,8 @@ import { MainGeneralService } from 'src/app/core/services/main/general.service';
 export class InitialComponent implements OnInit, OnDestroy {
 
   constructor(
-    private mainGeneralService: MainGeneralService
+    private mainGeneralService: MainGeneralService,
+    private router: Router
   ) {
   }
 

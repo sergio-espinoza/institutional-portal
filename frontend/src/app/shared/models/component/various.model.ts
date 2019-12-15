@@ -8,11 +8,19 @@ export class MenuButtonModel {
 }
 
 export class InfoModel {
-  icon?: string;
-  title?: string;
-  path?: string;
-  color?: string;
-  className?: string;
+  constructor(
+    public title?: string,
+    public path?: string,
+    public icon?: string,
+    public color?: string,
+    public className?: string
+  ) {
+    this.icon = icon ? icon : '';
+    this.title = title ? title : '';
+    this.path = path ? path : '';
+    this.color = color ? color : '';
+    this.className = className ? className : '';
+  }
 }
 
 export class NotificationItemModel {

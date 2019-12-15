@@ -9,6 +9,7 @@ import { SidebarComponent } from './partials/sidebar/sidebar.component';
 import { FooterComponent } from './partials/footer/footer.component';
 import { InitialComponent } from './initial/initial.component';
 import { TransparencyDocumentComponent } from './initial/transparency-document/transparency-document.component';
+import { TransparencyLinksComponent } from './initial/transparency-links/transparency-links.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { TransparencyDocumentComponent } from './initial/transparency-document/t
     SidebarComponent,
     FooterComponent,
     InitialComponent,
-    TransparencyDocumentComponent
+    TransparencyDocumentComponent,
+    TransparencyLinksComponent
   ],
   entryComponents: [
     TransparencyDocumentComponent

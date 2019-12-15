@@ -8,7 +8,7 @@
         <mat-icon>settings</mat-icon>
       </button>
       <button
-        *ngIf="!view"
+        [style.display]="mainGeneralService.viewTransparencyButton ? '' : 'none'"
         mat-icon-button
         class="transparency"
         (click)="openMenuTransparency()">

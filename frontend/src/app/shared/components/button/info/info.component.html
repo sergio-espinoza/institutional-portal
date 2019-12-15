@@ -1,6 +1,11 @@
 <mat-chip-list>
-  <mat-chip [color]="infoData.color" class="date-sticker">
-    <mat-icon>{{ infoData.icon }}</mat-icon>{{ infoData.title }}
+  <mat-chip 
+    [routerLink]="'/'+infoData.path"
+    routerLinkActive="info-active"
+    [routerLinkActiveOptions]="{ exact: true }"
+    [color]="infoData.color" class="date-sticker" selected>
+    <mat-icon *ngIf="infoData.icon">{{ infoData.icon }}</mat-icon>
+    {{ infoData.title }}
   </mat-chip>
 </mat-chip-list>
 
