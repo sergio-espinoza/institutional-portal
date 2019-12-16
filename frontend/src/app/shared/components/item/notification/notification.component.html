@@ -10,17 +10,19 @@
     <div class="relative">
       <img mat-card-image
         [src]="notificationItemData?.image"
+        width="350"
+        height="300"
         alt="Image Notification Item" />
       <mat-chip class="date-sticker" *ngIf="notificationItemData.date">
         <mat-icon>schedule</mat-icon>
         {{ notificationItemData?.date | date: 'medium' }}</mat-chip>
     </div>
-    <mat-card-content>
+    <mat-card-content *ngIf="showContent">
       <p>
         {{ notificationItemData?.description }}
       </p>
     </mat-card-content>
-    <mat-card-actions [align]="alignAction">
+    <mat-card-actions *ngIf="showActions" [align]="alignAction">
       <ng-content></ng-content>
     </mat-card-actions>
   </mat-card>

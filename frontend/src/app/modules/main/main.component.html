@@ -19,12 +19,6 @@
     <app-section>
       <app-info [infoData]="infoData"></app-info>
     </app-section>
-      <app-notification *ngFor="let item of notificationItemData; index as i"
-        [notificationItemData]="item"
-        [showHeader]="false">
-        <button mat-button (click)="openDetail(i)">DETAIL</button>
-        <button mat-button>CANCEL</button>
-      </app-notification>
       <app-link-list title="Social Links" [listLinks]="linkLists"></app-link-list>
       <app-minimized-view [minimizedViewData]="{
               title: 'Carhuacayn',

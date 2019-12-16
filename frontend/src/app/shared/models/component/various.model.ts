@@ -59,3 +59,24 @@ export class ExpansionModel {
   description?: string;
   icon?: string;
 }
+
+export class SectionModel {
+  title?: string;
+  background?: string;
+}
+
+export class PersonalSayModel {
+  constructor(
+    public src?: string,
+    public alt?: string,
+    public message?: string,
+    public personalName?: string,
+    public rol?: string
+  ) {
+    this.src = src ? src : 'https://i.imgur.com/vSa2MgS.jpg';
+    this.alt = alt ? alt : 'person';
+    this.message = message ? message : '';
+    this.personalName = personalName ? personalName : 'MR(S) PERSONAL NAME';
+    this.rol = rol ? rol : 'Software Developer';
+  }
+}

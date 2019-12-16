@@ -10,6 +10,8 @@ import { FooterComponent } from './partials/footer/footer.component';
 import { InitialComponent } from './initial/initial.component';
 import { TransparencyDocumentComponent } from './initial/transparency-document/transparency-document.component';
 import { TransparencyLinksComponent } from './initial/transparency-links/transparency-links.component';
+import { SectionMayorComponent } from './initial/sections/personal-say/personal-say.component';
+import { GalleryInitialComponent } from './initial/sections/gallery-initial/gallery-initial.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { TransparencyLinksComponent } from './initial/transparency-links/transpa
     FooterComponent,
     InitialComponent,
     TransparencyDocumentComponent,
-    TransparencyLinksComponent
+    TransparencyLinksComponent,
+    SectionMayorComponent,
+    GalleryInitialComponent
   ],
   entryComponents: [
     TransparencyDocumentComponent

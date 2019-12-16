@@ -1,0 +1,17 @@
+<app-section>
+  <div class="notifications">
+    <app-notification *ngFor="let item of notificationItemData; index as i"
+      [notificationItemData]="item"
+      [showContent]="false"
+      [showHeader]="false"
+      [showActions]="false"
+      (click)="openDetail(i)">
+    </app-notification>
+  </div>
+</app-section>
+<div style="width: 100vw;display:inline-block;overflow:hidden;">
+  <div style="width: 200vw;">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora beatae, officiis ut vero eligendi cum ipsa voluptatibus. A, libero quidem dignissimos nam praesentium id? Ex, veritatis? Sint ratione necessitatibus accusantium.
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora beatae, officiis ut vero eligendi cum ipsa voluptatibus. A, libero quidem dignissimos nam praesentium id? Ex, veritatis? Sint ratione necessitatibus accusantium.
+  </div>
+</div>

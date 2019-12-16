@@ -1,0 +1,50 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  border-radius: 50%;
+  width: 140px;
+  height: 140px;
+}
+
+.container-description {
+  max-width: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.container-description p {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 5px 30px;
+  text-align: center;
+}
+
+.quote {
+  font-size: 50px;
+  color: rgb(25, 118, 210);
+  line-height: 0;
+}
+
+.start {
+  padding-top: 45px;
+
+  align-self: flex-start;
+}
+
+.end {
+  padding-bottom: 45px;
+  align-self: flex-end;
+}
+
+h4 {
+  font-size: 18px;
+}
+

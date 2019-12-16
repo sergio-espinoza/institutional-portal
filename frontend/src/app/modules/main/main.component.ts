@@ -17,30 +17,6 @@ export class MainComponent implements OnInit {
     title: 'Data 1',
     icon: 'email',
   };
-  notificationItemData: NotificationItemModel[] = [
-    {
-      title: 'Shiba Inu',
-      subtitle: 'Dog Breed',
-      date: new Date(),
-      avatar: 'https://material.angular.io/assets/img/examples/shiba1.jpg',
-      image: 'https://material.angular.io/assets/img/examples/shiba2.jpg',
-      description: `
-        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-        A small, agile dog that copes very well with mountainous terrain,
-        the Shiba Inu was originally bred for hunting.
-        `
-    },
-    {
-      title: 'Amazing Background',
-      subtitle: 'this is Amazing Background',
-      date: new Date(),
-      image: 'https://thumbs.gfycat.com/ShamefulAptHogget-size_restricted.gif',
-      avatar: 'https://thumbs.gfycat.com/ShamefulAptHogget-size_restricted.gif',
-      description: `
-        This is a Amazing Background in format Gift.
-        `
-    }
-  ];
   @ViewChild(MenuBasicComponent, { static: true }) menuBasic: MenuBasicComponent;
 
   linkLists: LinkListModel[] = [
@@ -58,7 +34,6 @@ export class MainComponent implements OnInit {
   displayedColumns: string[] = [ 'name', 'size' ];
 
   constructor(
-    public dialog: MatDialog,
     private bottomSheet: MatBottomSheet,
     public mainGeneralService: MainGeneralService
   ) {
@@ -73,18 +48,6 @@ export class MainComponent implements OnInit {
     } else {
       this.menuBasic.classSticky = 'no-sticky';
     }
-  }
-
-  openDetail(index: number): void {
-    const dialogRef = this.dialog.open(ItemDetailComponent, {
-      panelClass: 'complete',
-      data: {
-        selectedIndex: index,
-        items: this.notificationItemData
-      } as {
-        selectedIndex: number,
-        items: NotificationItemModel[] }
-    });
   }
 
   openMenuTransparency() {
