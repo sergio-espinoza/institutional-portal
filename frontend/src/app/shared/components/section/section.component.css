@@ -10,6 +10,10 @@ section {
   justify-content: center;
 }
 
+.initial {
+  padding-top: 20vh;
+}
+
 .container {
   display: flex;
   height: 100%;

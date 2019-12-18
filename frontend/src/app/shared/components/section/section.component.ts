@@ -12,6 +12,8 @@ export class SectionComponent implements OnInit {
     background: 'https://i.imgur.com/TZ8lanL.jpg'
   };
 
+  @Input() className: string;
+
   constructor(
 
   ) { }

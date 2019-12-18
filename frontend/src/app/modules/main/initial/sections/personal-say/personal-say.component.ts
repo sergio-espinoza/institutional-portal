@@ -4,7 +4,7 @@ import { SectionModel, PersonalSayModel } from 'src/app/shared/models';
 @Component({
   selector: 'app-section-mayor',
   template: `
-    <app-section [sectionData]="sectionData">
+    <app-section [sectionData]="sectionData" className="initial">
       <app-personal-say></app-personal-say>
     </app-section>
   `

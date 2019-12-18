@@ -1,45 +1,81 @@
-.background {
+:host {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+
+.image-selected {
   position: relative;
+  width: 70%;
+}
+
+.image-selected .background {
+  height: 70%;
+  width: 95%;
   background-size: 100% 100%;
-  height: 85%;
 }
 
-button {
+.image-selected button {
   position: absolute;
-  top: 45%;
+  top: 32%;
 }
 
-.left {
+.image-selected .left {
   left: 0;
 }
-.right {
-  right: 0;
+.image-selected .right {
+  right: 5%;
 }
 
-.navigate {
+.image-selected .navigate {
   height:48px !important;
   width: 48px !important;
   font-size:48px !important;
 }
 
-
-.date-sticker {
+.image-selected .date-sticker {
   position: absolute;
   top: 15px;
-  right: -15px;
+  right: 3%;
   font-size: 11px;
 }
 
-.date-sticker mat-icon {
+.image-selected .date-sticker mat-icon {
   padding-right: 5px;
 }
 
-.description {
-  padding: 5px;
-  font-size: 13px;
+h4 {
+  padding: 5px 0;
+  font-size: 15px;
 }
 
-h4 {
-  padding: 0;
-  margin: 0;
+.image-selected .description {
+  width: 95%;
+  padding-top: 2%;
+  max-height: 30%;
+  overflow-y: auto;
+}
+
+
+.image-list {
+  width: 30%;
+  height: 100%;
+  overflow-x: auto;
+}
+
+.image-list img {
+  margin: 0 5%;
+  width: 90%;
+  height: 80%;
+  filter: brightness(50%);
+}
+
+.image-list .selected img {
+  border: 5px solid #2525ff;
+  width: calc(90% - 10px);
+  height: calc(80% - 10px);
+  filter: brightness(100%);
 }
