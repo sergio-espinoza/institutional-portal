@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ExpansionModel, InfoModel } from 'src/app/shared/models';
+import { ExpansionModel, InfoModel } from '../../../../shared/models';
 
 import { infoDataTransparency } from './infoDataTransparency';
 

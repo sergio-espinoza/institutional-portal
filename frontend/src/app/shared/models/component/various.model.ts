@@ -80,3 +80,5 @@ export class PersonalSayModel {
     this.rol = rol ? rol : 'Software Developer';
   }
 }
+
+

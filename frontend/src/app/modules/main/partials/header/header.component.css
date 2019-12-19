@@ -26,22 +26,22 @@ mat-toolbar-row {
   height: 32px;
   background: #1976d2;
   color: #ffffff;
-  padding: 20px 0;
+  padding: 20px;
 }
 
-.item {
-  place-content: center;
-  align-items: center;
-  flex-direction: row;
-  box-sizing: border-box;
+.contact-links {
   display: flex;
-  font-size: 12px;
-  font-weight: bold;
-  border-right: 1px solid rgba(227,242,253,.2);
-  padding: 0 15px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
-.item:last-of-type {
+app-contact-link {
+  padding: 0 5px;
+  border-right: 1px solid rgba(227,242,253,.2);
+}
+
+app-contact-link:last-of-type {
   border-right: none;
 }
 

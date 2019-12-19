@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { InfoModel } from 'src/app/shared/models';
+import { InfoModel } from '../../../../shared/models';
 
 @Component({
   selector: 'app-transparency-links',

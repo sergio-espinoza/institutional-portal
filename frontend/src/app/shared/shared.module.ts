@@ -21,7 +21,9 @@ import {
   ExpansionComponent,
   BottomSheetComponent,
   PersonalSayComponent,
-  ReviewComponent
+  ReviewComponent,
+  ProfileComponent,
+  ContactLinkComponent
 } from './components';
 
 import {
@@ -45,7 +47,11 @@ const COMPONENTS = [
   ExpansionComponent,
   BottomSheetComponent,
   PersonalSayComponent,
-  ReviewComponent
+  ReviewComponent,
+  ProfileComponent,
+  ContactLinkComponent,
+
+
 ];
 
 const PIPES = [

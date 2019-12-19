@@ -1,0 +1,59 @@
+.content-profile {
+  width: 313.25px;
+  margin-right: 16px;
+}
+
+mat-card {
+  padding: 0;
+}
+
+mat-card-content {
+  padding: 16px;
+}
+
+img {
+  width: 313.25px;
+  height: 375.90px;
+  border-radius: 4px 4px 0 0;
+}
+
+h2 {
+  font-size: 21px;
+}
+
+.star {
+  width: 18px;
+  height: 18px;
+  font-size: 18px;
+  color: rgb(251, 192, 45);
+}
+
+p {
+  margin-top: 1rem;
+  font-size: 14px;
+}
+
+.contact-links {
+  padding: 10px 0;
+}
+
+mat-card-actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 10px 16px !important;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+button {
+  color: #1976d2;
+}
+
+

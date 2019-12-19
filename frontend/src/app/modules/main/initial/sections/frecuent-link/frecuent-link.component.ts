@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ExpansionModel } from 'src/app/shared/models';
+import { ExpansionModel } from '../../../../../shared/models';
 
 @Component({
   selector: 'app-frecuent-link',

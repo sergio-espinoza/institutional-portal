@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { PersonalSayModel } from 'src/app/shared/models';
+import { PersonalSayModel } from '../../../../shared/models';
 
 @Component({
   selector: 'app-personal-say',

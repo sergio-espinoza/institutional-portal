@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SectionModel, PersonalSayModel } from 'src/app/shared/models';
+import { SectionModel, PersonalSayModel } from '../../../../../shared/models';
 
 @Component({
   selector: 'app-section-mayor',

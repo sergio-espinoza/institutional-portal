@@ -1,10 +1,35 @@
-<mat-card>
-  <mat-card-content>
+<div class="content-profile">
+  <mat-card>
     <img src="https://i.imgur.com/CgsKzn8.jpg"
-      alt="personal profile"
-      width="300" height="400px" />
-  </mat-card-content>
-  <mat-card-actions>
-
-  </mat-card-actions>
-</mat-card>
+      alt="personal profile" />
+    <mat-card-content>
+      <h2>Lusia Manuel</h2>
+      <mat-icon class="star">star</mat-icon>
+      <mat-icon class="star">star</mat-icon>
+      <mat-icon class="star">star</mat-icon>
+      <mat-icon class="star">star</mat-icon>
+      <mat-icon class="star">star</mat-icon>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Illum fugiat impedit tempora</p>
+      <div
+        class="contact-links"
+        *ngFor="let contactLink of contactLinks">
+        <app-contact-link
+          [contactLinkData]="contactLink"
+          iconColor="#1976d2"></app-contact-link>
+      </div>
+    </mat-card-content>
+    <mat-divider></mat-divider>
+    <mat-card-actions>
+      <div class="social-links">
+        <app-link
+          *ngFor="let linkIcon of linkIcons"
+          className="icon"
+          [properties]="{ color: '#ffffff', path: linkIcon.path }">
+          <app-icon [pathProperties]="linkIcon"></app-icon>
+        </app-link>
+      </div>
+      <button mat-button routerLink="/main/document">VIEW PROFILE</button>
+    </mat-card-actions>
+  </mat-card>
+</div>

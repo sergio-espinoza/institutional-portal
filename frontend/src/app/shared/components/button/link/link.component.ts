@@ -9,6 +9,7 @@ export class LinkComponent implements OnInit {
   @Input() className: 'icon' | 'mixed' | 'letter' = 'mixed';
   @Input() properties = {
     color: '#ffffff',
+    path: 'https://www.google.com'
   };
 
   constructor() { }

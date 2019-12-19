@@ -1,5 +1,10 @@
 <div [className]="className">
-  <button mat-raised-button [style.backgroundColor]="properties.color">
-    <ng-content></ng-content>
+  <button
+    mat-raised-button
+    [routerLink]="properties.path"
+    [style.backgroundColor]="properties.color">
+    <a [href]="properties.path" target="_blank">
+      <ng-content></ng-content>
+    </a>
   </button>
 </div>

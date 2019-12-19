@@ -1,16 +1,17 @@
 <mat-toolbar>
   <mat-toolbar-row>
-    <div class="item" *ngFor="let headerLink of headerLinks">
-      <mat-icon>{{ headerLink.icon }}</mat-icon>
-      <span>{{ headerLink.title }}</span>
+    <div class="contact-links">
+      <app-contact-link
+        *ngFor="let header of headerLinks"
+        [contactLinkData]="header"></app-contact-link>
     </div>
     <div class="social-links">
-      <app-link className="icon" *ngFor="let linkIcon of linkIcons">
+      <app-link
+        *ngFor="let linkIcon of linkIcons"
+        className="icon"
+        [properties]="{ color: '#ffffff', path: linkIcon.path }">
         <app-icon [pathProperties]="linkIcon"></app-icon>
       </app-link>
     </div>
   </mat-toolbar-row>
 </mat-toolbar>
-
-<!-- <app-info *ngFor="let headerLink of headerLinks"
-  [infoData]="headerLink"></app-info> -->

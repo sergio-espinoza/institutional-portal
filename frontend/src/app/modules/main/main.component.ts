@@ -3,7 +3,7 @@ import { InfoModel, NotificationItemModel, LinkListModel } from '../../shared/mo
 import { MatDialog, MatBottomSheet } from '@angular/material';
 import { ItemDetailComponent, MenuBasicComponent } from '../../shared/components';
 import { TransparencyDocumentComponent } from './initial/transparency-document/transparency-document.component';
-import { MainGeneralService } from 'src/app/core/services/main/general.service';
+import { MainGeneralService } from '../../core/services/main/general.service';
 
 @Component({
   selector: 'app-main',

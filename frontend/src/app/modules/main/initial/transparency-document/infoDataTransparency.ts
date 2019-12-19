@@ -1,4 +1,4 @@
-import { InfoModel } from 'src/app/shared/models';
+import { InfoModel } from '../../../../shared/models';
 
 export const infoDataTransparency: InfoModel[][] = [
   [ new InfoModel('Marco Legal de Transparencia', 'main', 'home', 'primary'),

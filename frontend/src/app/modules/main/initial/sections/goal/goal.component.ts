@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ExpansionModel, SectionModel } from 'src/app/shared/models';
+import { ExpansionModel, SectionModel } from '../../../../../shared/models';
 
 @Component({
   selector: 'app-goal',

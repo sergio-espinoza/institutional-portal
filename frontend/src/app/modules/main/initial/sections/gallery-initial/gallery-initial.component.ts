@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material';
-import { ItemDetailComponent } from 'src/app/shared/components';
-import { NotificationItemModel } from 'src/app/shared/models';
+import { ItemDetailComponent } from '../../../../../shared/components';
+import { NotificationItemModel } from '../../../../../shared/models';
 
 @Component({
   selector: 'app-gallery-initial',
