@@ -2,11 +2,10 @@
   <div class="background-init"></div>
   <mat-card>
     <div class="goals">
-      <div class="goal" *ngFor="let goal of goalData">
-        <mat-icon>{{ goal.icon }}</mat-icon>
-        <h2>{{ goal.title}}</h2>
-        <p>{{ goal.description }}</p>
-      </div>
+      <app-review
+        *ngFor="let goal of goalData"
+        [reviewData]="goal"
+      ></app-review>
     </div>
     <div class="background">
       <img src="https://i.imgur.com/xx7dk9B.jpg" alt="Mission">

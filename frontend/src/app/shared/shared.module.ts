@@ -20,7 +20,8 @@ import {
   IconComponent,
   ExpansionComponent,
   BottomSheetComponent,
-  PersonalSayComponent
+  PersonalSayComponent,
+  ReviewComponent
 } from './components';
 
 import {
@@ -43,7 +44,8 @@ const COMPONENTS = [
   IconComponent,
   ExpansionComponent,
   BottomSheetComponent,
-  PersonalSayComponent
+  PersonalSayComponent,
+  ReviewComponent
 ];
 
 const PIPES = [

@@ -1,0 +1,19 @@
+.links {
+  width: 90vw;
+  height: 75vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: row wrap;
+}
+app-review {
+  width: 40%;
+  height: 40%;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+app-review:hover {
+  cursor: pointer;
+  filter: brightness(140%);
+}

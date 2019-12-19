@@ -13,6 +13,7 @@ import { TransparencyLinksComponent } from './initial/transparency-links/transpa
 import { SectionMayorComponent } from './initial/sections/personal-say/personal-say.component';
 import { GalleryInitialComponent } from './initial/sections/gallery-initial/gallery-initial.component';
 import { GoalComponent } from './initial/sections/goal/goal.component';
+import { FrecuentLinkComponent } from './initial/sections/frecuent-link/frecuent-link.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { GoalComponent } from './initial/sections/goal/goal.component';
     TransparencyLinksComponent,
     SectionMayorComponent,
     GalleryInitialComponent,
-    GoalComponent
+    GoalComponent,
+    FrecuentLinkComponent
   ],
   entryComponents: [
     TransparencyDocumentComponent

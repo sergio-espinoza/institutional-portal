@@ -1,0 +1,8 @@
+<app-section [sectionData]="{ title: 'Frecuent Links', background: '' }">
+  <div class="links">
+    <app-review
+      class="mat-elevation-z2"
+      *ngFor="let link of frecuentLinks"
+      [reviewData]="link" className="center"></app-review>
+  </div>
+</app-section>

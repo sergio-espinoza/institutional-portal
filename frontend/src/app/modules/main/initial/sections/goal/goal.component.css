@@ -1,8 +1,8 @@
 mat-card {
   display: flex;
   flex-flow: row wrap;
-  width: 85vw;
-  height: 60%;
+  width: 80vw;
+  height: 70%;
   box-sizing: border-box;
   padding: 0;
 }
@@ -12,6 +12,8 @@ mat-card {
   height: 100%;
   position: absolute;
   background: url(https://i.imgur.com/CNEp4ur.png);
+  background-repeat: repeat;
+  background-size: 350px;
 }
 
 .goals {
@@ -24,25 +26,9 @@ mat-card {
   box-sizing: border-box;
 }
 
-.goal {
-  width: 40%;
-  height: 40%;
-}
-
-mat-icon {
-  font-size: 48px;
-  color: #1976d2;
-}
-
-h2 {
-  font-size: 21px;
-  font-family: Montserrat;
-}
-
-p {
-  font-size: 14px;
-  font-family: Montserrat;
-
+app-review {
+  width: 50%;
+  height: 50%;
 }
 
 background-init {
