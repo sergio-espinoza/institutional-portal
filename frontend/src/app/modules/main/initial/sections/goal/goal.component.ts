@@ -14,9 +14,9 @@ export class GoalComponent implements OnInit {
     { title: 'Title 4', description: 'Description 4', icon: 'search' },
   ];
 
-  sectionData: SectionModel = {
+  sectionMissionData: SectionModel = {
     title: 'Our Mission',
-    background: 'https://i.imgur.com/CNEp4ur.png'
+    background: ''
   };
 
   constructor() { }

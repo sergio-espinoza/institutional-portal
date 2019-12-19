@@ -1,6 +1,7 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { MainGeneralService } from 'src/app/core/services/main/general.service';
 import { Router } from '@angular/router';
+import { SectionModel } from 'src/app/shared/models';
 
 @Component({
   selector: 'app-initial',

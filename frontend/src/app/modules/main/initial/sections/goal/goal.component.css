@@ -1,13 +1,60 @@
 mat-card {
   display: flex;
   flex-flow: row wrap;
+  width: 85vw;
+  height: 60%;
   box-sizing: border-box;
+  padding: 0;
+}
+
+.background-init {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: url(https://i.imgur.com/CNEp4ur.png);
 }
 
 .goals {
   width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.goal {
+  width: 40%;
+  height: 40%;
+}
+
+mat-icon {
+  font-size: 48px;
+  color: #1976d2;
+}
+
+h2 {
+  font-size: 21px;
+  font-family: Montserrat;
+}
+
+p {
+  font-size: 14px;
+  font-family: Montserrat;
+
+}
+
+background-init {
+  position: absolute;
 }
 
 .background {
   width: 50%;
+  height: 100%;
+}
+
+.background img {
+  width: 100%;
+  height: 100%;
 }

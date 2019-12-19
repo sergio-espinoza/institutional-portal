@@ -42,3 +42,7 @@ h3::after {
   background-color: rgb(25, 118, 210);
   height: 3px;
 }
+
+.pre-section {
+  height: 20vh;
+}
