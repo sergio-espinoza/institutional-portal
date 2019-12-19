@@ -12,6 +12,7 @@ import { TransparencyDocumentComponent } from './initial/transparency-document/t
 import { TransparencyLinksComponent } from './initial/transparency-links/transparency-links.component';
 import { SectionMayorComponent } from './initial/sections/personal-say/personal-say.component';
 import { GalleryInitialComponent } from './initial/sections/gallery-initial/gallery-initial.component';
+import { GoalComponent } from './initial/sections/goal/goal.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { GalleryInitialComponent } from './initial/sections/gallery-initial/gall
     TransparencyDocumentComponent,
     TransparencyLinksComponent,
     SectionMayorComponent,
-    GalleryInitialComponent
+    GalleryInitialComponent,
+    GoalComponent
   ],
   entryComponents: [
     TransparencyDocumentComponent

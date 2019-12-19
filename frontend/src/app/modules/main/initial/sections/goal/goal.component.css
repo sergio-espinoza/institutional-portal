@@ -1,0 +1,13 @@
+mat-card {
+  display: flex;
+  flex-flow: row wrap;
+  box-sizing: border-box;
+}
+
+.goals {
+  width: 50%;
+}
+
+.background {
+  width: 50%;
+}

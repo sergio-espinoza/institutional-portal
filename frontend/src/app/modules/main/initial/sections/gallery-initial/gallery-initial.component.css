@@ -1,0 +1,29 @@
+.notifications {
+  width: 95%;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  overflow-x: auto;
+}
+
+.notifications img {
+  width: 250px;
+  height: 200px;
+  margin: 0 5px;
+  cursor: pointer;
+  filter: brightness(70%);
+}
+
+.notifications .first {
+  width: 350px;
+  height: 250px;
+  margin: 0 10px;
+  cursor: pointer;
+  filter: brightness(70%);
+}
+
+.notifications img:hover, .notifications .first:hover {
+  filter: brightness(100%);
+}

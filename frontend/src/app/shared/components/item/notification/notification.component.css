@@ -23,3 +23,8 @@ mat-card-header {
 .relative {
   position: relative;
 }
+
+.into-gallery .notification-card .relative img {
+  width: 200px;
+  height: 180px;
+}

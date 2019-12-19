@@ -6,18 +6,7 @@ import { NotificationItemModel } from 'src/app/shared/models';
 @Component({
   selector: 'app-gallery-initial',
   templateUrl: './gallery-initial.component.html',
-  styles: [`
-    .notifications {
-      width: 100vw;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      flex-flow: row wrap;
-    }
-    app-notification {
-      margin: 5px;
-    }
-  `]
+  styleUrls: ['./gallery-initial.component.css']
 })
 
 export class GalleryInitialComponent implements OnInit {
@@ -32,7 +21,8 @@ export class GalleryInitialComponent implements OnInit {
         The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
         A small, agile dog that copes very well with mountainous terrain,
         the Shiba Inu was originally bred for hunting.
-        `
+        `,
+      className: 'into-gallery'
     },
     {
       title: 'Shiba Inu',
@@ -44,7 +34,8 @@ export class GalleryInitialComponent implements OnInit {
         The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
         A small, agile dog that copes very well with mountainous terrain,
         the Shiba Inu was originally bred for hunting.
-        `
+        `,
+      className: 'into-gallery'
     },
     {
       title: 'Shiba Inu',
@@ -56,7 +47,8 @@ export class GalleryInitialComponent implements OnInit {
         The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
         A small, agile dog that copes very well with mountainous terrain,
         the Shiba Inu was originally bred for hunting.
-        `
+        `,
+      className: 'into-gallery'
     },
     {
       title: 'Amazing Background',
@@ -66,7 +58,8 @@ export class GalleryInitialComponent implements OnInit {
       avatar: 'https://thumbs.gfycat.com/ShamefulAptHogget-size_restricted.gif',
       description: `
         This is a Amazing Background in format Gift.
-        `
+        `,
+      className: 'into-gallery'
     },
     {
       title: 'Amazing Background',
@@ -76,15 +69,20 @@ export class GalleryInitialComponent implements OnInit {
       avatar: 'https://thumbs.gfycat.com/ShamefulAptHogget-size_restricted.gif',
       description: `
         This is a Amazing Background in format Gift.
-        `
+        `,
+      className: 'into-gallery'
     },
   ];
+
+  notificationToDisplay: NotificationItemModel[];
 
   constructor(
     public dialog: MatDialog,
   ) { }
 
-  ngOnInit() { }
+  ngOnInit() {
+    this.notificationToDisplay = this.notificationItemData.slice(1, 5);
+  }
 
   openDetail(index: number): void {
     const dialogRef = this.dialog.open(ItemDetailComponent, {
@@ -94,7 +92,8 @@ export class GalleryInitialComponent implements OnInit {
         items: this.notificationItemData
       } as {
         selectedIndex: number,
-        items: NotificationItemModel[] }
+        items: NotificationItemModel[]
+      }
     });
   }
 }
