@@ -1,0 +1,18 @@
+.profiles-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profiles {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.profiles-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 3vh;
+}

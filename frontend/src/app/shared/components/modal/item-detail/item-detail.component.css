@@ -9,7 +9,7 @@
 
 .image-selected {
   position: relative;
-  width: 70%;
+  width: 80%;
 }
 
 .image-selected .background {
@@ -61,7 +61,7 @@ h4 {
 
 
 .image-list {
-  width: 30%;
+  width: 20%;
   height: 100%;
   overflow-x: auto;
 }
@@ -70,12 +70,12 @@ h4 {
   margin: 0 5%;
   width: 90%;
   height: 80%;
-  filter: brightness(50%);
+  opacity: 0.3;
 }
 
 .image-list .selected img {
   border: 5px solid #2525ff;
   width: calc(90% - 10px);
   height: calc(80% - 10px);
-  filter: brightness(100%);
+  opacity: 1;
 }

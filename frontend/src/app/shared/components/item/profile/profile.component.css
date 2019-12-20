@@ -1,40 +1,46 @@
 .content-profile {
-  width: 313.25px;
+  width: 280px;
   margin-right: 16px;
 }
 
 mat-card {
   padding: 0;
+  box-sizing: border-box;
 }
 
 mat-card-content {
-  padding: 16px;
+  padding: 0 16px;
+  height: 33vh;
+  box-sizing: border-box;
+  overflow-y: auto;
+  margin: 0;
 }
 
 img {
-  width: 313.25px;
-  height: 375.90px;
+  width: 280px;
+  height: 30vh;
   border-radius: 4px 4px 0 0;
 }
 
 h2 {
-  font-size: 21px;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .star {
-  width: 18px;
-  height: 18px;
-  font-size: 18px;
+  width: 16px;
+  height: 16px;
+  font-size: 16px;
   color: rgb(251, 192, 45);
 }
 
 p {
-  margin-top: 1rem;
-  font-size: 14px;
+  margin: .5vh 0;
+  font-size: 11px;
 }
 
 .contact-links {
-  padding: 10px 0;
+  padding: 5px 0;
 }
 
 mat-card-actions {

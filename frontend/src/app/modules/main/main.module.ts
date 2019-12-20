@@ -14,6 +14,7 @@ import { SectionMayorComponent } from './initial/sections/personal-say/personal-
 import { GalleryInitialComponent } from './initial/sections/gallery-initial/gallery-initial.component';
 import { GoalComponent } from './initial/sections/goal/goal.component';
 import { FrecuentLinkComponent } from './initial/sections/frecuent-link/frecuent-link.component';
+import { ProfilesComponent } from './initial/sections/profiles/profiles.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { FrecuentLinkComponent } from './initial/sections/frecuent-link/frecuent
     SectionMayorComponent,
     GalleryInitialComponent,
     GoalComponent,
-    FrecuentLinkComponent
+    FrecuentLinkComponent,
+    ProfilesComponent
   ],
   entryComponents: [
     TransparencyDocumentComponent
