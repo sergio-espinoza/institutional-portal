@@ -12,7 +12,7 @@
   width: 120%;
   height: 100%;
   background-size: 100% 100%;
-  filter: brightness(40%);
+  filter: brightness(20%);
   animation: pendulum 15s infinite;
   animation-direction: alternate;
   color: #ffffff;
@@ -63,13 +63,13 @@ p i {
 }
 
 @keyframes pendulum {
-  from { 
-    transform: translateX(0);   
-    filter: brightness(30%);
+  from {
+    transform: translateX(0);
+    filter: brightness(20%);
   }
-  to { 
-    transform: translateX(-7%);   
-    filter: brightness(70%);
+  to {
+    transform: translateX(-7%);
+    filter: brightness(65%);
   }
 }
 

@@ -7,6 +7,13 @@ export class MenuButtonModel {
   title?: string;
 }
 
+export class LinkModel {
+  constructor(
+    public color?: string,
+    public path?: string
+  ) { }
+}
+
 export class InfoModel {
   constructor(
     public title?: string,
@@ -80,5 +87,21 @@ export class PersonalSayModel {
     this.rol = rol ? rol : 'Software Developer';
   }
 }
+
+export class SavageModel {
+  d: string;
+  fill?: string;
+}
+
+export class ProfileModel {
+  image: string;
+  rating: number;
+  description: string;
+  contactLinks: LinkListModel[];
+  socialLinks: { link: LinkModel, icon: SavageModel }[];
+  path: string;
+}
+
+
 
 

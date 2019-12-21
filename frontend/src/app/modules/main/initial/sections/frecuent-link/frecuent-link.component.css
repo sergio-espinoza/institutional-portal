@@ -15,5 +15,5 @@ app-review {
 
 app-review:hover {
   cursor: pointer;
-  filter: brightness(140%);
+  filter: brightness(85%);
 }

@@ -1,6 +1,6 @@
 <div class="content-profile">
   <mat-card>
-    <img src="https://i.imgur.com/CgsKzn8.jpg"
+    <img [src]="profileData.image"
       alt="personal profile" />
     <mat-card-content>
       <h2>Lusia Manuel</h2>
@@ -9,11 +9,10 @@
       <mat-icon class="star">star</mat-icon>
       <mat-icon class="star">star</mat-icon>
       <mat-icon class="star">star</mat-icon>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Illum fugiat impedit tempora</p>
+      <p>{{ profileData.description }}</p>
       <div
         class="contact-links"
-        *ngFor="let contactLink of contactLinks">
+        *ngFor="let contactLink of profileData.contactLinks">
         <app-contact-link
           [contactLinkData]="contactLink"
           iconColor="#1976d2"></app-contact-link>
@@ -23,10 +22,10 @@
     <mat-card-actions>
       <div class="social-links">
         <app-link
-          *ngFor="let linkIcon of linkIcons"
+          *ngFor="let socialLink of profileData.socialLinks"
           className="icon"
-          [properties]="{ color: '#ffffff', path: linkIcon.path }">
-          <app-icon [pathProperties]="linkIcon"></app-icon>
+          [linkData]="socialLink.link">
+          <app-icon [pathProperties]="socialLink.icon"></app-icon>
         </app-link>
       </div>
       <button mat-button routerLink="/main/document">VIEW PROFILE</button>

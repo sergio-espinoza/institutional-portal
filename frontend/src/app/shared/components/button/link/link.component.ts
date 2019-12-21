@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { LinkModel } from 'src/app/shared/models';
 
 @Component({
   selector: 'app-link',
@@ -7,7 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class LinkComponent implements OnInit {
   @Input() className: 'icon' | 'mixed' | 'letter' = 'mixed';
-  @Input() properties = {
+  @Input() linkData: LinkModel = {
     color: '#ffffff',
     path: 'https://www.google.com'
   };

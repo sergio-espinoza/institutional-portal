@@ -9,7 +9,7 @@
       <app-link
         *ngFor="let linkIcon of linkIcons"
         className="icon"
-        [properties]="{ color: '#ffffff', path: linkIcon.path }">
+        [linkData]="{ color: '#ffffff', path: linkIcon.path }">
         <app-icon [pathProperties]="linkIcon"></app-icon>
       </app-link>
     </div>
