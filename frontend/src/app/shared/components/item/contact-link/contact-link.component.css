@@ -14,7 +14,23 @@ mat-icon {
 }
 
 span {
-  padding: 0 .5em;
-  font-size: 14px;
+  padding: 0 .1em;
   font-family: Montserrat;
+}
+
+.title-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  font-size: 13px;
+}
+.subtitle {
+  font-size: 8px;
+}
+
+.bold {
+  font-weight: bold;
 }

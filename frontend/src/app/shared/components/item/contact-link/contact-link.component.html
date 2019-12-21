@@ -1,4 +1,7 @@
 <p>
   <mat-icon [style.color]="iconColor">{{ contactLinkData.icon }}</mat-icon>
-  <span>{{ contactLinkData.title }}</span>
+  <span class="title-content">
+    <span class="subtitle">{{ contactLinkData.subtitle }}</span>
+    <span class="title" [className]="className">{{ contactLinkData.title }}</span>
+  </span>
 </p>

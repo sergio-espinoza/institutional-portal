@@ -18,7 +18,7 @@
       <router-outlet></router-outlet>
       <app-link-list title="Social Links" [listLinks]="linkLists"></app-link-list>
       <app-minimized-view [minimizedViewData]="{
-              title: 'Carhuacayn',
+              title: 'Carhuacayan',
               subtitle: 'Social View',
               url: 'https://www.facebook.com/muni.carhuacayan',
               type: 'page'
@@ -29,6 +29,7 @@
     <app-section>
       <app-banner></app-banner>
     </app-section>
-      <app-table-icon [dataSource]="dataSource" [displayedColumns]="displayedColumns"></app-table-icon>
+    <app-table-icon [dataSource]="dataSource" [displayedColumns]="displayedColumns"></app-table-icon>
+    <app-footer></app-footer>
   </mat-drawer-content>
 </mat-drawer-container>

@@ -10,9 +10,10 @@ export class ContactLinkComponent implements OnInit {
   @Input() contactLinkData: LinkListModel = {
     title: 'Title Contact Link',
     icon: 'email',
-    path: 'https://facebook.com'
+    path: 'https://facebook.com',
+    subtitle: ''
   };
-
+  @Input() className = 'normal';
   @Input() iconColor = '#ffffff';
 
   constructor() { }

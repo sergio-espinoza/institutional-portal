@@ -60,6 +60,8 @@ mat-card-actions {
 
 button {
   color: #1976d2;
+  margin-left: 0;
+  padding: 0 8px;
 }
 
 
