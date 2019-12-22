@@ -15,6 +15,11 @@ export class ContactLinkComponent implements OnInit {
   };
   @Input() className = 'normal';
   @Input() iconColor = '#ffffff';
+  @Input() fontSize = {
+    icon: 24,
+    title: 13,
+    subtitle: 8
+  };
 
   constructor() { }
 

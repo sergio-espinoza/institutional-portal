@@ -1,7 +1,12 @@
 <p>
-  <mat-icon [style.color]="iconColor">{{ contactLinkData.icon }}</mat-icon>
+  <mat-icon
+    [style.color]="iconColor"
+    [style.fontSize.px]="fontSize.icon"
+    [style.width.px]="fontSize.icon"
+    [style.height.px]="fontSize.icon">
+    {{ contactLinkData.icon }}</mat-icon>
   <span class="title-content">
-    <span class="subtitle">{{ contactLinkData.subtitle }}</span>
-    <span class="title" [className]="className">{{ contactLinkData.title }}</span>
+    <span class="subtitle" [style.fontSize.px]="fontSize.subtitle">{{ contactLinkData.subtitle }}</span>
+    <span class="title" [className]="className"[style.fontSize.px]="fontSize.title">{{ contactLinkData.title }}</span>
   </span>
 </p>

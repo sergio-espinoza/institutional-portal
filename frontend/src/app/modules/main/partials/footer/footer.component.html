@@ -1,18 +1,78 @@
-<div class="container-pre-footer">
-  <img src="https://i.imgur.com/jpGZpmF.png" alt="personal pre footer">
-  <div class="content-pre-footer">
+<app-pre-footer></app-pre-footer>
+<div class="container">
+  <div class="header">
+    <div>
+      <h2>SUBSCRIBE OUR NEWSLETTER</h2>
+      <p>Stay up to date with our latest news and properties</p>
+    </div>
+    <div>
+      <form class="form-subscriber" [formGroup]="formHeader">
+        <mat-form-field appearance="outline">
+          <input
+            matInput
+            type="email"
+            formControlName="emailHeader"
+            placeholder="Your Email Address..."/>
+          <mat-hint>example@gmail.com</mat-hint>
+          <mat-error>Invalid email Address!!!</mat-error>
+        </mat-form-field>
+        <button mat-raised-button class="subscribe">SUBSCRIBE</button>
+      </form>
+    </div>
+  </div>
+  <mat-divider></mat-divider>
+  <div class="content">
     <div class="description">
-      <h2>LOOKINK TO SELL YOUR HOME?</h2>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisincing elit</p>
+      <h1>HouseKey</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Sit assumenda, culpa molestiae earum saepe vitae eveniet iste</p>
+      <div class="contact-links">
+        <div
+          *ngFor="let contactLinkData of contactsLinkData"
+          class="contact-link">
+          <app-contact-link
+            [contactLinkData]="contactLinkData"
+            iconColor="#1976d2"></app-contact-link>
+        </div>
+      </div>
+      <div class="social-link">
+        <app-link
+          *ngFor="let socialLink of socialLinkData"
+          className="icon"
+          [linkData]="socialLink.link">
+          <app-icon [pathProperties]="socialLink.icon"></app-icon></app-link>
+      </div>
     </div>
-    <div>
-      <app-contact-link
-        [contactLinkData]="contactLinkData"
-        className="bold"></app-contact-link>
+    <div class="form-content">
+      <h2>FEEDBACK</h2>
+      <p>We want your feedback about everything</p>
+      <form [formGroup]="formContent">
+        <mat-form-field appearance="outline">
+          <mat-label>E-mail</mat-label>
+          <input
+            matInput
+            type="email"
+            formControlName="emailContent"
+            placeholder="Your email address..."/>
+          <mat-hint>example@gmail.com</mat-hint>
+          <mat-error>Invalid email Address!!!</mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Message for us</mat-label>
+          <textarea
+            matInput
+            formControlName="messageContent"></textarea>
+          <mat-error> Message is required!!!</mat-error>
+        </mat-form-field>
+        <div class="submit">
+          <button mat-raised-button>SUBMIT</button>
+        </div>
+      </form>
     </div>
-    <div>
-      <button mat-raised-button>GET IN TOUCH</button>
+    <div class="map">
+      <h2>OUR LOCATION</h2>
+      <div><iframe width="100%" height="400"
+        [src]="'https://maps.google.com/maps?width=100%&amp;height=400&amp;hl=en&amp;coord=-11.20419495,-76.28550543084211&amp;q=Plaza%2BPrincipal%2BSanta%2BB%C3%A1rbara%2Bde%2BCarhuacay%C3%A1n+(Santa%20B%C3%A1rbara%20de%20Carhuacay%C3%A1n)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed' | satinizer: 'resourceUrl'" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/coordinates.html">find my coordinates</a></iframe></div><br />
     </div>
   </div>
 </div>
-

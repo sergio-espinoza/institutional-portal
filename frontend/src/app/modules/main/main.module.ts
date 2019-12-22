@@ -15,6 +15,7 @@ import { GalleryInitialComponent } from './initial/sections/gallery-initial/gall
 import { GoalComponent } from './initial/sections/goal/goal.component';
 import { FrecuentLinkComponent } from './initial/sections/frecuent-link/frecuent-link.component';
 import { ProfilesComponent } from './initial/sections/profiles/profiles.component';
+import { PreFooterComponent } from './partials/footer/pre-footer/pre-footer.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { ProfilesComponent } from './initial/sections/profiles/profiles.componen
     GalleryInitialComponent,
     GoalComponent,
     FrecuentLinkComponent,
-    ProfilesComponent
+    ProfilesComponent,
+    PreFooterComponent
   ],
   entryComponents: [
     TransparencyDocumentComponent
