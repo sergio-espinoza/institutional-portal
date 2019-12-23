@@ -1,0 +1,36 @@
+.content {
+  width: 75vw;
+  margin-bottom: 5px;
+}
+
+mat-card {
+  opacity: .75;
+}
+
+.content div {
+  padding: 5px 55px;
+}
+
+.content h2 {
+  text-align: center;
+  padding: 10px 0;
+}
+
+p {
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+h4 {
+  padding: 10px 55px;
+  text-align: end;
+}
+
+h2, h3, h4 {
+  color: #1976d2;
+}
+
+.person {
+  align-self: flex-end;
+}
+

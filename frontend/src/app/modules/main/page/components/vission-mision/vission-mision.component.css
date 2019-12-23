@@ -1,0 +1,16 @@
+.vission-mission {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60vw;
+}
+
+.vission-mission div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.subtitle {
+  width: 250px;
+}

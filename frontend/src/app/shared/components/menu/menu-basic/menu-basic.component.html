@@ -18,12 +18,17 @@
 	</mat-toolbar-row>
 </mat-toolbar>
 <mat-menu #info="matMenu" routerLinkActive="active">
-  <button mat-menu-item routerLinkActive="menu-active" routerLink="/main/document">Mision y Vision</button>
-  <button mat-menu-item routerLinkActive="menu-active" routerLink="/main/group">Símbolos Oficiales</button>
+  <button mat-menu-item routerLinkActive="menu-active"
+   routerLink="/main/page/vission-mission">Visión y Misión</button>
+  <button mat-menu-item routerLinkActive="menu-active" routerLink="/main/page/official-symbol">Símbolos Oficiales</button>
   <button mat-menu-item routerLinkActive="menu-active" routerLink="/main/news">Estructura Organica</button>
-  <button mat-menu-item routerLinkActive="menu-active" routerLink="/main/page">Gobernador Regional</button>
+  <button mat-menu-item 
+    routerLinkActive="menu-active"
+    routerLink="/main/page"
+    [routerLinkActiveOptions]="{ exact: true }"
+    >Gobernador Regional</button>
   <button mat-menu-item [matMenuTriggerFor]="coordinacion">Consejo Regional</button>
-  <button mat-menu-item routerLinkActive="menu-active" routerLink="/main/schedule">Consejo de Coordinacion Regional</button>
+  <button mat-menu-item routerLinkActive="menu-active" routerLink="/main/page/coordination-council">Consejo de Coordinacion</button>
   <button mat-menu-item routerLink="/auth">Agendas Regionales</button>
 </mat-menu>
 <mat-menu #management="matMenu">

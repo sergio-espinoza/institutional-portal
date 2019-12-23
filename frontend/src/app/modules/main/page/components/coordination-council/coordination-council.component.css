@@ -1,0 +1,25 @@
+.pre-section {
+  width: 100vw;
+  height: 64px;
+}
+
+mat-card {
+  width: 65vw;
+  padding: 30px;
+  margin: 15px 0;
+
+}
+
+h2 {
+  color: #1976d2;
+  padding: 15px 0;
+}
+
+h3 {
+  color: #505050;
+  padding-top: 15px;
+}
+
+ul, ol {
+  padding-left: 30px;
+}
