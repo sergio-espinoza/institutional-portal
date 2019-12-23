@@ -1,28 +1,58 @@
-.container {
+footer {
+  position: relative;
+  overflow: hidden;
   background: rgba(33,33,33,.93);
-  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-image: url(https://i.imgur.com/S2iOjje.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .content {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+  width: 95vw;
+  padding: 20px 0;
+  border-top: 1px solid rgba(255,255,255,.2);
+  border-bottom: 1px solid rgba(255,255,255,.2);
 }
 
 .header {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  width: 95vw;
+  padding: 20px 0;
 }
 
 .form-subscriber {
   display: flex;
+  flex: 1 1 42.4%;
 }
 
-button {
-  background: #1976d2;
-  color: #ffffff;
+.form-subscriber mat-form-field {
+  flex: 1 1 0%;
+  box-sizing: border-box;
 }
+
+p, input, textarea, ::placeholder, mat-hint, mat-label {
+  color: rgba(255, 255, 255, .6);
+}
+
 .subscribe {
   height: 51px;
   margin-top: 3.5px;
@@ -41,7 +71,7 @@ button {
 }
 
 .content .description {
-  max-width: 400px;
+  max-width: 500px;
 }
 
 .form-content form {
@@ -57,9 +87,29 @@ button {
 }
 
 .map {
-  width: 400px;
+  width: 350px;
 }
 
-input, textarea {
+button {
+  background: #1976d2;
   color: #ffffff;
 }
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  width: 95vw;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer p {
+  font-size: 12px;
+  margin: 0;
+}
+
+.footer p a {
+  margin: 0 10px;
+  font-weight: 700;
+}
+

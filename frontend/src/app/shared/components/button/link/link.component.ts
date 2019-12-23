@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { LinkModel } from 'src/app/shared/models';
+import { LinkModel } from '../../../../shared/models';
+
 
 @Component({
   selector: 'app-link',

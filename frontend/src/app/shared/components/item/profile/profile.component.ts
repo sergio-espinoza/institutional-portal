@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { LinkListModel, ProfileModel } from '../../../../shared/models';
-import { IconService } from 'src/app/core/services/icon/icon.service';
+import { IconService } from '../../../../core/services/icon/icon.service';
 
 @Component({
   selector: 'app-profile',

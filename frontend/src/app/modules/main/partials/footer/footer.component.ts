@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, Validators as vl, FormControl, FormBuilder } from '@angular/forms';
-import { LinkModel, LinkListModel, SavageModel } from 'src/app/shared/models';
-import { IconService } from 'src/app/core/services/icon/icon.service';
+import { LinkModel, LinkListModel, SavageModel } from '../../../../shared/models';
+import { IconService } from '../../../../core/services/icon/icon.service';
 
 @Component({
   selector: 'app-footer',

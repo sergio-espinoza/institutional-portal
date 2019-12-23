@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { LinkListModel } from 'src/app/shared/models';
+import { LinkListModel } from '../../../../../shared/models';
 
 @Component({
   selector: 'app-pre-footer',

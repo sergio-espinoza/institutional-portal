@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { SavageModel } from 'src/app/shared/models';
+import { SavageModel } from '../../../../shared/models';
 
 @Component({
   selector: 'app-icon',
