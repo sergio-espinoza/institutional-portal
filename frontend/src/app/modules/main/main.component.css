@@ -5,6 +5,17 @@
   overflow: hidden;
 }
 
+mat-drawer-content {
+  opacity: 0;
+  animation: main-load 1s forwards;
+}
+
+@keyframes main-load {
+  100% {
+    opacity: 1;
+  }
+}
+
 mat-drawer {
   width: 300px;
 }

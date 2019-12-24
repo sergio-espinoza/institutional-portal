@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SectionModel } from 'src/app/shared/models';
+import { SectionModel } from '../../../../../shared/models';
 
 @Component({
   selector: 'app-official-symbol',

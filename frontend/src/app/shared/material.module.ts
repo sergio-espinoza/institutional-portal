@@ -25,6 +25,7 @@ import {
   MatDatepickerModule,
   MatRadioModule,
   MatBottomSheetModule,
+  MatProgressSpinnerModule
 
 } from '@angular/material';
 
@@ -59,7 +60,8 @@ import { ScrollingModule } from '@angular/cdk/scrolling';
     MatDatepickerModule,
     MatRadioModule,
     ScrollingModule,
-    MatBottomSheetModule
+    MatBottomSheetModule,
+    MatProgressSpinnerModule,
 
   ],
   providers: [],

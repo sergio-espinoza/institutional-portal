@@ -1,0 +1,16 @@
+.spinner {
+  width: 20px;
+  height: 20px;
+  margin-top: -40px;
+  animation: spinner-ub06eb63b 1s ease infinite;
+}
+
+@keyframes spinner-ub06eb63b {
+  0%, 100% {
+    box-shadow: -13px 20px 0 #1976d2, 13px 20px 0 rgba(0, 82, 236, 0.2), 13px 46px 0 rgba(0, 82, 236, 0.2), -13px 46px 0 rgba(0, 82, 236, 0.2); }
+  25% {
+    box-shadow: -13px 20px 0 rgba(0, 82, 236, 0.2), 13px 20px 0 #1976d2, 13px 46px 0 rgba(0, 82, 236, 0.2), -13px 46px 0 rgba(0, 82, 236, 0.2); }
+  50% {
+    box-shadow: -13px 20px 0 rgba(0, 82, 236, 0.2), 13px 20px 0 rgba(0, 82, 236, 0.2), 13px 46px 0 #1976d2, -13px 46px 0 rgba(0, 82, 236, 0.2); }
+  75% {
+    box-shadow: -13px 20px 0 rgba(0, 82, 236, 0.2), 13px 20px 0 rgba(0, 82, 236, 0.2), 13px 46px 0 rgba(0, 82, 236, 0.2), -13px 46px 0 #1976d2; } }
