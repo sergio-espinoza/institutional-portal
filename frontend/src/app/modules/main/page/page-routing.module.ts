@@ -5,7 +5,13 @@ import {
   VissionMisionComponent,
   LeaderComponent,
   OfficialSymbolComponent,
-  CoordinationCouncilComponent
+  CoordinationCouncilComponent,
+  ConsultationComponent,
+  DirectoryComponent,
+  LaborComponent,
+  ProsecutorComponent,
+  ManagementComponent,
+  DirectoryCouncilComponent
 } from './components';
 
 const routes: Routes = [
@@ -14,7 +20,13 @@ const routes: Routes = [
       { path: '', component: LeaderComponent },
       { path: 'vission-mission', component: VissionMisionComponent },
       { path: 'official-symbol', component: OfficialSymbolComponent},
-      { path: 'coordination-council', component: CoordinationCouncilComponent},
+      { path: 'coordination-council', component: CoordinationCouncilComponent },
+      { path: 'consultation', component: ConsultationComponent },
+      { path: 'directory', component: DirectoryComponent },
+      { path: 'labor', component: LaborComponent },
+      { path: 'management', component: ManagementComponent },
+      { path: 'prosecutor', component: ProsecutorComponent },
+      { path: 'directory-council', component: DirectoryCouncilComponent }
     ]
   },
   { path: '**', redirectTo: '', pathMatch: 'full' }

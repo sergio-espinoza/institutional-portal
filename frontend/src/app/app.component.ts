@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DocumentService } from './core/services/api-local/document.service';
 import { Router, NavigationEnd, Event } from '@angular/router';
 
 @Component({
@@ -7,19 +8,20 @@ import { Router, NavigationEnd, Event } from '@angular/router';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  classNameContentSpinner = '';
-
   constructor(
+    private documentService: DocumentService,
     private router: Router
-    ) {
-      this.onNavigation();
+  ) {
+    this.onNavigationEnd();
   }
 
-  onNavigation(): void {
-    this.router.events.subscribe((eventRouter: Event) => {
-      if (eventRouter instanceof NavigationEnd) {
-        this.classNameContentSpinner = 'hide';
+  onNavigationEnd(): void {
+    this.router.events.subscribe(
+      (navigationEvent: Event) => {
+        if (navigationEvent instanceof NavigationEnd) {
+          this.documentService.document.getElementById('preloader').className = '.content-spinner hide';
+        }
       }
-    });
+    );
   }
 }

@@ -9,16 +9,28 @@ import {
   VissionMisionComponent,
   LeaderComponent,
   OfficialSymbolComponent,
-  CoordinationCouncilComponent
+  CoordinationCouncilComponent,
+  DirectoryComponent,
+  ProsecutorComponent,
+  ManagementComponent,
+  LaborComponent,
+  ConsultationComponent,
+  DirectoryCouncilComponent
 
 } from './components';
-
 
 const COMPONENTS = [
   VissionMisionComponent,
   LeaderComponent,
   OfficialSymbolComponent,
-  CoordinationCouncilComponent
+  CoordinationCouncilComponent,
+  DirectoryComponent,
+  ProsecutorComponent,
+  ManagementComponent,
+  LaborComponent,
+  ConsultationComponent,
+  DirectoryCouncilComponent,
+
 ];
 
 
