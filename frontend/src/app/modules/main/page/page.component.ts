@@ -1,22 +1,17 @@
 import { Component, OnInit } from '@angular/core';
+import { PageService } from 'src/app/core/services/page/page.service';
 
 @Component({
   selector: 'app-page',
-  template: `
-    <div class="menu-header"></div>
-    <router-outlet></router-outlet>
-  `,
-  styles: [`
-    .menu-header {
-      width: 100vw;
-      height: 64px;
-      position: absolute;
-      background: rgba(255, 0, 0, .7);
-    }
-  `]
+  templateUrl: './page.component.html',
+  styleUrls: ['./page.component.css']
 })
 export class PageComponent implements OnInit {
-  constructor() { }
 
-  ngOnInit() { }
+  constructor(
+    public pageService: PageService
+  ) { }
+
+  ngOnInit() {
+  }
 }

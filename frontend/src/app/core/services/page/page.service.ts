@@ -1,8 +1,17 @@
 import { Injectable } from '@angular/core';
-import { PageModule } from '../../../modules/main/page/page.module';
 
-@Injectable({ providedIn: PageModule })
+@Injectable({ providedIn: 'root' })
 export class PageService {
-  constructor() { }
+  pageData: { title: string, subtitle: string } = {
+    title: 'Page',
+    subtitle: 'This is Page Module'
+  };
+
+  constructor() {
+  }
+
+  setPageData(data: { title: string, subtitle: string }): void {
+    this.pageData = data;
+  }
 
 }
