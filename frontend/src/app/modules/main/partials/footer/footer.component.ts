@@ -3,12 +3,19 @@ import { FormGroup, Validators as vl, FormControl, FormBuilder } from '@angular/
 import { LinkModel, LinkListModel, SavageModel } from '../../../../shared/models';
 import { IconService } from '../../../../core/services/icon/icon.service';
 
+const urlMapSource = 'https://maps.google.com/maps?width=100%&amp;height=3500&amp;hl=en&amp;' +
+  'coord=-11.20419495,-76.28550543084211&amp;q=Plaza%2BPrincipal%2BSanta%2BB%C3%A1rbara%2' +
+  'Bde%2BCarhuacay%C3%A1n+(Santa%20B%C3%A1rbara%20de%20Carhuacay%C3%A1n)&amp;ie=UTF8&amp;' +
+  't=&amp;z=14&amp;iwloc=B&amp;output=embed';
+
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent implements OnInit {
+  urlMap = urlMapSource;
+
   formHeader: FormGroup = this.fb.group({
     emailHeader: this.fb.control('', [vl.email, vl.required])
   });

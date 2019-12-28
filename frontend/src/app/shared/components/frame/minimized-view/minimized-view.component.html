@@ -1,23 +1,16 @@
-<mat-card>
-    <mat-card-header>
-      <mat-card-title>{{ minimizedViewData.title }}</mat-card-title>
-      <mat-card-subtitle>{{ minimizedViewData.subtitle }}</mat-card-subtitle>
-    </mat-card-header>
-    <mat-card-content>
-      <div
-        [class]="'fb-'+minimizedViewData.type"
-        [attr.data-href]="minimizedViewData.url | satinizer: 'url'"
-        data-tabs="timeline"
-        data-small-header="false"
-        data-adapt-container-width="true"
-        data-hide-cover="false"
-        data-show-text="true"
-        data-show-facepile="true">
-        <blockquote [attr.cite]="minimizedViewData.url" class="fb-xfbml-parse-ignore">
-          <a [href]="minimizedViewData.url">Link Social</a></blockquote></div>
-    </mat-card-content>
-  </mat-card>
-
+<div
+  [class]="'fb-'+minimizedViewData.type"
+  [attr.data-href]="minimizedViewData.url"
+  data-tabs="timeline,events,messages"
+  [attr.data-width]="size.width" data-height=""
+  data-small-header="true"
+  data-adapt-container-width="true"
+  data-hide-cover="true"
+  data-show-text="true"
+  data-show-facepile="false">
+  <blockquote [attr.cite]="minimizedViewData.url" class="fb-xfbml-parse-ignore">
+    <a [href]="minimizedViewData.url" target="_blank">Link Social</a></blockquote>
+</div>
 
 
 

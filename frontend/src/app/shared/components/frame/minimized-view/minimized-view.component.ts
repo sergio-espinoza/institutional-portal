@@ -8,6 +8,9 @@ import { MinimizedViewModel } from '../../../models';
 })
 export class MinimizedViewComponent implements OnInit {
   @Input() minimizedViewData: MinimizedViewModel;
+  @Input() size: { width: string, height: string } = {
+    width: '1300px', height: 'auto'
+  };
 
   constructor() { }
 

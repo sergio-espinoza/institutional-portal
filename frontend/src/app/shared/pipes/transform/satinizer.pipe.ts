@@ -18,7 +18,7 @@ export class SatinizerPipe implements PipeTransform {
   ) { }
 
   transform(value: any, type: string): any {
-    return this.bypassObject[type](value);
+    return this.bypassObject[type](value).changingThisBreaksApplicationSecurity;
   }
 
 }
