@@ -1,18 +1,18 @@
-:host {
-  width: 90%;
-  height: 88%;
+.table-container {
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  overflow: auto;
-
-}
-
-div {
+  justify-content: center;
+  align-items: center;
   width: 90%;
   height: 80%;
   margin: auto;
   overflow-x: auto;
+  padding: 35px 0;
+}
+
+.table-container mat-form-field {
+  width: 50%;
+  font-size: 14px;
 }
 
 .mat-table {
@@ -28,22 +28,5 @@ mat-paginator {
   position: sticky;
   bottom: 0;
   left: 0;
-}
-
-mat-card {
-  padding: 0;
-  height: initial;
-}
-
-mat-card-content {
   width: 100%;
-}
-
-mat-form-field {
-  width: 100%;
-  padding: 0;
-}
-
-.mat-form-field-wrapper {
-  padding: 0;
 }

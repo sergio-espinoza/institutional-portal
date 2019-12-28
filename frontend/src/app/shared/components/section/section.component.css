@@ -15,10 +15,11 @@ section {
 }
 
 .initial {
-  height: -webkit-calc(100vh - 40px);
-  height: -moz-calc(100vh - 40px);
-  height: -o-calc(100vh - 40px);
-  height: calc(100vh - 40px);
+  height: 75vh;
+  height: 75vh;
+  height: 75vh;
+  height: 75vh;
+  overflow-x: auto;
 }
 
 .other {

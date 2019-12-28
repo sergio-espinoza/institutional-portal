@@ -21,8 +21,6 @@ mat-drawer-content {
   }
 }
 
-
-
 .notifications, .transparency {
   position: fixed;
   z-index: 20;

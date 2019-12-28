@@ -33,7 +33,6 @@ const COMPONENTS = [
 
 ];
 
-
 @NgModule({
   declarations:
     [PageComponent, ...COMPONENTS],
