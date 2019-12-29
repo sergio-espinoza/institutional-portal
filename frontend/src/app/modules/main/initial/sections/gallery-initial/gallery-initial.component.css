@@ -1,9 +1,17 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.first-content {
+  width: 40%;
+  padding: 0 5px;
+}
+
 .notifications {
-  width: 95%;
-  height: 80%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-flow: row wrap;
   overflow-x: auto;
 }
@@ -11,12 +19,12 @@
 .notifications img {
   width: 250px;
   height: 200px;
-  margin: 0 5px;
+  margin: 5px;
   cursor: pointer;
   filter: brightness(70%);
 }
 
-.notifications .first {
+.first {
   width: 350px;
   height: 250px;
   margin: 0 10px;
@@ -24,6 +32,6 @@
   filter: brightness(70%);
 }
 
-.notifications img:hover, .notifications .first:hover {
+.notifications img:hover, .first:hover {
   filter: brightness(100%);
 }

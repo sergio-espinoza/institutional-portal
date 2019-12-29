@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild, HostListener } from '@angular/core';
-import { InfoModel, NotificationItemModel, LinkListModel } from '../../shared/models';
-import { MatDialog, MatBottomSheet } from '@angular/material';
-import { ItemDetailComponent, MenuBasicComponent } from '../../shared/components';
+import { InfoModel, LinkListModel } from '../../shared/models';
+import { MatBottomSheet } from '@angular/material';
+import { MenuBasicComponent } from '../../shared/components';
 import { TransparencyDocumentComponent } from './initial/transparency-document/transparency-document.component';
 import { MainGeneralService } from '../../core/services/main/general.service';
 
@@ -24,14 +24,6 @@ export class MainComponent implements OnInit {
     { title: 'Google', subtitle: 'Google Link', icon: 'email', path: 'https://www.google.com' },
     { title: 'Facebook', subtitle: 'Facebook WebSite', icon: 'notifications_active', path: 'https://www.facebook.com' }
   ];
-
-  dataSource: any[] = [
-    { name: 'Document 1', size: '350 KB', createdat: new Date() },
-    { name: 'Document 2', size: '1500 KB', createdat: new Date() },
-    { name: 'Document 3', size: '450 KB', createdat: new Date() },
-  ];
-
-  displayedColumns: string[] = [ 'name', 'size' ];
 
   constructor(
     private bottomSheet: MatBottomSheet,

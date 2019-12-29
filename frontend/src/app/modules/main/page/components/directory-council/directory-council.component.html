@@ -1,109 +1,22 @@
-<mat-card>
-  DIRECTORIO DE CONSEJEROS
+<app-section [sectionData]="sectionData" className="other">
+  <div class="container">
+    <div class="subheader">
+      <p>En General para comunicarse con los consejeros regionales usted puede comunicarse al mismo número:</p>
+      <p class="icon-line"><mat-icon>phone</mat-icon>(064) 602 000 - 1516</p>
+    </div>
+  
+    <div class="mat-elevation-z1 councilor"
+      *ngFor="let councilor of directoryCouncilList; index as i">
+      <h3># {{ i + 1 }} - {{ councilor.roleTitle }}</h3>
+      <p class="icon-line"><mat-icon>contacts</mat-icon>
+        <b>Nombres: </b>{{ councilor.name }}</p>
+      <p class="icon-line"><mat-icon>business</mat-icon>
+        <b>Cargo: </b>{{ councilor.role }}</p>
+      <p class="icon-line"><mat-icon>contact_mail</mat-icon>
+        <b>Correo Electrónico: </b>{{ councilor.email }}</p>
+      <p class="icon-line"><mat-icon>access_time</mat-icon>
+        <b>Inicio de Cargo: </b>{{ councilor.roleStart }}</p>
+    </div>
+  </div>
+</app-section>
 
-
-  En General para comunicarse con los consejeros regionales usted puede comunicarse al mismo número
-Telefono:  (064) 602 000 - 1516
-
-CONSEJERO REGIONAL CHUPACA
-Nombres: SAÚL ARCOS GALVAN
-Cargo: Consejero Regional de Chupaca (Consejero delegado)
-Correo Electronico: sarcos@regionjunin.gob.pe
-Inicio de Cargo: 01/01/2019
-
-
-
-CONSEJERO REGIONAL YAULI
-Nombres: JORGE V. ROJAS GAMARRA
-Cargo: Consejero Regional de Yauli
-Correo Electrónico: jrojas@regionjunin.gob.pe
-Inicio de Cargo: 01/01/2019
-
-
-
-CONSEJERO REGIONAL TARMA
-Nombres: Ing. TATIANA ERLINDA ARIAS ESPINOZA
-Cargo: Consejera Regional de Tarma
-Correo Electrónico: tarias@regionjunin.gob.pe
-Inicio de Cargo: 01/01/2019
-
-
-
-CONSEJERO REGIONAL SATIPO
-Nombres: JOSÉ VILLAZANA FLORES
-Cargo: Consejero Regional de Satipo
-Correo Electrónico: jvillazana@regionjunin.gob.pe
-Inicio de Cargo: 01/01/2019
-
-
-
-CONSEJERO REGIONAL SATIPO
-Nombres: LUIS CARHUALLANQUI BERROCAL
-Cargo: Consejero Regional de Satipo
-Correo Electrónico: lcarhuallanqui@regionjunin.gob.pe
-Inicio de Cargo: 01/01/2019
-
-
-
-CONSEJERO REGIONAL CHANCHAMAYO
-Nombres: LIC. JESÚS E. LARA GUERRA
-Cargo: Consejero Regional de Chanchamayo
-Correo Electrónico: jlara@regionjunin.gob.pe
-Inicio de Cargo: 01/01/2019
-
-
-
-CONSEJERO REGIONAL CHANCHAMAYO
-Nombres: LIC. VERSAEL DIAZ GALLARDO
-Cargo: Consejero Regional de Chanchamayo
-Correo Electrónico: vdiaz@regionjunin.gob.pe
-Inicio de Cargo: 01/01/2019
-
-
-
-CONSEJERO REGIONAL HUANCAYO
-Nombres: CLEVER M. MERCADO MÉNDEZ
-Cargo: Consejero Regional de Huancayo
-Correo Electrónico: cmercado@regionjunin.gob.pe
-Inicio de Cargo: 01/01/2019
-
-
-
-CONSEJERO REGIONAL HUANCAYO
-Nombres: JORGE L. BUENDIA VILLENA
-Cargo: Consejero Regional de Huancayo
-Correo Electrónico: jbuendia@regionjunin.gob.pe
-Inicio de Cargo: 01/01/2019
-
-
-
-CONSEJERO REGIONAL HUANCAYO
-Nombres: JOSE M. ALVAREZ ROJAS
-Cargo: Consejero Regional de Huancayo
-Correo Electrónico: jalvarez@regionjunin.gob.pe
-Inicio de Cargo: 01/01/2019
-
-
-
-CONSEJERO REGIONAL JAUJA
-Nombres: LIC. DAVID E. ESLADO VARGAS
-Cargo: Consejero Regional de Jauja
-Correo Electrónico:  deslado@regionjunin.gob.pe
-Inicio de Cargo: 01/01/2019
-
-
-
-CONSEJERO REGIONAL CONCEPCIÓN
-Nombres: XIMENA M. LOPEZ CASTRO
-Cargo: Consejera Regional de Concepción
-Correo Electrónico: xlopez@regionjunin.gob.pe
-Inicio de Cargo: 01/01/2019
-
-
-
-CONSEJERO REGIONAL JUNÍN
-Nombres: ABIMAEL P. ROJAS TICSE
-Cargo: Consejero Regional de Junín
-Correo Electrónico: arojas@regionjunin.gob.pe
-Inicio de Cargo: 01/01/2019
-</mat-card>

@@ -5,14 +5,20 @@ import { SectionModel, PersonalSayModel } from '../../../../../shared/models';
   selector: 'app-section-mayor',
   template: `
     <app-section [sectionData]="sectionData" [showPresection]="true">
-      <app-personal-say></app-personal-say>
+      <app-personal-say [personalSayData]="personalSayData"></app-personal-say>
     </app-section>
   `
 })
 
 export class SectionMayorComponent implements OnInit {
-  sectionData: SectionModel = { title: 'Mayor Message', background: 'https://i.imgur.com/S2iOjje.jpg' };
-  personalSayData: PersonalSayModel = new PersonalSayModel();
+  sectionData: SectionModel = {
+    title: 'Mayor Message',
+    background: 'https://i.imgur.com/S2iOjje.jpg' };
+  personalSayData: PersonalSayModel = new PersonalSayModel(
+    'https://i.imgur.com/lnpPfU1.png',
+    'Mayor Icon', 'Mensaje del Alcalde',
+    'Juan Carlos Llacza Alcantara',
+    'Alcalde del Distrito');
 
   constructor() { }
 

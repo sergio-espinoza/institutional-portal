@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { functionsData } from './prosecutor.data';
+import { SectionModel } from '../../../../../shared/models';
+import { PageService } from '../../../../../core/services/page/page.service';
 
 @Component({
   selector: 'app-prosecutor',
@@ -6,10 +9,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./prosecutor.component.css']
 })
 export class ProsecutorComponent implements OnInit {
+  sectionData: SectionModel = new SectionModel(
+    'Procuraduría Pública', 'https://i.imgur.com/yg3Qdqv.jpg');
 
-  constructor() { }
+  functionsData: string[] = functionsData;
+
+  constructor(
+    private pageService: PageService
+  ) { }
 
   ngOnInit() {
+    this.pageService.setPageData({
+      title: 'Sección de Procuraduría Pública',
+      subtitle: 'Procuraduría Pública de la Municipalidad Distrital Santa Bárbara de Carhuacayán'
+    });
   }
 
 }

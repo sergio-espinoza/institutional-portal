@@ -1,13 +1,16 @@
-<mat-card>
-  CONSULTA EXPEDIENTE SIAF
+<h3>Archivos Alojados</h3>
 
-  ARCHIVOS PARA DESCARGAR
-Tipo	Nombre	Tamaño
-	RESOLUCION DIRECTORAL ADMINISTRATIVA N° 236-2019-GRJ/ORAF
-Jueves 22 de Agosto, 2019	519.2 KB
-	Resolución Gerencial Regional de Infraestructura N°208-2018-GR-JUNIN/GRI
-Lunes 4 de Junio, 2018	1.4 MB
-	RESOLUCION SUB DIRECTORAL ADMINISTRATIVA N° 124-2018-GRJ/ORH
-Viernes 23 de Febrero, 2018	365 KB
+<app-table-icon [dataSource]="dataSource" [displayedColumns]="displayedColumns" (changeIndexDocument)="srcSelected = $event">
+	<button mat-icon-button>
+		<mat-icon>pageview</mat-icon>
+	</button>
+</app-table-icon>
+<div class="frame-container">
+	<iframe
+	[src]="'https://drive.google.com/file/d/'+srcSelected+'/preview' | satinizer: 'resourceUrl'"
+	allowfullscreen
+	width="100%"
+	height="100%"></iframe>
+</div>
 
-</mat-card>
+

@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { SectionModel } from '../../../../../shared/models';
+import { PageService } from '../../../../../core/services/page/page.service';
+import { DirectoryCouncilModel, directoryCouncilList } from './directory-council.data';
 
 @Component({
   selector: 'app-directory-council',
@@ -6,10 +9,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./directory-council.component.css']
 })
 export class DirectoryCouncilComponent implements OnInit {
+  sectionData: SectionModel = new SectionModel(
+    'Directorio de Consejeros', 'https://i.imgur.com/yg3Qdqv.jpg');
 
-  constructor() { }
+  directoryCouncilList: DirectoryCouncilModel[] = directoryCouncilList;
+
+
+  constructor(
+    private pageService: PageService
+  ) { }
 
   ngOnInit() {
+    this.pageService.setPageData({
+      title: 'DIRECTORIO DE CONSEJEROS',
+      subtitle: 'Consejeros de la Municipalidad de Santa Bárbara de Carhuacayán'
+    });
   }
 
 }

@@ -1,8 +1,18 @@
-<app-section>
-  <div class="notifications">
-    <img class="first" [src]="notificationItemData[0].image" 
-      (click)="openDetail(0)"/>
-    <img *ngFor="let item of notificationToDisplay; index as i"
-      [src]="item.image" (click)="openDetail(i + 1)" />
+<app-section [sectionData]="{
+  title: 'Galería de Imágenes',
+  background: 'https://i.imgur.com/TZ8lanL.jpg'
+}">
+  <div class="container">
+    <div class="first-content">
+      <img class="first"
+      [src]="notificationItemData[0].image"
+      (click)="openDetail(0)" />
+    </div>
+    <div class="notifications">
+      <img
+        *ngFor="let item of notificationToDisplay; index as i"
+        [src]="item.image"
+        (click)="openDetail(i + 1)" />
+    </div>
   </div>
 </app-section>

@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { SectionModel } from '../../../../../shared/models';
+import { PageService } from '../../../../../core/services/page/page.service';
+import { functionsData } from './management.data';
 
 @Component({
   selector: 'app-management',
@@ -6,10 +9,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./management.component.css']
 })
 export class ManagementComponent implements OnInit {
+  sectionData: SectionModel = new SectionModel(
+    'Gerencia General', 'https://i.imgur.com/yg3Qdqv.jpg');
 
-  constructor() { }
+    functionsData: string[] = functionsData;
+
+  constructor(
+    private pageService: PageService
+  ) { }
 
   ngOnInit() {
+    this.pageService.setPageData({
+      title: 'Sección de Gerencia General Regional',
+      subtitle: 'Gerencia General de la Municipalidad Distrital Santa Bárbara de Carhuacayán'
+    });
   }
 
 }

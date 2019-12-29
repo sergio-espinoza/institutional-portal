@@ -1,0 +1,62 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.subheader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.subheader p {
+  margin: 15px;
+}
+
+mat-icon {
+  width: 22px;
+  height: 22px;
+  font-size: 22px;
+  margin-right: 5px;
+  color: #1976d2;
+}
+
+h3 {
+  text-transform: uppercase;
+  color: #79ac97;
+  margin-bottom: 15px;
+}
+
+.icon-line {
+  display: flex;
+  align-items: center;
+}
+
+p {
+  margin-bottom: 5px;
+}
+
+.functions {
+  width: 100%;
+  padding-left: 15px;
+}
+
+ol {
+  padding: 0 35px;
+  color: #1976d2;
+}
+
+li {
+  padding: 0 5px;
+}
+
+li span {
+  color: #262626;
+}
+

@@ -29,7 +29,6 @@ const routes: Routes = [
       { path: 'directory-council', component: DirectoryCouncilComponent }
     ]
   },
-  { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
 
 @NgModule({

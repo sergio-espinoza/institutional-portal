@@ -2,7 +2,7 @@
 
 body { margin: 0; padding: 0; font-family: Montserrat; }
 
-p, h1, h2, h3, h4, h5, h6, button {
+p, h1, h2, h3, h4, h5, h6, button, li, ul, ol {
   font-family: Montserrat !important;
 }
 

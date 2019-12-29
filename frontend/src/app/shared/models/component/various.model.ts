@@ -68,8 +68,10 @@ export class ExpansionModel {
 }
 
 export class SectionModel {
-  title?: string;
-  background?: string;
+  constructor(
+    public title?: string,
+    public background?: string
+  ) {}
 }
 
 export class PersonalSayModel {
