@@ -49,7 +49,7 @@ footer:before {
   box-sizing: border-box;
 }
 
-p, input, textarea, ::placeholder, mat-hint, mat-label {
+p, ::placeholder, mat-hint, mat-label {
   color: rgba(255, 255, 255, .6);
 }
 

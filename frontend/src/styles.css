@@ -2,7 +2,7 @@
 
 body { margin: 0; padding: 0; font-family: Montserrat; }
 
-p, h1, h2, h3, h4, h5, h6, button, li, ul, ol {
+*:not(mat-icon) {
   font-family: Montserrat !important;
 }
 
@@ -21,3 +21,9 @@ p, h1, h2, h3, h4, h5, h6, button, li, ul, ol {
   font-weight: 500;
   font-size: 14px;
 }
+
+.mat-form-field-appearance-outline .mat-form-field-outline {
+  color: rgba(255, 255, 255, .6);
+}
+
+
