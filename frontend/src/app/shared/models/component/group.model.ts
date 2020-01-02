@@ -10,13 +10,14 @@ export class DocumentModel {
   }
 }
 
+// This will be in PageModule, not in GroupModule
 export class DirectoryModel {
   constructor(
     public dependence?: string,
     public representative?: string,
     public email?: string,
     public phone?: string,
-    public annexes?: string
+    public annexes?: number
   ) { }
 }
 
@@ -31,7 +32,7 @@ export class AddressesModel {
   ) { }
 }
 
-export class DocumentPageServiceModel {
+export class DocumentGroupServiceModel {
   constructor(
     public regulations?: DocumentModel[],
     public ordinances?: DocumentModel[],
@@ -45,7 +46,7 @@ export class DocumentPageServiceModel {
   ) { }
 }
 
-export class LinkPageServiceModel {
+export class LinkGroupServiceModel {
   constructor(
     public addresses?: AddressesModel[],
     public directory?: DirectoryModel[],
