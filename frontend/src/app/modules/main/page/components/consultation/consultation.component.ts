@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { PageService } from 'src/app/core/services/page/page.service';
-import { MatDialog } from '@angular/material';
-import { PdfViewComponent } from 'src/app/shared/components';
 import { consultationData } from './consultation.data';
 
 @Component({
@@ -17,7 +15,6 @@ export class ConsultationComponent implements OnInit {
   displayedColumns: string[] = [ 'name', 'size' ];
   constructor(
     private pageService: PageService,
-    private dialog: MatDialog
   ) { }
 
   ngOnInit() {
@@ -25,19 +22,6 @@ export class ConsultationComponent implements OnInit {
       title: 'Consulta Expediente SIAF',
       subtitle: 'Sección de Consulta de Expediente SIAF'
     });
-  }
-
-  openPdf(src: string) {
-    const dialogRef = this.dialog.open(PdfViewComponent, {
-      panelClass: 'complete',
-      data: {
-        url: `https://drive.google.com/file/d/${src}/preview`
-      }
-    });
-  }
-
-  openDirect(index: number) {
-
   }
 
 }

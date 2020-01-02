@@ -45,20 +45,50 @@
   <button mat-menu-item [matMenuTriggerFor]="system">Sistemas Internos</button>
 </mat-menu>
 <mat-menu #image="matMenu">
-  <button mat-menu-item>Manual de Identidad Corporativa</button>
+  <button mat-menu-item
+    routerLink="/main/group/documents/identity-manual"
+    routerLinkActive="menu-active"
+    >Manual de Identidad Corporativa</button>
   <button mat-menu-item>Archivo de Noticias</button>
   <button mat-menu-item>Videos</button>
   <button mat-menu-item>Galerías Fotográficas</button>
 </mat-menu>
+
+
+
 <mat-menu #coordinacion="matMenu">
-  <button mat-menu-item routerLink="/main/page/directory-council" routerLinkActive="menu-active">Directorio de Consejeros Regionales</button>
-  <button mat-menu-item>Reglamento Interno de Consejo Regional</button>
-  <button mat-menu-item>Ordenanzas Regionales</button>
-  <button mat-menu-item>Acuerdos Regionales</button>
-  <button mat-menu-item>Actas de Sesiones Ordinarias</button>
-  <button mat-menu-item>Actas de Sesiones Extraordinarias</button>
-  <button mat-menu-item>Agenda de Sesiones Ordinarias</button>
-  <button mat-menu-item>Agenda de Sesiones Extraordinarias</button>
+  <button mat-menu-item 
+    routerLink="/main/page/directory-council"
+    routerLinkActive="menu-active"
+    >Directorio de Consejeros</button>
+  <button mat-menu-item
+    routerLink="/main/group/documents/regulations"
+    routerLinkActive="menu-active"
+    >Reglamento Interno de Consejo</button>
+  <button mat-menu-item
+    routerLink="/main/group//documents/ordinances"
+    routerLinkActive="menu-active"
+    >Ordenanzas Regionales</button>
+  <button mat-menu-item
+    routerLink="/main/group/documents/agreements"
+    routerLinkActive="menu-active"
+    >Acuerdos Municipales</button>
+  <button mat-menu-item
+    routerLink="/main/group/documents/ordinary-minutes"
+    routerLinkActive="menu-active"
+    >Actas de Sesiones Ordinarias</button>
+  <button mat-menu-item
+    routerLink="/main/group/documents/extraordinary-minutes"
+    routerLinkActive="menu-active"
+    >Actas de Sesiones Extraordinarias</button>
+  <button mat-menu-item
+    routerLink="/main/group/documents/ordinary-agenda"
+    routerLinkActive="menu-active"
+    >Agenda de Sesiones Ordinarias</button>
+  <button mat-menu-item
+    routerLink="/main/group/documents/extraordinary-agenda"
+    routerLinkActive="menu-active"
+    >Agenda de Sesiones Extraordinarias</button>
 </mat-menu>
 <mat-menu #system="matMenu">
   <button mat-menu-item>InfoSIAF</button>

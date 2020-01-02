@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { PdfViewComponent } from 'src/app/shared/components';
-import { PageService } from 'src/app/core/services/page/page.service';
-import { MatDialog } from '@angular/material';
+import { ActivatedRoute, ParamMap } from '@angular/router';
+import {
+  DocumentsGroupHttpService
+} from '../../../../core/http/group/documents/documents.http.service';
+import { DocumentModel } from '../../../../shared/models/component/group.model';
 
 @Component({
   selector: 'app-documents',
@@ -9,33 +11,30 @@ import { MatDialog } from '@angular/material';
   styleUrls: ['./documents.component.css']
 })
 export class DocumentsGroupComponent implements OnInit {
-  dataSource: any[] = [];
-
-  srcSelected: string = this.dataSource[0].src;
+  dataSource: any[];
+  srcSelected: string;
 
   displayedColumns: string[] = [ 'name', 'size' ];
   constructor(
-    private pageService: PageService,
-    private dialog: MatDialog
+    private dgHttpService: DocumentsGroupHttpService,
+    private route: ActivatedRoute
   ) { }
 
   ngOnInit() {
-    this.pageService.setPageData({
-      title: 'Consulta Expediente SIAF',
-      subtitle: 'Sección de Consulta de Expediente SIAF'
-    });
+    this.getDocuments();
   }
 
-  openPdf(src: string) {
-    const dialogRef = this.dialog.open(PdfViewComponent, {
-      panelClass: 'complete',
-      data: {
-        url: `https://drive.google.com/file/d/${src}/preview`
-      }
-    });
+  getDocuments() {
+    this.route.paramMap.subscribe(
+      (params: ParamMap) => {
+        this.dgHttpService.getDocuments(params.get('id')).subscribe(
+          (documents: DocumentModel[]) => {
+            this.dataSource = documents;
+            console.log(this.dataSource);
+            this.srcSelected = documents[0].src;
+          }
+        );
+      });
   }
 
-  openDirect(index: number) {
-
-  }
 }

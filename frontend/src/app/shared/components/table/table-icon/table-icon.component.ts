@@ -1,6 +1,5 @@
 import { Component, OnInit, Input, ViewChild, Output, EventEmitter } from '@angular/core';
 import { MatPaginator, MatSort, MatTableDataSource, MatDialog } from '@angular/material';
-import { Router } from '@angular/router';
 import { PdfViewComponent } from '../../modal';
 
 const pageSizeOptions = [5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 55, 70, 75,
@@ -14,7 +13,17 @@ const pageSizeOptions = [5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 55, 70, 
 export class TableIconComponent implements OnInit {
   pageSizeOptions: number[] = pageSizeOptions;
 
-  @Input() dataSource: any;
+  private internalDataSource: any[];
+
+  get dataSource(): any[] {
+    return this.internalDataSource;
+  }
+
+  @Input() set dataSource(value: any[]) {
+    this.getData(value);
+    this.internalDataSource = value;
+  }
+
   @Input() displayedColumns: string[];
   @Output() changeIndexDocument = new EventEmitter<string>();
 
@@ -26,14 +35,11 @@ export class TableIconComponent implements OnInit {
 
   constructor(
     public dialog: MatDialog,
-    private router: Router
   ) {
   }
 
   ngOnInit() {
-    this.getData();
-    this.data.paginator = this.paginator;
-    this.data.sort = this.sort;
+    this.getData(this.dataSource);
     this.columns = ['n', 'type', ...this.displayedColumns, 'createdat', 'actions'];
   }
 
@@ -44,8 +50,10 @@ export class TableIconComponent implements OnInit {
     }
   }
 
-  getData() {
-    this.data = new MatTableDataSource(this.dataSource);
+  getData(externalData: any[]) {
+    this.data = new MatTableDataSource(externalData);
+    this.data.paginator = this.paginator;
+    this.data.sort = this.sort;
   }
 
   openFormDialog(item: any, index: number): void {

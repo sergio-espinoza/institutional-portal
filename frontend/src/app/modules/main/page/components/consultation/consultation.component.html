@@ -1,9 +1,9 @@
 <h3>Archivos Alojados</h3>
 
-<app-table-icon [dataSource]="dataSource" [displayedColumns]="displayedColumns" (changeIndexDocument)="srcSelected = $event">
-	<button mat-icon-button>
-		<mat-icon>pageview</mat-icon>
-	</button>
+<app-table-icon
+	[dataSource]="dataSource"
+	[displayedColumns]="displayedColumns"
+	(changeIndexDocument)="srcSelected = $event">
 </app-table-icon>
 <div class="frame-container">
 	<iframe

@@ -4,6 +4,7 @@ import { MaterialModule } from './material.module';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
+
 import {
   InfoComponent,
   NotificationComponent,
@@ -68,7 +69,7 @@ const ENTRY_COMPONENTS = [
     MaterialModule,
     CommonModule,
     ReactiveFormsModule,
-    RouterModule
+    RouterModule,
   ],
   exports: [MaterialModule, ...COMPONENTS, ...PIPES, ReactiveFormsModule, FormsModule],
   declarations: [...COMPONENTS, ...PIPES],
