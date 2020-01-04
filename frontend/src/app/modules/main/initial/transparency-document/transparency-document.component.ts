@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ExpansionModel, InfoModel } from '../../../../shared/models';
 
 import { infoDataTransparency } from './infoDataTransparency';
+import { InfoService } from '../../../../core/services/shared/info.service';
 
 @Component({
   selector: 'app-transparency-document',
@@ -9,6 +10,7 @@ import { infoDataTransparency } from './infoDataTransparency';
 })
 
 export class TransparencyDocumentComponent implements OnInit {
+  groupLinkSelected: number;
 
   transparencyData: ExpansionModel[] = [
     { title: 'TRANSPARENCIA',
@@ -27,9 +29,12 @@ export class TransparencyDocumentComponent implements OnInit {
       description: 'Total 9 de esta Sección',
       icon: 'post_add' },
   ];
+
   infoDataTransparency: InfoModel[][] = infoDataTransparency;
 
-  constructor() { }
+  constructor(
+    public infoService: InfoService
+  ) { }
 
   ngOnInit() {
   }

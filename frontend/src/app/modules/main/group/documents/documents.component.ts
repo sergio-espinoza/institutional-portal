@@ -30,7 +30,6 @@ export class DocumentsGroupComponent implements OnInit {
         this.dgHttpService.getDocuments(params.get('id')).subscribe(
           (documents: DocumentModel[]) => {
             this.dataSource = documents;
-            console.log(this.dataSource);
             this.srcSelected = documents[0].src;
           }
         );

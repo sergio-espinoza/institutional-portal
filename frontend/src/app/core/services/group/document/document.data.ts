@@ -1,4 +1,4 @@
-import { DocumentGroupServiceModel } from 'src/app/shared/models/component/group.model';
+import { DocumentGroupServiceModel } from '../../../../shared/models/component/group.model';
 
 export const documentsPageData: DocumentGroupServiceModel = {
   regulations: [

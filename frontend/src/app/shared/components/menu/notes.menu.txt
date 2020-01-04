@@ -1,7 +1,7 @@
 Transparency
 
-legal-framework
-responsible-transparency (page)
+legal-framework ✔
+responsible-transparency (page) 
 access-public-information (see document)
 electronic-request (page)
 planning-organization (page | empty)
@@ -14,42 +14,42 @@ hiring-procurement (page | empty)
 Management Documents
 
 organization-chart (see documents)
-development-plan
-strategic-plan
-institutional-operational-plan
-organizations-functions-manual
-organizations-funtions-regulation
-staff-assignment-chart
+development-plan ✔
+strategic-plan ✔
+operational-plan ✔
+organizations-functions-manual ✔
+organizations-funtions-regulation ✔
+staff-assignment-chart ✔
 staff-analytical-budget (ver_documento)
-internal-council-regulation
-administrative-processes
+internal-council-regulation ✔
+administrative-processes ✔
 administrative-processes-manual  (grupo_ordenado)
-internal-regulations
-annual-hiring-plan
-computer-operating-plan
+internal-regulations ✔
+annual-hiring-plan ✔
+computer-operating-plan ✔
 
 
 Normativity
 
 organic-law-governments (see documents)
-ordinances
-decrees
-execute-resolutions
-administrative-director-resolution
-administrative-subexecutive-resolutions
-directives
-agreements-addenda
+ordinances ✔
+decrees ✔
+execute-resolutions ✔
+administrative-director-resolution ✔
+administrative-subexecutive-resolutions ✔
+directives ✔
+agreements-addenda ✔
 
 Managerial Resolutions
 
-general
-infrastructure
-economic-development
-social-development
-natural-resources
-planning-budget
-directors
-other-resolutions
+general ✔
+infrastructure ✔
+economic-development ✔
+social-development ✔
+natural-resources ✔
+planning-budget ✔
+directors ✔
+other-resolutions ✔
 
 
 Additional Information
@@ -57,9 +57,9 @@ Additional Information
 directory (page | already exists)
 agenda (schedule | already exists)
 participatory-budget (ordered group)
-coordination-council
+coordination-council ✔
 public-hearings (ordered group)
-audit-reports
-annual-reports
+audit-reports ✔
+annual-reports ✔
 affidavits-goods-services (ordered group)
 claims-book (page | embedded | error 522)

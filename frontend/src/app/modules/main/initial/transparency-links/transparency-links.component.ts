@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 import { InfoModel } from '../../../../shared/models';
 
 @Component({
@@ -8,6 +8,7 @@ import { InfoModel } from '../../../../shared/models';
       <app-info
         *ngFor="let link of links"
         [infoData]="link"
+        [indexParent]="indexParent"
       ></app-info>
     </div>
   `,
@@ -23,6 +24,7 @@ import { InfoModel } from '../../../../shared/models';
 
 export class TransparencyLinksComponent implements OnInit {
   @Input() links: InfoModel[] = [];
+  @Input() indexParent: number;
 
   constructor() { }
 

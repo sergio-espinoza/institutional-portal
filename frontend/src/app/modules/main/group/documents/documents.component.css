@@ -1,0 +1,20 @@
+h3 {
+  font-size: 25px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h3::after {
+  content: "";
+  display: block;
+  width: 40%;
+  margin: 2px auto 2vh;
+  background-color: rgb(25, 118, 210);
+  height: 3px;
+}
+
+.frame-container {
+  height: calc(100vh - 100px);
+  width: 85%;
+  margin: auto;
+}

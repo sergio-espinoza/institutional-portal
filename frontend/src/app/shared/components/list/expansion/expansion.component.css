@@ -7,3 +7,12 @@
   justify-content: space-between;
   align-items: center;
 }
+
+
+.selected mat-panel-title, .selected mat-panel-description {
+  color: #1976d2;
+}
+
+.selected mat-panel-title {
+  font-weight: 600;
+}

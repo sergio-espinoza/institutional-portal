@@ -1,9 +1,10 @@
 <mat-accordion>
   <app-expansion *ngFor="let item of transparencyData; index as i"
-    [expansionData]="item">
-  <app-transparency-links></app-transparency-links>
-  <app-transparency-links
-    [links]="infoDataTransparency[i]"
-  ></app-transparency-links>
-</app-expansion>
+      [ngClassSelected]="infoService.selectedIndex === i ? 'selected' : 'default'"
+      [expansionData]="item">
+      <app-transparency-links
+        [links]="infoDataTransparency[i]"
+        [indexParent]="i"
+      ></app-transparency-links>
+  </app-expansion>
 </mat-accordion>

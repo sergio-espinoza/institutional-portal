@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PageService } from 'src/app/core/services/page/page.service';
+import { PageService } from '../../../../../core/services/page/page.service';
 
 @Component({
   selector: 'app-labor',

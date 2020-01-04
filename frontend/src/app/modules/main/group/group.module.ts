@@ -5,7 +5,7 @@ import { GroupRoutingModule } from './group-routing.module';
 import { GroupComponent } from './group.component';
 import { LinksGroupComponent } from './links/links.component';
 import { DocumentsGroupComponent } from './documents/documents.component';
-import { SharedModule } from 'src/app/shared/shared.module';
+import { SharedModule } from '../../../shared/shared.module';
 
 
 @NgModule({

@@ -101,6 +101,7 @@ button {
   width: 95vw;
   justify-content: space-between;
   align-items: center;
+  min-height: 40px;
 }
 
 .footer p {

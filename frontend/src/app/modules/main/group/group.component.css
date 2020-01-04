@@ -1,0 +1,48 @@
+.header-image-wrapper {
+  position: relative;
+  overflow: hidden;
+  padding-top: 114px;
+}
+
+.header-image {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: url("https://i.imgur.com/yg3Qdqv.jpg");
+  width: 110%;
+  height: 50vh;
+  background-size: cover;
+  filter: brightness(35%);
+}
+
+.header-image-content {
+  flex-direction: column;
+  box-sizing: border-box;
+  display: flex;
+  place-content: center;
+  align-items: center;
+  color: #ffffff;
+  z-index: 1;
+}
+
+h1 {
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+p {
+  font-size: 24px;
+  text-align: center;
+  z-index: 1;
+}
+
+.theme-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.main-content-header {
+  border-top: 5px solid #1976d2;
+  margin-bottom: 35px;
+}

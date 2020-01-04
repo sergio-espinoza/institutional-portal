@@ -8,6 +8,7 @@ import { ExpansionModel } from '../../../../shared/models';
 })
 export class ExpansionComponent implements OnInit {
   @Input() expansionData: ExpansionModel;
+  @Input() ngClassSelected = 'default';
 
   constructor() { }
 
