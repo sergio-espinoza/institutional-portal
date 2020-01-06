@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { DocumentService } from './core/services/api-local/document.service';
 import { Router, NavigationEnd, Event } from '@angular/router';
+import { WindowService } from './core/services/api-local/window.service';
 
 @Component({
   selector: 'app-root',
@@ -10,6 +11,7 @@ import { Router, NavigationEnd, Event } from '@angular/router';
 export class AppComponent {
   constructor(
     private documentService: DocumentService,
+    private windowService: WindowService,
     private router: Router
   ) {
     this.onNavigationEnd();
@@ -20,6 +22,7 @@ export class AppComponent {
       (navigationEvent: Event) => {
         if (navigationEvent instanceof NavigationEnd) {
           this.documentService.document.getElementById('preloader').className = '.content-spinner hide';
+          this.windowService.getWindow().scroll(0, 40);
         }
       }
     );

@@ -9,7 +9,7 @@ import { SectionModel } from '../../../../../shared/models';
 export class CoordinationCouncilComponent implements OnInit {
   sectionData: SectionModel = {
     background: 'https://i.imgur.com/B6frbJo.jpg',
-    title: 'CONSEJO DE COORDINACIÓN'
+    title: 'COORDINACIÓN DE REGIDORES'
   };
 
   constructor() { }

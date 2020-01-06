@@ -26,17 +26,17 @@
     routerLinkActive="menu-active"
     routerLink="/main/page"
     [routerLinkActiveOptions]="{ exact: true }"
-    >Gobernador Regional</button>
-  <button mat-menu-item [matMenuTriggerFor]="coordinacion">Consejo Regional</button>
-  <button mat-menu-item routerLinkActive="menu-active" routerLink="/main/page/coordination-council">Consejo de Coordinacion</button>
-  <button mat-menu-item routerLink="/auth">Agendas Regionales</button>
+    >Gobernador Muncipal</button>
+  <button mat-menu-item [matMenuTriggerFor]="coordinacion">Registro Municipal</button>
+  <button mat-menu-item routerLinkActive="menu-active" routerLink="/main/page/coordination-council">Coordinacion de Regidores</button>
+  <button mat-menu-item routerLink="/auth">Agendas Muncipales</button>
 </mat-menu>
 <mat-menu #management="matMenu">
-  <button mat-menu-item routerLink="/main/page/management" routerLinkActive="menu-active">Gerencia General Regional</button>
-  <button mat-menu-item>Gerencias Regionales</button>
-  <button mat-menu-item routerLink="/main/page/prosecutor" routerLinkActive="menu-active">Procuraduría Pública Regional</button>
-  <button mat-menu-item>Direcciones Regionales</button>
-  <button mat-menu-item routerLink="/main/page/directory" routerLinkActive="menu-active">Directorio Regional</button>
+  <button mat-menu-item routerLink="/main/page/management" routerLinkActive="menu-active">Gerencia General Muncipal</button>
+  <button mat-menu-item>Gerencias Muncipales</button>
+  <button mat-menu-item routerLink="/main/page/prosecutor" routerLinkActive="menu-active">Procuraduría Pública Muncipal</button>
+  <button mat-menu-item>Direcciones Muncipales</button>
+  <button mat-menu-item routerLink="/main/page/directory" routerLinkActive="menu-active">Directorio Muncipal</button>
 </mat-menu>
 <mat-menu #services="matMenu">
   <button mat-menu-item routerLink="/main/page/labor" routerLinkActive="menu-active">Oportunidades Laborales</button>
@@ -60,15 +60,15 @@
   <button mat-menu-item 
     routerLink="/main/page/directory-council"
     routerLinkActive="menu-active"
-    >Directorio de Consejeros</button>
+    >Directorio de Regidores</button>
   <button mat-menu-item
     routerLink="/main/group/documents/regulations"
     routerLinkActive="menu-active"
-    >Reglamento Interno de Consejo</button>
+    >Reglamento Interno de Regidores</button>
   <button mat-menu-item
     routerLink="/main/group//documents/ordinances"
     routerLinkActive="menu-active"
-    >Ordenanzas Regionales</button>
+    >Ordenanzas Muncipales</button>
   <button mat-menu-item
     routerLink="/main/group/documents/agreements"
     routerLinkActive="menu-active"

@@ -25,10 +25,11 @@ export class FooterComponent implements OnInit {
   });
 
   contactsLinkData: LinkListModel[] = [
-    { title: '2903 Avenue Z, Brooklyn, NY', icon: 'location_on' },
-    { title: '(+100) 123 456 7890', icon: 'phone' },
-    { title: 'contact@housekey.com', icon: 'email' },
-    { title: 'Mon - Sun / 9:00AM - 8:00PM', icon: 'schedule' },
+    { title: 'Plaza Principal Santa Bárbara de Carhuacaýan', icon: 'location_on' },
+    { title: '(+51) 064 830 006', icon: 'phone' },
+    { title: '(+51) 064 811 251', icon: 'phone' },
+    { title: 'contact@munisbc.com', icon: 'email' },
+    { title: 'Lunes - Viernes / 9:00AM - 8:00PM', icon: 'schedule' },
 
   ];
 

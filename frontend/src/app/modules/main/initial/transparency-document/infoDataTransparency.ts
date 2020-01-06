@@ -58,7 +58,7 @@ export const infoDataTransparency: InfoModel[][] = [
     new InfoModel('Otras Resoluciones',
       'main/group/documents/other-resolutions', 'person', 'primary'),
   ],
-  [ new InfoModel('Directorio Regional',
+  [ new InfoModel('Directorio Muncipal',
       'main/group/documents/coordination-council', 'person', 'primary'),
     new InfoModel('Agendas',
       'main/group/documents/coordination-council', 'person', 'primary'),

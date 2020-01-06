@@ -15,7 +15,7 @@ export class ProfileComponent implements OnInit {
                   Illum fugiat impedit temporsssa`,
     contactLinks: [
       { title: 'Housekey', icon: 'apartment' },
-      { title: 'lusia.m@housekey.com', icon: 'email' },
+      { title: 'lusia.m@munisbc.com', icon: 'email' },
       { title: '(224)267-1346', icon: 'phone' },
     ],
     socialLinks: [

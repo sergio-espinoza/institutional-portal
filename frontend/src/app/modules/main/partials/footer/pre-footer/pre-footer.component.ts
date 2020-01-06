@@ -9,8 +9,8 @@ import { LinkListModel } from '../../../../../shared/models';
 export class PreFooterComponent {
   contactLinkData: LinkListModel = {
     icon: 'phone',
-    title: '(+100) 123 456 789 0',
-    subtitle: 'CALL US NOW' };
+    title: '(+51) 064 782 341',
+    subtitle: 'Llamar Ahora' };
 
   fontSize = { icon: 48, title: 21, subtitle: 14 };
 }

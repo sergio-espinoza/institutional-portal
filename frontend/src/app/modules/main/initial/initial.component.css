@@ -7,15 +7,39 @@
 
 .main {
   position: absolute;
-  top: 0;
-  background-image: url("https://i.imgur.com/4BmQPws.jpg");
   width: 120%;
   height: 100%;
+  top: 0;
   background-size: 100% 100%;
-  filter: brightness(20%);
-  animation: pendulum 15s infinite;
-  animation-direction: alternate;
+  filter: brightness(30%);
   color: #ffffff;
+}
+
+.background-1 {
+  background-image: url("https://i.imgur.com/4BmQPws.jpg");
+  animation: pendulum-1 60s infinite;
+  animation-direction: alternate;
+}
+
+.background-2 {
+  background-image: url("https://i.imgur.com/p8jckUu.jpg");
+  animation: pendulum-2 60s infinite;
+  opacity: 0;
+  animation-direction: alternate;
+}
+
+.background-3 {
+  background-image: url("https://i.imgur.com/UatqpAO.jpg");
+  animation: pendulum-3 60s infinite;
+  opacity: 0;
+  animation-direction: alternate;
+}
+
+.background-4 {
+  background-image: url("https://i.imgur.com/S2iOjje.jpg");
+  animation: pendulum-4 60s infinite;
+  opacity: 0;
+  animation-direction: alternate;
 }
 
 .title {
@@ -62,14 +86,80 @@ p i {
   font-size: 28px;
 }
 
-@keyframes pendulum {
-  from {
+@keyframes pendulum-1 {
+  0% {
     transform: translateX(0);
-    filter: brightness(20%);
+    filter: brightness(25%);
   }
-  to {
-    transform: translateX(-7%);
+  20% {
+    opacity: 1;
     filter: brightness(65%);
+  }
+  25% {
+    transform: translateX(-3%);
+    opacity: 0;
+  }
+}
+
+@keyframes pendulum-2 {
+  20% {
+    filter: brightness(30%);
+    transform: translateX(-3%);
+    opacity: 0;
+  }
+  25% {
+    filter: brightness(30%);
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+    filter: brightness(65%);
+  }
+  45% {
+    transform: translateX(0);
+    opacity: 0;
+  }
+}
+
+
+@keyframes pendulum-3 {
+  40% {
+    filter: brightness(30%);
+    transform: translateX(0);
+    opacity: 0;
+  }
+  55% {
+    filter: brightness(30%);
+    opacity: 1;
+  }
+  70% {
+    filter: brightness(65%);
+    opacity: 1;
+  }
+  75% {
+    transform: translateX(-3%);
+    opacity: 0;
+  }
+}
+
+
+@keyframes pendulum-4 {
+  70% {
+    filter: brightness(30%);
+    transform: translateX(-3%);
+    opacity: 0;
+  }
+  75% {
+    filter: brightness(30%);
+    opacity: 1;
+  }
+  95% {
+    filter: brightness(65%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 0.8;
   }
 }
 

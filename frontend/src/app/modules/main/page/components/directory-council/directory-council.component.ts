@@ -10,7 +10,7 @@ import { DirectoryCouncilModel, directoryCouncilList } from './directory-council
 })
 export class DirectoryCouncilComponent implements OnInit {
   sectionData: SectionModel = new SectionModel(
-    'Directorio de Consejeros', 'https://i.imgur.com/yg3Qdqv.jpg');
+    'Directorio de Regidores', 'https://i.imgur.com/yg3Qdqv.jpg');
 
   directoryCouncilList: DirectoryCouncilModel[] = directoryCouncilList;
 
@@ -21,8 +21,8 @@ export class DirectoryCouncilComponent implements OnInit {
 
   ngOnInit() {
     this.pageService.setPageData({
-      title: 'DIRECTORIO DE CONSEJEROS',
-      subtitle: 'Consejeros de la Municipalidad de Santa Bárbara de Carhuacayán'
+      title: 'DIRECTORIO DE Regidores',
+      subtitle: 'Regidores de la Municipalidad de Santa Bárbara de Carhuacayán'
     });
   }
 

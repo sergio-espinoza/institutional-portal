@@ -20,7 +20,7 @@ export class ManagementComponent implements OnInit {
 
   ngOnInit() {
     this.pageService.setPageData({
-      title: 'Sección de Gerencia General Regional',
+      title: 'Sección de Gerencia General Muncipal',
       subtitle: 'Gerencia General de la Municipalidad Distrital Santa Bárbara de Carhuacayán'
     });
   }
