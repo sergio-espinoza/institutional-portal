@@ -21,12 +21,6 @@ export class MainComponent implements OnInit {
   };
   @ViewChild(MenuBasicComponent, { static: true }) menuBasic: MenuBasicComponent;
 
-  linkLists: LinkListModel[] = [
-    { title: 'GitHub', subtitle: 'GitHub WebSite', icon: 'person', path: 'https://www.github.com/48479567' },
-    { title: 'Google', subtitle: 'Google Link', icon: 'email', path: 'https://www.google.com' },
-    { title: 'Facebook', subtitle: 'Facebook WebSite', icon: 'notifications_active', path: 'https://www.facebook.com' }
-  ];
-
   constructor(
     private bottomSheet: MatBottomSheet,
     public mainGeneralService: MainGeneralService,
@@ -39,7 +33,7 @@ export class MainComponent implements OnInit {
   }
 
   @HostListener('window:scroll', ['$event']) actionInScroll($event: Event) {
-    if ($event.target[this.scEl].scrollTop >= 300) {
+    if ($event.target[this.scEl].scrollTop >= 500) {
       this.menuBasic.classSticky = 'sticky';
     } else {
       this.menuBasic.classSticky = 'no-sticky';
@@ -50,7 +44,7 @@ export class MainComponent implements OnInit {
     this.bottomSheet.open(TransparencyDocumentComponent).afterDismissed().subscribe(
       _ => {
         if (this.infoService.isBrowsing) {
-          this.windowService.getWindow().scroll(0, 40);
+          this.windowService.getWindow().scroll(0, 0);
           this.infoService.isBrowsing = false;
         }
       }

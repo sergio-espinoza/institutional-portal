@@ -1,35 +1,20 @@
 <mat-drawer-container>
   <mat-drawer #drawer mode="over" position="end">
-    <app-sidebar (closed)="drawer.toggle()"></app-sidebar>
+    <app-sidebar (closeChange)="drawer.toggle()"></app-sidebar>
   </mat-drawer>
   <mat-drawer-content>
-      <app-header></app-header>
-      <button mat-icon-button class="notifications" (click)="drawer.toggle()">
-        <mat-icon>settings</mat-icon>
-      </button>
-      <button
-        [style.display]="mainGeneralService.viewTransparencyButton ? '' : 'none'"
-        mat-icon-button
-        class="transparency"
-        (click)="openMenuTransparency()">
-        <mat-icon>keyboard_arrow_up</mat-icon>
-      </button>
-      <app-menu-basic></app-menu-basic>
-      <router-outlet></router-outlet>
-      <app-section [sectionData]="{
-        title: 'Social Network',
-        background: 'https://i.imgur.com/Ry8at76.jpg'
-      }">
-      <mat-card class="social-section">
-        <app-link-list title="Social Links" [listLinks]="linkLists"></app-link-list>
-        <app-minimized-view [minimizedViewData]="{
-                      title: 'Carhuacayan',
-                      subtitle: 'Social View',
-                      url: 'https://www.facebook.com/muni.carhuacayan',
-                      type: 'page'
-                    }"></app-minimized-view>
-      </mat-card>
-      </app-section>
+    <app-header></app-header>
+    <button mat-icon-button class="notifications" (click)="drawer.toggle()">
+      <mat-icon>settings</mat-icon>
+    </button>
+    <button
+      [style.display]="mainGeneralService.viewTransparencyButton ? '' : 'none'" mat-icon-button
+      class="transparency"
+      (click)="openMenuTransparency()">
+      <mat-icon>keyboard_arrow_up</mat-icon>
+    </button>
+    <app-menu-basic></app-menu-basic>
+    <router-outlet></router-outlet>
     <app-footer></app-footer>
   </mat-drawer-content>
 </mat-drawer-container>

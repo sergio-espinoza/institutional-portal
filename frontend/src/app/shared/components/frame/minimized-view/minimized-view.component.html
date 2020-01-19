@@ -2,7 +2,7 @@
   [class]="'fb-'+minimizedViewData.type"
   [attr.data-href]="minimizedViewData.url"
   data-tabs="timeline,events,messages"
-  [attr.data-width]="size.width" data-height=""
+  [attr.data-width]="size.width" [attr.data-height]="size.height"
   data-small-header="true"
   data-adapt-container-width="true"
   data-hide-cover="true"
@@ -11,11 +11,3 @@
   <blockquote [attr.cite]="minimizedViewData.url" class="fb-xfbml-parse-ignore">
     <a [href]="minimizedViewData.url" target="_blank">Link Social</a></blockquote>
 </div>
-
-
-
-<!-- <div class="fb-page" data-href="https://www.facebook.com/muni.carhuacayan/" data-tabs="timeline"
-  data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
-  <blockquote cite="https://www.facebook.com/muni.carhuacayan/" class="fb-xfbml-parse-ignore">
-    <a href="https://www.facebook.com/muni.carhuacayan/"
-    >Municipalidad Distrital de Santa Barbara de Carhuacayan</a></blockquote></div> -->

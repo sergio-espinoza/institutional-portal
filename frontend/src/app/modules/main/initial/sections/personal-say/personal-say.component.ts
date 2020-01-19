@@ -12,7 +12,7 @@ import { SectionModel, PersonalSayModel } from '../../../../../shared/models';
 
 export class SectionMayorComponent implements OnInit {
   sectionData: SectionModel = {
-    title: 'Mayor Message',
+    title: 'Mensaje para la Comunidad',
     background: 'https://i.imgur.com/S2iOjje.jpg' };
   personalSayData: PersonalSayModel = new PersonalSayModel(
     'https://i.imgur.com/lnpPfU1.png',

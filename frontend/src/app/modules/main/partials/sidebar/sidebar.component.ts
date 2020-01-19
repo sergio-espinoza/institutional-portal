@@ -6,7 +6,8 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./sidebar.component.css']
 })
 export class SidebarComponent implements OnInit {
-  @Output() closed = new EventEmitter<void>();
+  @Output() closeChange = new EventEmitter<void>();
+
 
   constructor() { }
 
@@ -14,7 +15,7 @@ export class SidebarComponent implements OnInit {
   }
 
   close() {
-    this.closed.emit();
+    this.closeChange.emit();
   }
 
 }

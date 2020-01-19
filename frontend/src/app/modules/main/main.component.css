@@ -37,23 +37,6 @@ mat-drawer-content {
   left: calc(50% - 20px);
 }
 
-.social-section {
-  display: flex;
-  width: 95vw;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.social-section app-minimized-view {
-  width: 60%;
-}
-
-app-notification {
-  padding: 15px;
-  border-radius: 5px;
-}
-
 .notifications mat-icon {
   font-size: 24px;
   color: #ffffff;

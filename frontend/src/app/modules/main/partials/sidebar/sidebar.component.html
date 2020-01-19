@@ -3,6 +3,11 @@
   <button mat-icon-button (click)="close()"><mat-icon>close</mat-icon></button>
 </div>
 <div>
-  <h4>Section 1</h4>
-  <p mat-header></p>
+  <div class="background"></div>
+  <app-minimized-view [minimizedViewData]="{
+    title: 'Carhuacayán',
+    subtitle: 'Social View',
+    url: 'https://www.facebook.com/muni.carhuacayan',
+    type: 'page'
+  }"></app-minimized-view>
 </div>
