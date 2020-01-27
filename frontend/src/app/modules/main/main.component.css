@@ -2,11 +2,6 @@ mat-drawer {
   width: 300px;
 }
 
-app-menu-basic {
-  position: absolute;
-  width: 100%;
-}
-
 mat-drawer-content {
   opacity: 0;
   animation: main-content-visible 1s forwards;

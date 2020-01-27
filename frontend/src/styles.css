@@ -26,4 +26,13 @@ body { margin: 0; padding: 0; font-family: Montserrat; }
   color: rgba(255, 255, 255, .6);
 }
 
+.social-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.social-link {
+  padding: 0 2px;
+}
 

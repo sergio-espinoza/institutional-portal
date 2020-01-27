@@ -1,13 +1,21 @@
-:host {
-  font-family: Montserrat !important;
-  height: 20px;
-  font-size: 12px;
-  line-height: 1.7;
+mat-toolbar {
+  height: 36px;
+  background: #1976d2;
+  color: #ffffff;
 }
 
-mat-toolbar {
-  background: 0;
-  min-height: 0;
+.theme-container {
+  height: 36px;
+  flex-direction: row;
+  box-sizing: border-box;
+  display: flex;
+  place-content: center space-between;
+  align-items: center;
+}
+
+app-menu-basic {
+  position: absolute;
+  width: 100%;
 }
 
 .social-links {
@@ -22,12 +30,6 @@ mat-toolbar {
   padding: 0 2px;
 }
 
-mat-toolbar-row {
-  height: 32px;
-  background: #1976d2;
-  color: #ffffff;
-  padding: 20px;
-}
 
 .contact-links {
   display: flex;
@@ -45,11 +47,3 @@ app-contact-link:last-of-type {
   border-right: none;
 }
 
-mat-toolbar-row {
-  display: flex;
-  box-sizing: border-box;
-  flex-direction: row;
-  width: 100%;
-  align-items: center;
-  white-space: nowrap;
-}

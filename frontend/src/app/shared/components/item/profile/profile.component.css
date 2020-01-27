@@ -1,5 +1,5 @@
 .content-profile {
-  width: 280px;
+  width: 320px;
   margin-right: 16px;
 }
 
@@ -10,15 +10,13 @@ mat-card {
 
 mat-card-content {
   padding: 0 16px;
-  height: 33vh;
   box-sizing: border-box;
   overflow-y: auto;
   margin: 0;
 }
 
 img {
-  width: 280px;
-  height: 30vh;
+  width: 320px;
   border-radius: 4px 4px 0 0;
 }
 
@@ -48,20 +46,12 @@ mat-card-actions {
   flex-direction: row;
   justify-content: space-between;
   box-sizing: border-box;
-  margin: 0;
   padding: 10px 16px !important;
 }
 
-.social-links {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-button {
+a {
+  min-width: auto;
   color: #1976d2;
-  margin-left: 0;
-  padding: 0 8px;
 }
 
 

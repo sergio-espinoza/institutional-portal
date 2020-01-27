@@ -64,12 +64,6 @@ p, ::placeholder, mat-hint, mat-label {
   padding-bottom: 5px;
 }
 
-.social-link {
-  padding-top: 15px;
-  display: flex;
-  flex-direction: row;
-}
-
 .content .description {
   max-width: 500px;
 }
@@ -114,3 +108,6 @@ button {
   font-weight: 700;
 }
 
+.social-links {
+  padding-top: 15px;
+}

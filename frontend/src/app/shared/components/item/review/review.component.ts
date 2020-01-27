@@ -21,11 +21,9 @@ import { ExpansionModel } from '../../../../shared/models';
     }
     h2 {
       font-size: 21px;
-      font-family: Montserrat;
     }
     p {
       font-size: 14px;
-      font-family: Montserrat;
     }
   `]
 })

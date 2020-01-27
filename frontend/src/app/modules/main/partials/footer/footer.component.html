@@ -26,10 +26,13 @@
           <app-contact-link [contactLinkData]="contactLinkData" iconColor="#1976d2"></app-contact-link>
         </div>
       </div>
-      <div class="social-link">
-        <app-link *ngFor="let socialLink of socialLinkData" className="icon" [linkData]="socialLink.link">
-          <app-icon [pathProperties]="socialLink.icon"></app-icon>
-        </app-link>
+      <div class="social-links">
+        <div class="social-link"
+          *ngFor="let socialLink of socialLinkData">
+          <app-link className="icon" [linkData]="socialLink.link">
+            <app-icon [pathProperties]="socialLink.icon"></app-icon>
+          </app-link>
+        </div>
       </div>
     </div>
     <div class="form-content">

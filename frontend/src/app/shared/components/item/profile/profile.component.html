@@ -21,14 +21,16 @@
     <mat-divider></mat-divider>
     <mat-card-actions>
       <div class="social-links">
-        <app-link
-          *ngFor="let socialLink of profileData.socialLinks"
-          className="icon"
-          [linkData]="socialLink.link">
-          <app-icon [pathProperties]="socialLink.icon"></app-icon>
-        </app-link>
+        <div class="social-link"
+          *ngFor="let socialLink of profileData.socialLinks">
+          <app-link
+            className="icon"
+            [linkData]="socialLink.link">
+            <app-icon [pathProperties]="socialLink.icon"></app-icon>
+          </app-link>
+        </div>
       </div>
-      <button mat-button routerLink="/main/document">VIEW PROFILE</button>
+      <a mat-button routerLink="/main/document">VIEW PROFILE</a>
     </mat-card-actions>
   </mat-card>
 </div>

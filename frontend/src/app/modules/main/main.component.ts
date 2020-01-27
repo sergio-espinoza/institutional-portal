@@ -1,7 +1,5 @@
-import { Component, OnInit, ViewChild, HostListener } from '@angular/core';
-import { InfoModel, LinkListModel } from '../../shared/models';
+import { Component, OnInit} from '@angular/core';
 import { MatBottomSheet } from '@angular/material';
-import { MenuBasicComponent } from '../../shared/components';
 import { TransparencyDocumentComponent } from './initial/transparency-document/transparency-document.component';
 import { MainGeneralService } from '../../core/services/main/general.service';
 import { WindowService } from '../../core/services/api-local/window.service';
@@ -13,13 +11,6 @@ import { InfoService } from '../../core/services/shared/info.service';
   styleUrls: ['./main.component.css']
 })
 export class MainComponent implements OnInit {
-  scEl = 'scrollingElement';
-
-  infoData: InfoModel = {
-    title: 'Data 1',
-    icon: 'email',
-  };
-  @ViewChild(MenuBasicComponent, { static: true }) menuBasic: MenuBasicComponent;
 
   constructor(
     private bottomSheet: MatBottomSheet,
@@ -32,13 +23,6 @@ export class MainComponent implements OnInit {
   ngOnInit() {
   }
 
-  @HostListener('window:scroll', ['$event']) actionInScroll($event: Event) {
-    if ($event.target[this.scEl].scrollTop >= 500) {
-      this.menuBasic.classSticky = 'sticky';
-    } else {
-      this.menuBasic.classSticky = 'no-sticky';
-    }
-  }
 
   openMenuTransparency() {
     this.bottomSheet.open(TransparencyDocumentComponent).afterDismissed().subscribe(

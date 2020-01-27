@@ -1,11 +1,11 @@
 .container {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .first-content {
-  width: 40%;
-  padding: 0 5px;
+  padding: 0 25px;
 }
 
 .notifications {
@@ -27,7 +27,6 @@
 .first {
   width: 350px;
   height: 250px;
-  margin: 0 10px;
   cursor: pointer;
   filter: brightness(70%);
 }

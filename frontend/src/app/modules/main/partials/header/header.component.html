@@ -1,5 +1,5 @@
 <mat-toolbar>
-  <mat-toolbar-row>
+  <div class="theme-container">
     <div class="contact-links">
       <app-contact-link
         *ngFor="let header of headerLinks"
@@ -13,5 +13,6 @@
         <app-icon [pathProperties]="linkIcon"></app-icon>
       </app-link>
     </div>
-  </mat-toolbar-row>
+  </div>
 </mat-toolbar>
+<app-menu-basic></app-menu-basic>
