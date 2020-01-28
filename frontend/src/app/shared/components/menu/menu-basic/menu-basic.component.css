@@ -1,6 +1,6 @@
 .no-sticky {
   background: 0;
-  z-index: 15;
+  z-index: 150;
   color: #ffffff;
 }
 
@@ -28,7 +28,7 @@
   padding: 0;
   background: #ffffff;
   color: #262626;
-  z-index: 15;
+  z-index: 150;
 }
 
 .sticky mat-toolbar-row {
@@ -47,7 +47,7 @@ button {
   font-size: 14px;
   font-weight: 500;
   padding: 0 5px;
-  z-index: 18;
+  z-index: 180;
 }
 
 mat-toolbar-row {

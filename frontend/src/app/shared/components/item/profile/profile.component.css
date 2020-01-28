@@ -1,6 +1,5 @@
 .content-profile {
-  width: 320px;
-  margin-right: 16px;
+  width: 280px;
 }
 
 mat-card {
@@ -16,7 +15,8 @@ mat-card-content {
 }
 
 img {
-  width: 320px;
+  width: 280px;
+  height: 295px;
   border-radius: 4px 4px 0 0;
 }
 
@@ -46,12 +46,13 @@ mat-card-actions {
   flex-direction: row;
   justify-content: space-between;
   box-sizing: border-box;
-  padding: 10px 16px !important;
+  padding: 0 16px !important;
 }
 
 a {
   min-width: auto;
   color: #1976d2;
+  padding: 0 2px;
 }
 
 

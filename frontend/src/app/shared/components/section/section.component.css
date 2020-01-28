@@ -4,22 +4,26 @@ section {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  overflow-y: auto;
 }
 
-.normal {
+.compact {
   height: -webkit-calc(100vh - 64px);
   height: -moz-calc(100vh - 64px);
   height: -o-calc(100vh - 64px);
   height: calc(100vh - 64px);
 }
 
-.initial {
-  height: 75vh;
-  overflow-x: auto;
+.complete {
+  min-height: calc(100vh - 64px);
+  max-height: 100%;
 }
 
-.other {
-  height: auto;
+.initial .container {
+  padding-top: 25vh;
+}
+
+.normal {
   padding: 30px 0;
 }
 
@@ -54,8 +58,4 @@ h3::after {
   margin: 2px auto 2vh;
   background-color: rgb(25, 118, 210);
   height: 3px;
-}
-
-.pre-section {
-  height: 20vh;
 }

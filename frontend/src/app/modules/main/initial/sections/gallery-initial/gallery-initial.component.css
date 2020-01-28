@@ -2,10 +2,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-}
-
-.first-content {
-  padding: 0 25px;
+  flex-flow: row wrap;
 }
 
 .notifications {

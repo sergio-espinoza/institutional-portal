@@ -13,7 +13,6 @@ export class SectionComponent implements OnInit {
   };
 
   @Input() className = 'normal';
-  @Input() showPresection = false;
 
   constructor(
 
