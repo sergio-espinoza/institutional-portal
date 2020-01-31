@@ -1,0 +1,21 @@
+.content-frame {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+h3 {
+  text-align: center;
+}
+
+h3::after {
+  content: "";
+  display: block;
+  width: 80%;
+  margin: 2px auto 2vh;
+  background-color: rgb(25, 118, 210);
+  height: 2px;
+}

@@ -1,15 +1,31 @@
 <div class="content-main">
-  <div class="main background-1"></div>
-  <div class="main background-2"></div>
-  <div class="main background-3"></div>
-  <div class="main background-4"></div>
+
+  <div class="main background-1">
+    <img 
+      [style.visibility]="backgroundOne"
+      (load)="backgroundOne = 'visible'" 
+      src="https://i.imgur.com/4BmQPws.jpg" alt="background">
+  </div>
+  <div class="main background-2">
+    <img src="https://i.imgur.com/p8jckUu.jpg" alt="background">
+  </div>
+  <div class="main background-3">
+    <img src="https://i.imgur.com/UatqpAO.jpg" alt="background">
+  </div>
+  <div class="main background-4">
+    <img src="https://i.imgur.com/S2iOjje.jpg" alt="background">
+  </div>
+
   <div class="title">
     <h1>SANTA BÁRBARA DE CARHUACAYÁN</h1>
     <p><i>Gestión 2019 - 2022</i></p>
+    <!-- <mat-progress-spinner mode="indeterminate"></mat-progress-spinner> -->
     <button mat-raised-button class="title-button">NOSOTROS</button>
     <button mat-raised-button class="title-button">CONTACTO</button>
   </div>
+
 </div>
+
 <div class="description-initial">
   <mat-card>
     <mat-card-header>

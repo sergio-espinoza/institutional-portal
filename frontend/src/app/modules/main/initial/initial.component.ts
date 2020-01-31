@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./initial.component.css']
 })
 export class InitialComponent implements OnInit, OnDestroy {
+  backgroundOne = 'hidden';
 
   constructor(
     private mainGeneralService: MainGeneralService,
