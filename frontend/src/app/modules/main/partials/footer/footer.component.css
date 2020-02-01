@@ -4,6 +4,7 @@ footer {
   background: rgba(33,33,33,.93);
   display: flex;
   flex-direction: column;
+  flex-flow: column wrap;
   justify-content: center;
   align-items: center;
 }
@@ -29,14 +30,16 @@ footer:before {
   padding: 20px 0;
   border-top: 1px solid rgba(255,255,255,.2);
   border-bottom: 1px solid rgba(255,255,255,.2);
+  flex-flow: row wrap;
 }
 
 .header {
+  width: 95vw;
+  padding: 20px 0;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  width: 95vw;
-  padding: 20px 0;
+  flex-flow: row wrap;
 }
 
 .form-subscriber {
@@ -72,12 +75,14 @@ p, ::placeholder, mat-hint, mat-label {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  flex-flow: column wrap;
 }
 
 .form-content form .submit {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  flex-flow: row wrap;
 }
 
 .map {
@@ -96,6 +101,7 @@ button {
   justify-content: space-between;
   align-items: center;
   min-height: 40px;
+  flex-flow: row wrap;
 }
 
 .footer p {

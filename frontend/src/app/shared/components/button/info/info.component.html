@@ -1,12 +1,12 @@
 <mat-chip-list>
-  <mat-chip 
+  <mat-chip
     [routerLink]="'/'+infoData.path"
     routerLinkActive="info-active"
     (click)="sendIndexParent($event)"
     [routerLinkActiveOptions]="{ exact: true }"
     [color]="infoData.color" class="date-sticker" selected>
     <mat-icon *ngIf="infoData.icon">{{ infoData.icon }}</mat-icon>
-    {{ infoData.title }}
+    <span class="info-title">{{ infoData.title }}</span>
   </mat-chip>
 </mat-chip-list>
 

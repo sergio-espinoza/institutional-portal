@@ -12,4 +12,8 @@ mat-icon {
 
 .info-active {
   border: 3px solid #19d389;
-} 
+}
+
+.info-title {
+  line-height: normal;
+}

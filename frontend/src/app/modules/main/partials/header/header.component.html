@@ -5,14 +5,16 @@
         *ngFor="let header of headerLinks"
         [contactLinkData]="header"></app-contact-link>
     </div>
-    <div class="social-links">
-      <app-link
-        *ngFor="let linkIcon of linkIcons"
-        className="icon"
-        [linkData]="{ color: '#ffffff', path: linkIcon.path }">
-        <app-icon [pathProperties]="linkIcon"></app-icon>
-      </app-link>
+    <div>
+      <div class="social-links">
+        <app-link
+          *ngFor="let linkIcon of linkIcons"
+          className="icon"
+          [linkData]="{ color: '#ffffff', path: linkIcon.path }">
+          <app-icon [pathProperties]="linkIcon"></app-icon>
+        </app-link>
+      </div>
+      <app-menu-basic></app-menu-basic>
     </div>
   </div>
 </mat-toolbar>
-<app-menu-basic></app-menu-basic>

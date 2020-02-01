@@ -25,7 +25,8 @@ export class MainComponent implements OnInit {
 
 
   openMenuTransparency() {
-    this.bottomSheet.open(TransparencyDocumentComponent).afterDismissed().subscribe(
+    this.bottomSheet.open(TransparencyDocumentComponent, {
+    }).afterDismissed().subscribe(
       _ => {
         if (this.infoService.isBrowsing) {
           this.windowService.getWindow().scroll(0, 0);

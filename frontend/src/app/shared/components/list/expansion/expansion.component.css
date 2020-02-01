@@ -16,3 +16,9 @@
 .selected mat-panel-title {
   font-weight: 600;
 }
+
+@media screen and (max-width: 700px) {
+  mat-panel-description {
+    display: none;
+  }
+}

@@ -16,6 +16,8 @@ mat-toolbar {
 app-menu-basic {
   position: absolute;
   width: 100%;
+  left: 0;
+  top: 36px;
 }
 
 .social-links {
@@ -47,3 +49,9 @@ app-contact-link:last-of-type {
   border-right: none;
 }
 
+@media screen and (max-width: 850px) {
+  .contact-links {
+    display: none;
+  }
+
+}
