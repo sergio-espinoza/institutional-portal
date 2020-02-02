@@ -1,5 +1,5 @@
 .content-profile {
-  width: 280px;
+  width: 313px;
 }
 
 mat-card {
@@ -15,7 +15,7 @@ mat-card-content {
 }
 
 img {
-  width: 280px;
+  width: 313px;
   height: 295px;
   border-radius: 4px 4px 0 0;
 }

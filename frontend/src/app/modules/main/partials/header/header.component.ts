@@ -1,7 +1,7 @@
-import { Component, OnInit, ViewChild, HostListener } from '@angular/core';
+import { Component, OnInit, ViewChild, HostListener, Output, EventEmitter } from '@angular/core';
 import { headerLinks } from './data.header';
 import { LinkListModel } from '../../../../shared/models';
-import { MenuBasicComponent } from '../../../../shared/components';
+import { HorizontalMenuComponent } from '../../../../shared/components';
 import { IconService } from '../../../../core/services/icon/icon.service';
 
 @Component({
@@ -10,6 +10,8 @@ import { IconService } from '../../../../core/services/icon/icon.service';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+  @Output() menuChange = new EventEmitter<void>();
+
   headerLinks: LinkListModel[] = headerLinks;
   scEl = 'scrollingElement';
 
@@ -23,7 +25,7 @@ export class HeaderComponent implements OnInit {
       path: 'https://mail.google.com' },
   ];
 
-  @ViewChild(MenuBasicComponent, { static: true }) menuBasic: MenuBasicComponent;
+  @ViewChild(HorizontalMenuComponent, { static: true }) horizontalMenu: HorizontalMenuComponent;
 
   constructor(
     private iconService: IconService
@@ -34,9 +36,13 @@ export class HeaderComponent implements OnInit {
 
   @HostListener('window:scroll', ['$event']) actionInScroll($event: Event) {
     if ($event.target[this.scEl].scrollTop >= 500) {
-      this.menuBasic.classSticky = 'sticky';
+      this.horizontalMenu.classSticky = 'sticky';
     } else {
-      this.menuBasic.classSticky = 'no-sticky';
+      this.horizontalMenu.classSticky = 'no-sticky';
     }
+  }
+
+  onMenuChange() {
+    this.menuChange.emit();
   }
 }

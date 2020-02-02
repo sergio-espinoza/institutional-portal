@@ -1,0 +1,44 @@
+:host {
+  position: fixed;
+  top: 0;
+  width: 300px;
+  overflow-y: auto;
+}
+
+h2 {
+  display: inline-block;
+  padding: 5px 15px;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 300px;
+  background-color: #ffffff;
+}
+
+.active {
+  background: #1976d2;
+  color: #ffffff;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+mat-list-item,
+mat-expansion-panel-header,
+.mat-list-item, a {
+
+  font-size: 12px;
+}
+
+mat-expansion-panel, .mat-expansion-panel {
+  box-shadow: none;
+}
+
+.vertical-menu-content {
+  height: calc(100vh - 45px);
+  overflow: auto;
+}

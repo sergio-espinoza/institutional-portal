@@ -2,8 +2,11 @@
   <mat-drawer #drawer mode="over" position="end">
     <app-sidebar (closeChange)="drawer.toggle()"></app-sidebar>
   </mat-drawer>
+  <mat-drawer #menuDrawer mode="over" position="start">
+    <app-vertical-menu (closeChange)="menuDrawer.toggle()"></app-vertical-menu>
+  </mat-drawer>
   <mat-drawer-content>
-    <app-header></app-header>
+    <app-header (menuChange)="menuDrawer.toggle()"></app-header>
     <button mat-icon-button class="notifications" (click)="drawer.toggle()">
       <mat-icon>settings</mat-icon>
     </button>

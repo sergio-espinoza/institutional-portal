@@ -13,7 +13,11 @@ mat-toolbar {
   align-items: center;
 }
 
-app-menu-basic {
+.menu-button {
+  display: none;
+}
+
+app-horizontal-menu {
   position: absolute;
   width: 100%;
   left: 0;
@@ -50,8 +54,23 @@ app-contact-link:last-of-type {
 }
 
 @media screen and (max-width: 850px) {
-  .contact-links {
+  .contact-links, app-horizontal-menu {
     display: none;
+  }
+
+  mat-toolbar {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+  }
+
+  .against-theme-container {
+    height: 36px;
+    width: 100%;
+  }
+
+  .menu-button {
+    display: inline;
   }
 
 }

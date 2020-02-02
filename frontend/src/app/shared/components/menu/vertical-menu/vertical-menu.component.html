@@ -1,0 +1,111 @@
+<div class="flex-row space-between mat-elevation-z1">
+  <h2>MENU</h2>
+  <button mat-icon-button (click)="close()"><mat-icon>close</mat-icon></button>
+</div>
+<div class="vertical-menu-content">
+  <mat-nav-list>
+    <mat-list-item routerLink="/main" routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }">
+      <mat-icon matListIcon>home</mat-icon>
+      <a matLine>Home</a>
+    </mat-list-item>
+  </mat-nav-list>
+  <mat-nav-list>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        INFORMACIÓN INSTITUCIONAL
+      </mat-expansion-panel-header>
+      <mat-nav-list>
+        <mat-list-item
+          routerLink="/main/page/vission-mission" routerLinkActive="active"
+        >VISIÓN Y MISIÓN</mat-list-item>
+        <mat-list-item
+          routerLink="/main/page/official-symbol" routerLinkActive="active"
+        >SÍMBOLOS OFICIALES</mat-list-item>
+        <mat-list-item
+          routerLink="/main/news" routerLinkActive="active"
+        >ESTRUCTURA ORGÁNICA</mat-list-item>
+        <mat-list-item
+          routerLink="/main/page" routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+        >GOBERNADOR MUNICIPAL</mat-list-item>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            REGISTRO MUNICIPAL
+          </mat-expansion-panel-header>
+          <mat-nav-list>
+            <mat-list-item
+            routerLink="/main/page/directory-council" routerLinkActive="active"
+            >DIRECTORIO DE REGIDORES</mat-list-item>
+            <mat-list-item 
+            routerLink="/main/group/documents/regulations" routerLinkActive="active"
+            >REGLAMENTO INTERNO DE REGIDORES</mat-list-item>
+            <mat-list-item 
+            routerLink="/main/group/documents/ordinances" routerLinkActive="active"
+            >ORDENANZAS MUNICIPALES</mat-list-item>
+            <mat-list-item 
+            routerLink="/main/group/documents/agreements" routerLinkActive="active"
+            >ACUERDOS MUNICIPALES</mat-list-item>
+            <mat-list-item 
+            routerLink="/main/group/documents/ordinary-minutes" routerLinkActive="active"
+            >ACTAS DE SESIONES ORDINARIAS</mat-list-item>
+            <mat-list-item
+            routerLink="/main/group/documents/extraordinary-minutes" routerLinkActive="active"
+            >ACTAS DE SESIONES EXTRAORDINARIAS</mat-list-item>
+            <mat-list-item 
+            routerLink="/main/group/documents/ordinary-agenda" routerLinkActive="active"
+            >AGENDA DE SESIONES ORDINARIAS</mat-list-item>
+            <mat-list-item  
+            routerLink="/main/group/documents/extraordinary-agenda" routerLinkActive="active"
+            >AGENDA DE SESIONES EXTRAORDINARIAS</mat-list-item>
+          </mat-nav-list>
+        </mat-expansion-panel>
+        <mat-list-item>COORDINACIÓN DE REGIDORES</mat-list-item>
+        <mat-list-item>AGENDAS MUNICIPALES</mat-list-item>
+      </mat-nav-list>
+    </mat-expansion-panel>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        GERENCIAS Y OFICINAS
+      </mat-expansion-panel-header>
+      <mat-nav-list>
+        <mat-list-item>GERENCIA GENERAL MUNICIPAL</mat-list-item>
+        <mat-list-item>GERENCIAS MUNICIPALES</mat-list-item>
+        <mat-list-item>PROCURADURÍA PÚBLICA MUNICIPAL</mat-list-item>
+        <mat-list-item>DIRECCIONES MUNICIPALES</mat-list-item>
+        <mat-list-item>DIRECTORIO MUNICIPAL</mat-list-item>
+      </mat-nav-list>
+    </mat-expansion-panel>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        SERVICIOS EN LÍNEA
+      </mat-expansion-panel-header>
+      <mat-nav-list>
+        <mat-list-item>OPORTUNIDADES LABORALES</mat-list-item>
+        <mat-list-item>SERVIDOR DE DOCUMENTOS</mat-list-item>
+        <mat-list-item
+        routerLink="/main/page/consultation" routerLinkActive="active"
+        >CONSULTA EXPEDIENTE SIAF</mat-list-item>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>SISTEMAS INTERNOS</mat-expansion-panel-header>
+          <mat-nav-list>
+            <mat-list-item>INFOSIAF</mat-list-item>
+            <mat-list-item>CONTROL DE ASISTENCIA</mat-list-item>
+          </mat-nav-list>
+        </mat-expansion-panel>
+      </mat-nav-list>
+  
+    </mat-expansion-panel>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        IMAGEN INSTITUCIONAL
+      </mat-expansion-panel-header>
+      <mat-nav-list>
+        <mat-list-item>MANUAL DE IDENTIDAD CORPORATIVA</mat-list-item>
+        <mat-list-item>ARCHIVO DE NOTICIAS</mat-list-item>
+        <mat-list-item>VIDEOS</mat-list-item>
+        <mat-list-item>GALERÍAS FOTOGRÁFICAS</mat-list-item>
+      </mat-nav-list>
+    </mat-expansion-panel>
+  </mat-nav-list>
+</div>

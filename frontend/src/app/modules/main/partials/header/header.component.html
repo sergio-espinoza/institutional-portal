@@ -1,5 +1,8 @@
 <mat-toolbar>
   <div class="theme-container">
+    <button mat-icon-button class="menu-button" (click)="onMenuChange()">
+      <mat-icon>menu</mat-icon>
+    </button>
     <div class="contact-links">
       <app-contact-link
         *ngFor="let header of headerLinks"
@@ -14,7 +17,8 @@
           <app-icon [pathProperties]="linkIcon"></app-icon>
         </app-link>
       </div>
-      <app-menu-basic></app-menu-basic>
+    <app-horizontal-menu></app-horizontal-menu>
     </div>
   </div>
 </mat-toolbar>
+<div class="against-theme-container"></div>

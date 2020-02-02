@@ -9,7 +9,6 @@ import {
   InfoComponent,
   NotificationComponent,
   ItemDetailComponent,
-  MenuBasicComponent,
   LinkListComponent,
   MinimizedViewComponent,
   TableIconComponent,
@@ -24,7 +23,9 @@ import {
   PersonalSayComponent,
   ReviewComponent,
   ProfileComponent,
-  ContactLinkComponent
+  ContactLinkComponent,
+  HorizontalMenuComponent,
+  VerticalMenuComponent
 } from './components';
 
 import {
@@ -35,7 +36,6 @@ const COMPONENTS = [
   InfoComponent,
   NotificationComponent,
   ItemDetailComponent,
-  MenuBasicComponent,
   LinkListComponent,
   MinimizedViewComponent,
   TableIconComponent,
@@ -51,7 +51,8 @@ const COMPONENTS = [
   ReviewComponent,
   ProfileComponent,
   ContactLinkComponent,
-
+  HorizontalMenuComponent,
+  VerticalMenuComponent
 
 ];
 
