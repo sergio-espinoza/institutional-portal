@@ -9,6 +9,10 @@ footer {
   align-items: center;
 }
 
+.title {
+  font-size: 32px;
+}
+
 footer:before {
   content: "";
   position: absolute;
@@ -22,24 +26,25 @@ footer:before {
   background-position: center;
 }
 
-.content {
+.header, .content, .footer {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  flex-flow: row wrap;
   width: 95vw;
+}
+
+.header, .content {
   padding: 20px 0;
+}
+
+.content {
+  justify-content: space-between;
   border-top: 1px solid rgba(255,255,255,.2);
   border-bottom: 1px solid rgba(255,255,255,.2);
-  flex-flow: row wrap;
 }
 
 .header {
-  width: 95vw;
-  padding: 20px 0;
-  display: flex;
-  flex-direction: row;
   justify-content: space-evenly;
-  flex-flow: row wrap;
 }
 
 .form-subscriber {
@@ -47,20 +52,26 @@ footer:before {
   flex: 1 1 42.4%;
 }
 
+mat-form-field, h2 {
+  color: #ffffff;
+}
+
 .form-subscriber mat-form-field {
   flex: 1 1 0%;
   box-sizing: border-box;
 }
+
 
 p, ::placeholder, mat-hint, mat-label {
   color: rgba(255, 255, 255, .6);
 }
 
 .subscribe {
-  height: 51px;
-  margin-top: 3.5px;
+  height: 59px;
+  margin-top: 4px;
   margin-left: -5px;
   border-radius: 0 4px 4px 0;
+  box-shadow: none;
 }
 
 .contact-link {
@@ -95,13 +106,9 @@ button {
 }
 
 .footer {
-  display: flex;
-  flex-direction: row;
-  width: 95vw;
   justify-content: space-between;
   align-items: center;
   min-height: 40px;
-  flex-flow: row wrap;
 }
 
 .footer p {

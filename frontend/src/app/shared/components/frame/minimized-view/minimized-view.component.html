@@ -2,12 +2,18 @@
   [class]="'fb-'+minimizedViewData.type"
   [attr.data-href]="minimizedViewData.url"
   data-tabs="timeline,events,messages"
-  [attr.data-width]="size.width" [attr.data-height]="size.height"
+  [style.height]="size.height | satinizer: 'style'"
+  [attr.data-width]="size.width| satinizer: 'style'"
+  [attr.data-height]="size.height| satinizer: 'style'"
   data-small-header="true"
   data-adapt-container-width="true"
   data-hide-cover="true"
   data-show-text="true"
-  data-show-facepile="false">
-  <blockquote [attr.cite]="minimizedViewData.url" class="fb-xfbml-parse-ignore">
-    <a [href]="minimizedViewData.url" target="_blank">Link Social</a></blockquote>
+  data-show-facepile="true">
+  <blockquote
+    [attr.cite]="minimizedViewData.url"
+    class="fb-xfbml-parse-ignore">
+    <a [href]="minimizedViewData.url" target="_blank"
+    mat-button>Social Link</a>
+  </blockquote>
 </div>

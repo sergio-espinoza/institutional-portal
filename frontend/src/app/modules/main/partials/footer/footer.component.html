@@ -19,11 +19,14 @@
   <mat-divider></mat-divider>
   <div class="content">
     <div class="description">
-      <h1>Municipalidad de Santa Bárbara de Carhuacayán</h1>
+      <h2 class="title">Municipalidad de Santa Bárbara de Carhuacayán</h2>
       <p>Contactarse con el centro de Atención para enviar mensajes de recomendación y sugerencias.</p>
       <div class="contact-links">
         <div *ngFor="let contactLinkData of contactsLinkData" class="contact-link">
-          <app-contact-link [contactLinkData]="contactLinkData" iconColor="#1976d2"></app-contact-link>
+          <app-contact-link
+            [contactLinkData]="contactLinkData"
+            [fontColor]="{ icon: '#1976d2', title: '#ffffff', subtitle: '#ffffff' }">
+          </app-contact-link>
         </div>
       </div>
       <div class="social-links">

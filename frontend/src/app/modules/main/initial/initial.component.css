@@ -169,6 +169,10 @@ p i {
     font-size: 30px;
   }
 
+  .content-main {
+    height: calc(100vh - 45px);
+  }
+
   p i {
     font-size: 18px;
   }

@@ -2,6 +2,7 @@
 	<mat-toolbar-row>
     <button
       mat-icon-button
+      class="home-button"
       routerLink="/main"
       routerLinkActive="active"
       [routerLinkActiveOptions]="{ exact: true }">
@@ -57,7 +58,7 @@
 
 
 <mat-menu #coordinacion="matMenu">
-  <button mat-menu-item 
+  <button mat-menu-item
     routerLink="/main/page/directory-council"
     routerLinkActive="menu-active"
     >Directorio de Regidores</button>

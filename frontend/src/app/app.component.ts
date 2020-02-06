@@ -1,7 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, Inject } from '@angular/core';
 import { DocumentService } from './core/services/api-local/document.service';
 import { Router, NavigationEnd, Event } from '@angular/router';
-import { WindowService } from './core/services/api-local/window.service';
+import { WINDOW } from './core/services/api-local/window.service';
 
 @Component({
   selector: 'app-root',
@@ -11,7 +11,7 @@ import { WindowService } from './core/services/api-local/window.service';
 export class AppComponent {
   constructor(
     private documentService: DocumentService,
-    private windowService: WindowService,
+    @Inject(WINDOW) private windowRef: Window,
     private router: Router
   ) {
     this.onNavigationEnd();
@@ -21,8 +21,8 @@ export class AppComponent {
     this.router.events.subscribe(
       (navigationEvent: Event) => {
         if (navigationEvent instanceof NavigationEnd) {
-          this.documentService.document.getElementById('preloader').className = '.content-spinner hide';
-          this.windowService.getWindow().scroll(0, 0);
+          this.windowRef.scroll(0, 0);
+          this.windowRef.document.getElementById('preloader').className = 'content-spinner hide';
         }
       }
     );

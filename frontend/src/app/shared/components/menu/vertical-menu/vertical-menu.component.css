@@ -30,8 +30,12 @@ h2 {
 mat-list-item,
 mat-expansion-panel-header,
 .mat-list-item, a {
-
   font-size: 12px;
+}
+
+mat-expansion-panel-header, .home-button {
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 mat-expansion-panel, .mat-expansion-panel {

@@ -2,7 +2,6 @@ import { Component, OnInit, Input, Optional } from '@angular/core';
 import { InfoModel } from '../../../../shared/models';
 import { MatBottomSheetRef } from '@angular/material';
 import { TransparencyDocumentComponent } from '../transparency-document/transparency-document.component';
-import { WindowService } from '../../../../core/services/api-local/window.service';
 
 @Component({
   selector: 'app-transparency-links',
@@ -32,7 +31,6 @@ export class TransparencyLinksComponent implements OnInit {
 
   constructor(
     @Optional() private bottomSheetRef: MatBottomSheetRef<TransparencyDocumentComponent>,
-    private windowService: WindowService
   ) { }
 
   ngOnInit() { }

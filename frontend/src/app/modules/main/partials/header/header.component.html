@@ -6,6 +6,7 @@
     <div class="contact-links">
       <app-contact-link
         *ngFor="let header of headerLinks"
+        [fontColor]="{ title: '#ffffff', subtitle: '#ffffff', icon: '#ffffff' }"
         [contactLinkData]="header"></app-contact-link>
     </div>
     <div>

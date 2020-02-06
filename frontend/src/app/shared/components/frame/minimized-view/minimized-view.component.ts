@@ -1,6 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { MinimizedViewModel } from '../../../models';
-import { WindowService } from '../../../../core/services/api-local/window.service';
 
 @Component({
   selector: 'app-minimized-view',
@@ -14,11 +13,9 @@ export class MinimizedViewComponent implements OnInit {
   };
 
   constructor(
-    private windowService: WindowService
   ) { }
 
   ngOnInit() {
-    this.size.height = `${this.windowService.getWindow().innerHeight - 45}px`;
   }
 
 }

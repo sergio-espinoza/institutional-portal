@@ -1,3 +1,23 @@
+
+mat-toolbar-row {
+  padding: 5px 0;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  justify-content: space-around;
+  flex-flow: row wrap;
+}
+
+
+.title-button, .home-button {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 0 5px;
+  z-index: 180;
+}
+
+
 .no-sticky {
   background: 0;
   z-index: 150;
@@ -41,20 +61,3 @@
   color: #1976d2;
 }
 
-
-button {
-  text-transform: uppercase;
-  font-size: 14px;
-  font-weight: 500;
-  padding: 0 5px;
-  z-index: 180;
-}
-
-mat-toolbar-row {
-  padding: 5px 0;
-  display: flex;
-  padding: 0;
-  margin: 0;
-  justify-content: space-around;
-  flex-flow: row wrap;
-}

@@ -5,3 +5,9 @@ div {
   justify-content: center;
   align-items: center;
 }
+
+a {
+  color: #1976d2;
+  font-size: 32px;
+  font-weight: bold;
+}

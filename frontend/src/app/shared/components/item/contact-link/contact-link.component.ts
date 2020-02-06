@@ -13,12 +13,16 @@ export class ContactLinkComponent implements OnInit {
     path: 'https://facebook.com',
     subtitle: ''
   };
-  @Input() className = 'normal';
-  @Input() iconColor = '#ffffff';
   @Input() fontSize = {
     icon: 24,
     title: 13,
     subtitle: 8
+  };
+
+  @Input() fontColor = {
+    icon: '#1976d2',
+    title: 'rgba(0, 0, 0, 0.87);',
+    subtitle: 'rgba(0, 0, 0, 0.87);'
   };
 
   constructor() { }
