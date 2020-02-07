@@ -1,10 +1,9 @@
 <app-section className="complete">
   <div class="content-profiles">
-      <app-profile></app-profile>
-      <app-profile></app-profile>
-      <app-profile></app-profile>
-      <app-profile></app-profile>
-    </div>
+    <app-profile *ngFor="let profile of profilesList"
+      [profileData]="profile"
+    ></app-profile>
+  </div>
   <div class="profiles-button">
     <button mat-raised-button routerLink="/main/document" color="primary">OUR AGENTS</button>
   </div>

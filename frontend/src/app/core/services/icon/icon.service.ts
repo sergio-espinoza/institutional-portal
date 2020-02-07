@@ -3,7 +3,7 @@ import { icons } from './icon.svg';
 
 @Injectable({ providedIn: 'root' })
 export class IconService {
-  getIcon(name: string): string {
+  static getIcon(name: string): string {
     return icons[name];
   }
 

@@ -97,6 +97,7 @@ export class SavageModel {
 
 export class ProfileModel {
   image: string;
+  name: string;
   rating: number;
   description: string;
   contactLinks: LinkListModel[];

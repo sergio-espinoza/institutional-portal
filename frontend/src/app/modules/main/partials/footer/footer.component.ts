@@ -25,10 +25,10 @@ export class FooterComponent implements OnInit {
   });
 
   contactsLinkData: LinkListModel[] = [
-    { title: 'Plaza Principal Santa Bárbara de Carhuacaýan', icon: 'location_on' },
+    { title: 'Plaza Principal Santa Bárbara de Carhuacayán', icon: 'location_on' },
     { title: '(+51) 064 830 006', icon: 'phone' },
     { title: '(+51) 064 811 251', icon: 'phone' },
-    { title: 'contact@munisbc.com', icon: 'email' },
+    { title: 'webmaster@munisantabarbaradecarhuacayan.gob.pe', icon: 'email' },
     { title: 'Lunes - Viernes / 9:00AM - 8:00PM', icon: 'schedule' },
 
   ];
@@ -36,25 +36,24 @@ export class FooterComponent implements OnInit {
   socialLinkData: { link: LinkModel, icon: SavageModel }[] = [
     {
       link: { color: 'rgba(255, 255, 255, 0.7)', path: 'https://facebook.com' },
-      icon: { fill: '#262626', d: this.iconService.getIcon('facebook') }
+      icon: { fill: '#262626', d: IconService.getIcon('facebook') }
     },
     {
       link: { color: 'rgba(255, 255, 255, 0.7)', path: 'https://twitter.com' },
-      icon: { fill: '#262626', d: this.iconService.getIcon('twitter') }
+      icon: { fill: '#262626', d: IconService.getIcon('twitter') }
     },
     {
       link: { color: 'rgba(255, 255, 255, 0.7)', path: 'https://instagram.com' },
-      icon: { fill: '#262626', d: this.iconService.getIcon('instagram') }
+      icon: { fill: '#262626', d: IconService.getIcon('instagram') }
     },
     {
       link: { color: 'rgba(255, 255, 255, 0.7)', path: 'https://gmail.com' },
-      icon: { fill: '#262626', d: this.iconService.getIcon('gmail') }
+      icon: { fill: '#262626', d: IconService.getIcon('gmail') }
     },
   ];
 
   constructor(
     private fb: FormBuilder,
-    private iconService: IconService
   ) { }
 
   ngOnInit() {

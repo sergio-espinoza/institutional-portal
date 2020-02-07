@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { LinkListModel, ProfileModel } from '../../../../shared/models';
+import { ProfileModel } from '../../../../shared/models';
 import { IconService } from '../../../../core/services/icon/icon.service';
 
 @Component({
@@ -10,9 +10,19 @@ import { IconService } from '../../../../core/services/icon/icon.service';
 export class ProfileComponent implements OnInit {
   @Input() profileData: ProfileModel = {
     image: 'https://i.imgur.com/CgsKzn8.jpg',
+    name: 'Lusia Masiel',
     rating: 0,
     description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Illum fugiat impedit temporsssa`,
+                  Illum fugiat impedit temporsssa,
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Illum fugiat impedit temporsssa,
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Illum fugiat impedit temporsssa,
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Illum fugiat impedit temporsssa,
+                  Illum fugiat impedit temporsssa,
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  `,
     contactLinks: [
       { title: 'Housekey', icon: 'apartment' },
       { title: 'lusia.m@munisbc.com', icon: 'email' },
@@ -21,29 +31,28 @@ export class ProfileComponent implements OnInit {
     socialLinks: [
       { link: { color: '#ffffff', path: 'https://facebook.com'},
         icon: { fill: 'rgba(0, 0, 0, .54)',
-                d: this.iconService.getIcon('facebook') },
+                d: IconService.getIcon('facebook') },
       },
       {
         link: { color: '#ffffff', path: 'https://twitter.com'},
         icon: { fill: 'rgba(0, 0, 0, .54)',
-                d: this.iconService.getIcon('twitter') },
+                d: IconService.getIcon('twitter') },
       },
       {
         link: { color: '#ffffff', path: 'https://www.instagram.com'},
         icon: { fill: 'rgba(0, 0, 0, .54)',
-                d: this.iconService.getIcon('instagram') },
+                d: IconService.getIcon('instagram') },
       },
       {
         link: { color: '#ffffff', path: 'https://mail.google.com'},
         icon: { fill: 'rgba(0, 0, 0, .54)',
-                d: this.iconService.getIcon('gmail') }
+                d: IconService.getIcon('gmail') }
       }
     ],
     path: 'main/document'
   };
 
   constructor(
-    private iconService: IconService
   ) { }
 
   ngOnInit() {

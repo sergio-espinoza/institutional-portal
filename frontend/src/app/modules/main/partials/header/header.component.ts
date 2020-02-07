@@ -16,19 +16,18 @@ export class HeaderComponent implements OnInit {
   scEl = 'scrollingElement';
 
   linkIcons: any[] = [
-    { fill: '#1976d2', d: this.iconService.getIcon('facebook'),
+    { fill: '#1976d2', d: IconService.getIcon('facebook'),
       path: 'https://facebook.com' },
-    { fill: '#1976d2', d: this.iconService.getIcon('twitter'),
+    { fill: '#1976d2', d: IconService.getIcon('twitter'),
       path: 'https://twitter.com' },
-    { fill: '#1976d2', d: this.iconService.getIcon('instagram') },
-    { fill: '#1976d2', d: this.iconService.getIcon('gmail'),
+    { fill: '#1976d2', d: IconService.getIcon('instagram') },
+    { fill: '#1976d2', d: IconService.getIcon('gmail'),
       path: 'https://mail.google.com' },
   ];
 
   @ViewChild(HorizontalMenuComponent, { static: true }) horizontalMenu: HorizontalMenuComponent;
 
   constructor(
-    private iconService: IconService
   ) { }
 
   ngOnInit() {
