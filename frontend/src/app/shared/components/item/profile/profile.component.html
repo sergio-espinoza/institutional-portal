@@ -1,25 +1,25 @@
-<div class="content-profile">
-  <mat-card>
-    <img [src]="profileData.image"
-      alt="personal profile" />
-    <mat-card-content>
-      <h2>Lusia Manuel</h2>
-      <mat-icon class="star">star</mat-icon>
-      <mat-icon class="star">star</mat-icon>
-      <mat-icon class="star">star</mat-icon>
-      <mat-icon class="star">star</mat-icon>
-      <mat-icon class="star">star</mat-icon>
-      <p>{{ profileData.description }}</p>
-      <div
-        class="contact-links"
-        *ngFor="let contactLink of profileData.contactLinks">
-        <app-contact-link
-          [contactLinkData]="contactLink"
-          iconColor="#1976d2"></app-contact-link>
-      </div>
-    </mat-card-content>
+<mat-card>
+  <img [src]="profileData.image"
+    alt="personal profile" />
+  <mat-card-content>
+    <h2>Lusia Masiel</h2>
+    <mat-icon class="star">star</mat-icon>
+    <mat-icon class="star">star</mat-icon>
+    <mat-icon class="star">star</mat-icon>
+    <mat-icon class="star">star</mat-icon>
+    <mat-icon class="star">star</mat-icon>
+    <p>{{ profileData.description }}</p>
+    <div
+      class="contact-links"
+      *ngFor="let contactLink of profileData.contactLinks">
+      <app-contact-link
+        [contactLinkData]="contactLink"
+        iconColor="#1976d2"></app-contact-link>
+    </div>
+  </mat-card-content>
+  <div class="card-actions-container">
     <mat-divider></mat-divider>
-    <mat-card-actions>
+    <div class="card-actions">
       <div class="social-links">
         <div class="social-link"
           *ngFor="let socialLink of profileData.socialLinks">
@@ -31,6 +31,7 @@
         </div>
       </div>
       <a mat-button routerLink="/main/document">VIEW PROFILE</a>
-    </mat-card-actions>
-  </mat-card>
-</div>
+    </div>
+  </div>
+</mat-card>
+

@@ -14,13 +14,12 @@
 .container-pre-footer img {
   position: absolute;
   bottom: 0;
-  width: 11vw;
   height: 16vh;
   z-index: 90;
 }
 
 .content-pre-footer {
-  padding-left: 16vw;
+  padding-left: 135px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;

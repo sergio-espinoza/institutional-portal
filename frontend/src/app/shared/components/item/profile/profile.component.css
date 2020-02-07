@@ -1,22 +1,25 @@
-.content-profile {
-  width: 313px;
-}
 
 mat-card {
   padding: 0;
+  width: 333px;
+  height: 100%;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 mat-card-content {
-  padding: 0 16px;
+  padding: 16px;
+  height: 100%;
   box-sizing: border-box;
   overflow-y: auto;
   margin: 0;
 }
 
 img {
-  width: 313px;
-  height: 295px;
+  width: 333px;
+  height: 330px;
   border-radius: 4px 4px 0 0;
 }
 
@@ -41,7 +44,7 @@ p {
   padding: 5px 0;
 }
 
-mat-card-actions {
+.card-actions {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
