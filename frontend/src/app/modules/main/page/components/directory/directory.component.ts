@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SectionModel } from '../../../../../shared/models';
 
 @Component({
   selector: 'app-directory',
@@ -6,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./directory.component.css']
 })
 export class DirectoryComponent implements OnInit {
+  sectionData: SectionModel = {
+    title: 'Directory',
+    background: 'https://i.imgur.com/CNEp4ur.png'
+  };
+
 
   constructor() { }
 

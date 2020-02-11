@@ -6,14 +6,20 @@
   justify-content: space-around;
   flex-flow: row wrap;
 }
-app-review {
+.link {
   width: 40%;
   height: 40%;
   background-color: #ffffff;
   text-align: center;
 }
 
-app-review:hover {
+app-review {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.link:hover {
   cursor: pointer;
   filter: brightness(85%);
 }

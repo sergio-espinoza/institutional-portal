@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { PageService } from '../../../../../core/services/page/page.service';
 import { consultationData } from './consultation.data';
+import { SectionModel } from 'src/app/shared/models';
 
 @Component({
   selector: 'app-consultation',
@@ -8,6 +9,11 @@ import { consultationData } from './consultation.data';
   styleUrls: ['./consultation.component.css']
 })
 export class ConsultationComponent implements OnInit {
+  sectionData: SectionModel = {
+    title: 'Consultation',
+    background: 'https://i.imgur.com/CNEp4ur.png'
+  };
+
   dataSource: any[] = consultationData;
 
   srcSelected: string = this.dataSource[0].src;
@@ -18,10 +24,6 @@ export class ConsultationComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.pageService.setPageData({
-      title: 'Consulta Expediente SIAF',
-      subtitle: 'Sección de Consulta de Expediente SIAF'
-    });
   }
 
 }

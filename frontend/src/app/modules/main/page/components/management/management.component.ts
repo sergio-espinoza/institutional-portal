@@ -12,17 +12,13 @@ export class ManagementComponent implements OnInit {
   sectionData: SectionModel = new SectionModel(
     'Gerencia General', 'https://i.imgur.com/yg3Qdqv.jpg');
 
-    functionsData: string[] = functionsData;
+  functionsData: string[] = functionsData;
 
   constructor(
     private pageService: PageService
   ) { }
 
   ngOnInit() {
-    this.pageService.setPageData({
-      title: 'Sección de Gerencia General Muncipal',
-      subtitle: 'Gerencia General de la Municipalidad Distrital Santa Bárbara de Carhuacayán'
-    });
   }
 
 }

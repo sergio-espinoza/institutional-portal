@@ -22,7 +22,6 @@ export class AppComponent {
       (navigationEvent: Event) => {
         if (navigationEvent instanceof NavigationEnd) {
           this.windowRef.scroll(0, 0);
-          this.windowRef.document.getElementById('preloader').className = 'content-spinner hide';
         }
       }
     );

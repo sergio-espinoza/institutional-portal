@@ -19,10 +19,6 @@ export class ProsecutorComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.pageService.setPageData({
-      title: 'Sección de Procuraduría Pública',
-      subtitle: 'Procuraduría Pública de la Municipalidad Distrital Santa Bárbara de Carhuacayán'
-    });
   }
 
 }

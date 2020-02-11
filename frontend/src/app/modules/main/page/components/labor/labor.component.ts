@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PageService } from '../../../../../core/services/page/page.service';
+import { SectionModel } from 'src/app/shared/models';
 
 @Component({
   selector: 'app-labor',
@@ -7,12 +8,16 @@ import { PageService } from '../../../../../core/services/page/page.service';
   styleUrls: ['./labor.component.css']
 })
 export class LaborComponent implements OnInit {
+  sectionData: SectionModel = {
+    title: 'Oportunidades Laborales',
+    background: 'https://i.imgur.com/yg3Qdqv.jpg'
+  };
+
   constructor(
     private pageService: PageService
   ) { }
 
   ngOnInit() {
-    this.pageService.setPageData({ title: 'Oportunidad Laboral', subtitle: 'Oportunidades Laborales' });
   }
 
 }

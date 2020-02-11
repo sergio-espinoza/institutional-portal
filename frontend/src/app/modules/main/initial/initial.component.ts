@@ -1,6 +1,6 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy, Inject } from '@angular/core';
 import { MainGeneralService } from '../../../core/services/main/general.service';
-import { Router } from '@angular/router';
+import { WINDOW } from '../../../core/services/api-local/window.service';
 
 @Component({
   selector: 'app-initial',
@@ -9,19 +9,22 @@ import { Router } from '@angular/router';
 })
 export class InitialComponent implements OnInit, OnDestroy {
   backgroundOne = 'hidden';
+  viewTransparencyButton = false;
 
   constructor(
-    private mainGeneralService: MainGeneralService,
-    private router: Router
+    @Inject(WINDOW) private windowRef: Window
   ) {
   }
 
   ngOnInit() {
-  this.mainGeneralService.viewTransparencyButton = false;
   }
 
   ngOnDestroy() {
-    this.mainGeneralService.viewTransparencyButton = true;
+  }
+
+  loadMainBackground() {
+    this.windowRef.document.getElementById('preloader').className = 'content-spinner hide';
+    this.backgroundOne = 'visible'
   }
 
 }

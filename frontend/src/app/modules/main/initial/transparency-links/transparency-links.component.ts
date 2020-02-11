@@ -1,6 +1,6 @@
 import { Component, OnInit, Input, Optional } from '@angular/core';
 import { InfoModel } from '../../../../shared/models';
-import { MatBottomSheetRef } from '@angular/material';
+import { MatBottomSheetRef } from '@angular/material/bottom-sheet';
 import { TransparencyDocumentComponent } from '../transparency-document/transparency-document.component';
 
 @Component({

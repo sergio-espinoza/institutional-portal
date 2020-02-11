@@ -11,12 +11,13 @@
       <mat-icon>settings</mat-icon>
     </button>
     <button
-      [style.display]="mainGeneralService.viewTransparencyButton ? '' : 'none'" mat-icon-button
+      *ngIf="viewTransparencyButton === undefined? true: viewTransparencyButton" 
+      mat-icon-button
       class="transparency"
-      (click)="openMenuTransparency()">
+      (click)="openTransparencyMenu()">
       <mat-icon>keyboard_arrow_up</mat-icon>
     </button>
-    <router-outlet></router-outlet>
+    <router-outlet (activate)="toggleTransparencyMenu($event.viewTransparencyButton)"></router-outlet>
     <app-footer></app-footer>
   </mat-drawer-content>
 </mat-drawer-container>

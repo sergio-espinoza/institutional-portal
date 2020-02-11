@@ -20,10 +20,6 @@ export class DirectoryCouncilComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.pageService.setPageData({
-      title: 'DIRECTORIO DE Regidores',
-      subtitle: 'Regidores de la Municipalidad de Santa Bárbara de Carhuacayán'
-    });
   }
 
 }

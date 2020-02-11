@@ -1,13 +1,12 @@
 <div class="header-image-wrapper">
   <div class="header-image"></div>
   <div class="header-image-content">
-    <h1>{{ pageService.pageData.title }}</h1>
-    <p><i>{{ pageService.pageData.subtitle }}</i></p>
+    <h2>{{ groupTitle | titlecase }}</h2>
+    <p><i>{{ groupSubtitle }}</i></p>
   </div>
   <div class="theme-container">
     <mat-card class="main-content-header">
-      <router-outlet></router-outlet>
-      <!-- <router-outlet (activate)="setPageData($event)"></router-outlet> -->
+      <router-outlet (activate)="setPageData($event.sectionData.title)"></router-outlet>
     </mat-card>
   </div>
 </div>

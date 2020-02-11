@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MatDialog } from '@angular/material';
+import { MatDialog } from '@angular/material/dialog';
 import { ItemDetailComponent } from '../../../../../shared/components';
 import { NotificationItemModel } from '../../../../../shared/models';
 import { notificationItemData } from './gallery-inicial.data';
