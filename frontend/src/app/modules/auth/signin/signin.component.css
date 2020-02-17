@@ -1,0 +1,25 @@
+.content, .content mat-card, .content mat-card mat-card-actions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  height: 100vh;
+}
+
+.content mat-card {
+  min-width: 350px;
+  max-width: 500px;
+}
+
+.content mat-card mat-card-actions, .content mat-card mat-card-header {
+  width: 100%;
+}
+
+.content mat-card mat-card-header {
+  padding: 25px;
+}
+
+

@@ -43,6 +43,6 @@ export class MainComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy() {
-    this.bottomSheetSubscription.unsubscribe();
+    if (this.bottomSheetSubscription) this.bottomSheetSubscription.unsubscribe();
   }
 }

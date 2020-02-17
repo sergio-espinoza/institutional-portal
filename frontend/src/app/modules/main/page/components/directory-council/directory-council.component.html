@@ -1,10 +1,10 @@
-<app-section [sectionData]="sectionData" className="other">
+<app-section [sectionData]="sectionData">
   <div class="container">
     <div class="subheader">
       <p>En General para comunicarse con los regidores municipales usted puede comunicarse al mismo número:</p>
       <p class="icon-line"><mat-icon>phone</mat-icon>(064) 602 000 - 1516</p>
     </div>
-  
+
     <div class="mat-elevation-z1 councilor"
       *ngFor="let councilor of directoryCouncilList; index as i">
       <h3># {{ i + 1 }} - {{ councilor.roleTitle }}</h3>

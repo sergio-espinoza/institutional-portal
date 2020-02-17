@@ -11,6 +11,9 @@
   height: 40%;
   background-color: #ffffff;
   text-align: center;
+  z-index: 3;
+  cursor: pointer;
+
 }
 
 app-review {
@@ -20,6 +23,5 @@ app-review {
 }
 
 .link:hover {
-  cursor: pointer;
   filter: brightness(85%);
 }

@@ -9,8 +9,11 @@ import { DirectoryCouncilModel, directoryCouncilList } from './directory-council
   styleUrls: ['./directory-council.component.css']
 })
 export class DirectoryCouncilComponent implements OnInit {
-  sectionData: SectionModel = new SectionModel(
-    'Directorio de Regidores', 'https://i.imgur.com/yg3Qdqv.jpg');
+
+  sectionData: SectionModel = {
+    title: 'Directorio de Regidores',
+    background: 'https://i.imgur.com/yg3Qdqv.jpg'
+  }
 
   directoryCouncilList: DirectoryCouncilModel[] = directoryCouncilList;
 

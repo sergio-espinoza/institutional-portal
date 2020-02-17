@@ -23,8 +23,7 @@ export class InitialComponent implements OnInit, OnDestroy {
   }
 
   loadMainBackground() {
-    this.windowRef.document.getElementById('preloader').className = 'content-spinner hide';
-    this.backgroundOne = 'visible'
+    this.backgroundOne = 'visible';
   }
 
 }
