@@ -1,29 +1,29 @@
 <div class="image-selected">
   <div
     class="background"
-    [style.backgroundImage]="'url('+data.items[currentIndex]?.image+')'">
+    [style.backgroundImage]="'url('+data.imagesSource[currentIndex]?.link+')'">
   <button mat-icon-button class="navigate left" 
     [disabled]="currentIndex === 0 ? true : null">
     <mat-icon (click)="before()">navigate_before</mat-icon>
   </button>
-  <mat-chip class="date-sticker" *ngIf="data.items[currentIndex].date">
+  <mat-chip class="date-sticker" *ngIf="data.imagesSource[currentIndex].datetime">
     <mat-icon>schedule</mat-icon>
-    {{ data.items[currentIndex]?.date | date: 'medium' }}</mat-chip>
+    {{ getCorrectDate(data.imagesSource[currentIndex]?.datetime) | date }}</mat-chip>
   <button mat-icon-button class="navigate right"
     [disabled]="currentIndex === total - 1 ? true : null">
     <mat-icon (click)="next()">navigate_next</mat-icon>
   </button>
   </div>
   <div class="description">
-    <h4>{{data.items[currentIndex]?.title}}</h4>
-    <p>{{data.items[currentIndex]?.description}}</p>
+    <h4>{{data.imagesSource[currentIndex]?.title}}</h4>
+    <p>{{data.imagesSource[currentIndex]?.description}}</p>
   </div>
 </div>
 <div class="image-list">
   <div 
     class="gallery" [class.selected]="currentIndex === i" 
-    *ngFor="let item of data.items; index as i">
-    <img [src]="item.image" alt="List of Images" (click)="currentIndex = i" />
+    *ngFor="let image of data.imagesSource; index as i">
+    <img [src]="image.link" alt="List of Images" (click)="currentIndex = i" />
   </div>
 </div>
 

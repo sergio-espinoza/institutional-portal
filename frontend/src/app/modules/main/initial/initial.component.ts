@@ -1,5 +1,4 @@
 import { Component, OnInit, OnDestroy, Inject } from '@angular/core';
-import { MainGeneralService } from '../../../core/services/main/general.service';
 import { WINDOW } from '../../../core/services/api-local/window.service';
 
 @Component({

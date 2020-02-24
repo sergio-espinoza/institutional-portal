@@ -1,4 +1,5 @@
-<app-section [sectionData]="{
+<app-section 
+  [sectionData]="{
     title: 'Galería de Imágenes',
     background: 'https://i.imgur.com/TZ8lanL.jpg'
   }"
@@ -6,13 +7,14 @@
   <div class="container">
     <div class="first-content">
       <img class="first"
-      [src]="notificationItemData[0].image"
+      *ngIf="imagesSource"
+      [src]="imagesSource[0].link"
       (click)="openDetail(0)" />
     </div>
     <div class="notifications">
       <img
-        *ngFor="let item of notificationToDisplay; index as i"
-        [src]="item.image"
+        *ngFor="let image of imagesSourceToDisplay; index as i"
+        [src]="image.link"
         (click)="openDetail(i + 1)" />
     </div>
   </div>

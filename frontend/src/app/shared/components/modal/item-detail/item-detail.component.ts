@@ -1,6 +1,6 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { MAT_DIALOG_DATA} from '@angular/material/dialog';
-import { NotificationItemModel } from '../../../models';
+import { IImgurResponseData } from '../../../models';
 
 @Component({
   selector: 'app-item-detail',
@@ -9,12 +9,12 @@ import { NotificationItemModel } from '../../../models';
 })
 export class ItemDetailComponent implements OnInit {
   currentIndex = this.data.selectedIndex;
-  total = this.data.items.length;
-
+  total = this.data.imagesSource.length;
 
   constructor(
-    @Inject(MAT_DIALOG_DATA) public data: { selectedIndex: number, items: NotificationItemModel[] }
-  ) { }
+    @Inject(MAT_DIALOG_DATA) public data: { selectedIndex: number, imagesSource: IImgurResponseData[] }
+  ) {
+  }
 
 
   ngOnInit() {
@@ -25,6 +25,10 @@ export class ItemDetailComponent implements OnInit {
   }
   before() {
     this.currentIndex = Math.max(--this.currentIndex, 0);
+  }
+
+  getCorrectDate(incorretDate: number): number {
+    return incorretDate * 1000;
   }
 
 

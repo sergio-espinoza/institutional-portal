@@ -1,8 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ItemDetailComponent } from '../../../../../shared/components';
-import { NotificationItemModel } from '../../../../../shared/models';
-import { notificationItemData } from './gallery-inicial.data';
+import { IImgurResponseData } from '../../../../../shared/models';
+import { ImgurService } from '../../../../../core/services/external-api/imgur.service';
+import { Subscriber } from 'rxjs';
 
 @Component({
   selector: 'app-gallery-initial',
@@ -10,17 +11,20 @@ import { notificationItemData } from './gallery-inicial.data';
   styleUrls: ['./gallery-initial.component.css']
 })
 
-export class GalleryInitialComponent implements OnInit {
-  notificationItemData: NotificationItemModel[] = notificationItemData;
+export class GalleryInitialComponent implements OnInit, OnDestroy {
 
-  notificationToDisplay: NotificationItemModel[];
+  imagesSourceSubscriber: Subscriber<IImgurResponseData>;
+  imagesSource: IImgurResponseData[];
+  imagesSourceToDisplay: IImgurResponseData[];
+
 
   constructor(
     public dialog: MatDialog,
+    private imgurService: ImgurService
   ) { }
 
   ngOnInit() {
-    this.notificationToDisplay = this.notificationItemData.slice(1, 6);
+    this.getImagesFromImgur();
   }
 
   openDetail(index: number): void {
@@ -28,11 +32,23 @@ export class GalleryInitialComponent implements OnInit {
       panelClass: 'complete',
       data: {
         selectedIndex: index,
-        items: this.notificationItemData
+        imagesSource: this.imagesSource
       } as {
         selectedIndex: number,
-        items: NotificationItemModel[]
+        imagesSource: IImgurResponseData[]
       }
     });
+  }
+
+  getImagesFromImgur(): void {
+    this.imgurService.getImages().subscribe(
+      (imagesSource: IImgurResponseData[]) => {
+        this.imagesSource = imagesSource;
+        this.imagesSourceToDisplay = this.imagesSource.slice(1, 6);
+      });
+  }
+
+  ngOnDestroy() {
+    if (this.imagesSourceSubscriber) this.imagesSourceSubscriber.unsubscribe();
   }
 }
