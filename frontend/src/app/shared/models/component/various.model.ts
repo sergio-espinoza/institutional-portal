@@ -1,10 +1,9 @@
-import { MatMenuPanel } from '@angular/material/menu';
-
-export class MenuButtonModel {
-  triggerfor?: MatMenuPanel<any>;
-  path?: string;
-  icon?: string;
+export interface MenuItemModel {
   title?: string;
+  path?: string;
+  routeActiveExact?: boolean;
+  icon?: string;
+  children?: MenuItemModel[]
 }
 
 export class LinkModel {

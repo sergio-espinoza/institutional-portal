@@ -12,8 +12,7 @@ export class InitialComponent implements OnInit, OnDestroy {
 
   constructor(
     @Inject(WINDOW) private windowRef: Window
-  ) {
-  }
+  ) { }
 
   ngOnInit() {
   }

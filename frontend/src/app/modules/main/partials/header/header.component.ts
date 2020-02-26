@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild, HostListener, Output, EventEmitter } from '@angular/core';
 import { headerLinks } from './data.header';
 import { LinkListModel } from '../../../../shared/models';
-import { HorizontalMenuComponent } from '../../../../shared/components';
+import { HorizontalMenuComponent } from './horizontal-menu/horizontal-menu.component';
 import { IconService } from '../../../../core/services/icon/icon.service';
 
 @Component({

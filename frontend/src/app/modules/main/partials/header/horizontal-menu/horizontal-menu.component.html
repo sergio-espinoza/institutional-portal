@@ -1,0 +1,25 @@
+<mat-toolbar [className]="classSticky">
+	<mat-toolbar-row>
+    <button
+      mat-icon-button
+      class="home-button"
+      routerLink="/main"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }">
+      <mat-icon>home</mat-icon>
+    </button>
+    <button mat-button class="title-button"
+      routerLinkActive="active" [matMenuTriggerFor]="info.menu">Información Institucional</button>
+    <button mat-button class="title-button"
+      routerLinkActive="active" [matMenuTriggerFor]="management.menu">Gerencias y Oficinas</button>
+    <button mat-button class="title-button"
+      routerLinkActive="active" [matMenuTriggerFor]="services.menu">Servicios en Línea</button>
+    <button mat-button class="title-button"
+      routerLinkActive="active" [matMenuTriggerFor]="image.menu">Imagen Institucional</button>
+	</mat-toolbar-row>
+</mat-toolbar>
+
+<app-horizontal-menu-item #info [items]="infoMenu"></app-horizontal-menu-item>
+<app-horizontal-menu-item #management [items]="managementMenu"></app-horizontal-menu-item>
+<app-horizontal-menu-item #services [items]="servicesMenu"></app-horizontal-menu-item>
+<app-horizontal-menu-item #image [items]="imageMenu"></app-horizontal-menu-item>

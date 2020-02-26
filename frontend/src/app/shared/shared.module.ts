@@ -24,7 +24,6 @@ import {
   ReviewComponent,
   ProfileComponent,
   ContactLinkComponent,
-  HorizontalMenuComponent,
   VerticalMenuComponent
 } from './components';
 
@@ -51,7 +50,6 @@ const COMPONENTS = [
   ReviewComponent,
   ProfileComponent,
   ContactLinkComponent,
-  HorizontalMenuComponent,
   VerticalMenuComponent
 
 ];

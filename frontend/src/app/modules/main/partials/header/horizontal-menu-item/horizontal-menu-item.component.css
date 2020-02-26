@@ -1,0 +1,9 @@
+
+.menu-active {
+  background: rgba(25,118,210,.38);
+  color: #1976d2 !important;
+}
+
+.menu-active:host-context() {
+  background: rgba(25,118,210,.38);
+}

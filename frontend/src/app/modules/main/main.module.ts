@@ -4,24 +4,40 @@ import { CommonModule } from '@angular/common';
 import { MainRoutingModule } from './main-routing.module';
 import { MainComponent } from './main.component';
 import { SharedModule } from '../../shared/shared.module';
-import { HeaderComponent } from './partials/header/header.component';
-import { SidebarComponent } from './partials/sidebar/sidebar.component';
-import { FooterComponent } from './partials/footer/footer.component';
-import { InitialComponent } from './initial/initial.component';
-import { TransparencyDocumentComponent } from './initial/transparency-document/transparency-document.component';
-import { TransparencyLinksComponent } from './initial/transparency-links/transparency-links.component';
-import { SectionMayorComponent } from './initial/sections/personal-say/personal-say.component';
-import { GalleryInitialComponent } from './initial/sections/gallery-initial/gallery-initial.component';
-import { GoalComponent } from './initial/sections/goal/goal.component';
-import { FrecuentLinkComponent } from './initial/sections/frecuent-link/frecuent-link.component';
-import { ProfilesComponent } from './initial/sections/profiles/profiles.component';
-import { PreFooterComponent } from './partials/footer/pre-footer/pre-footer.component';
+
+import {
+  InitialComponent,
+  TransparencyDocumentComponent,
+  TransparencyLinksComponent,
+  SectionMayorComponent,
+  GalleryInitialComponent,
+  GoalComponent,
+  FrecuentLinkComponent,
+  ProfilesComponent
+} from './initial';
+
+import {
+  HeaderComponent,
+  HorizontalMenuComponent,
+  VerticalMenuComponent,
+  HorizontalMenuItemComponent,
+  VerticalMenuItemComponent,
+  SidebarComponent,
+  PreFooterComponent,
+  FooterComponent,
+} from './partials';
+
 
 @NgModule({
   declarations: [
     MainComponent,
     HeaderComponent,
+    HorizontalMenuComponent,
+    VerticalMenuComponent,
+    HorizontalMenuItemComponent,
+    VerticalMenuItemComponent,
     SidebarComponent,
+    PreFooterComponent,
     FooterComponent,
     InitialComponent,
     TransparencyDocumentComponent,
@@ -31,7 +47,6 @@ import { PreFooterComponent } from './partials/footer/pre-footer/pre-footer.comp
     GoalComponent,
     FrecuentLinkComponent,
     ProfilesComponent,
-    PreFooterComponent
   ],
   entryComponents: [
     TransparencyDocumentComponent
