@@ -1,0 +1,22 @@
+.menu-active {
+  background: #1976d2;
+  color: #ffffff;
+}
+
+mat-expansion-panel, .mat-expansion-panel {
+  box-shadow: none;
+}
+
+mat-expansion-panel-header {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+mat-expansion-panel-header,
+.mat-list-item {
+  font-size: 12px;
+}
+
+mat-list-item, .mat-list-item {
+  font-size: 11px;
+}

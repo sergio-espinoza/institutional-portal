@@ -1,10 +1,17 @@
-<mat-menu #menu>
+<mat-nav-list>
   <ng-container *ngFor="let item of items">
-    <button 
-    *ngIf="!item.children; else branch" mat-menu-item>{{ item.title }}</button>
+    <mat-list-item
+      *ngIf="!item.children; else branch"
+      [routerLink]="item.path"
+      routerLinkActive="menu-active"
+      (click)="onNavigate()"
+      [routerLinkActiveOptions]="{ exact: item.routeActiveExact }"
+    >{{ item.title }}</mat-list-item>
     <ng-template #branch>
-      <button mat-menu-item [matMenuTriggerFor]="innerPanel.menu">{{ item.title }}</button>
-      <app-horizontal-menu-item #innerPanel [items]="item.children"></app-horizontal-menu-item>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>{{ item.title }}</mat-expansion-panel-header>
+        <app-vertical-menu-item [items]="item.children" (closeChange)="onNavigate()"></app-vertical-menu-item>
+      </mat-expansion-panel>
     </ng-template>
   </ng-container>
-</mat-menu>
+</mat-nav-list>

@@ -1,6 +1,5 @@
 export * from './modal';
 export * from './button';
-export * from './menu';
 export * from './item';
 export * from './list';
 export * from './frame';

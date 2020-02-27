@@ -178,9 +178,3 @@ p i {
   }
 }
 
-
-/*
-  @angular/flex-layout - workaround for possible browser quirk with mediaQuery listeners
-  see
-*/
-/* @media screen and (min-width: 600px), screen and (min-width: 960px), screen and (min-width: 1280px), screen and (min-width: 1920px), screen and (min-width: 1920px) and (max-width: 4999.99px), screen and (max-width: 1919.99px), screen and (min-width: 1280px) and (max-width: 1919.99px), screen and (max-width: 1279.99px), screen and (min-width: 960px) and (max-width: 1279.99px), screen and (max-width: 959.99px), screen and (min-width: 600px) and (max-width: 959.99px), screen and (max-width: 599.99px), screen and (min-width: 0px) and (max-width: 599.99px), print {.fx-query-test{ }} */

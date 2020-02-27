@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { MenuItemModel } from 'src/app/shared/models';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { MenuItemModel } from '../../../../../shared/models';
 
 @Component({
   selector: 'app-vertical-menu-item',
@@ -7,12 +7,18 @@ import { MenuItemModel } from 'src/app/shared/models';
   styleUrls: ['./vertical-menu-item.component.css']
 })
 export class VerticalMenuItemComponent implements OnInit {
+  @Input() items: MenuItemModel[] = [];
 
-  items: MenuItemModel[] = [];
+  @Output() closeChange = new EventEmitter<void>();
 
-  constructor() { }
+  constructor(
+  ) { }
 
   ngOnInit(): void {
+  }
+
+  onNavigate(): void {
+    this.closeChange.emit();
   }
 
 }

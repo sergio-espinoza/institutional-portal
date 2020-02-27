@@ -1,1 +1,37 @@
-<p>vertical-menu works!</p>
+<div class="flex-row space-between mat-elevation-z1">
+  <h2>MENU</h2>
+  <button mat-icon-button (click)="close()">
+    <mat-icon>close</mat-icon>
+  </button>
+</div>
+<div class="vertical-menu-content">
+  <mat-nav-list>
+    <mat-list-item
+    routerLink="/main"
+    routerLinkActive="active"
+    (click)="close()"
+    [routerLinkActiveOptions]="{ exact: true }">
+    <mat-icon>home</mat-icon>
+    <a matLine><span class="home-button">Home</span></a>
+  </mat-list-item>
+  </mat-nav-list>
+  <mat-nav-list>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>Información Institucional</mat-expansion-panel-header>
+      <app-vertical-menu-item [items]="infoMenu" (closeChange)="close()"></app-vertical-menu-item>
+    </mat-expansion-panel>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>Gerencias y Oficinas</mat-expansion-panel-header>
+      <app-vertical-menu-item [items]="managementMenu" (closeChange)="close()"></app-vertical-menu-item>
+    </mat-expansion-panel>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>Servicios en Línea</mat-expansion-panel-header>
+      <app-vertical-menu-item [items]="servicesMenu" (closeChange)="close()"></app-vertical-menu-item>
+    </mat-expansion-panel>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>Imagen Institucional</mat-expansion-panel-header>
+      <app-vertical-menu-item [items]="imageMenu" (closeChange)="close()"></app-vertical-menu-item>
+    </mat-expansion-panel>
+  </mat-nav-list>
+</div>
+
