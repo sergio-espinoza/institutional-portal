@@ -5,7 +5,8 @@ import {
 } from '../../../../core/http/group/documents/documents.http.service';
 import { DocumentModel } from '../../../../shared/models/component/group.model';
 import { SectionModel } from '../../../../shared/models';
-import { Subscription } from 'rxjs';
+import { Subscription, Observable } from 'rxjs';
+import { switchMap } from 'rxjs/operators';
 
 @Component({
   selector: 'app-documents',
@@ -17,10 +18,12 @@ export class DocumentsGroupComponent implements OnInit, OnDestroy {
   srcSelected: string;
   documentSubscription: Subscription;
 
+  documentSources$: Observable< {title: string, documents: DocumentModel[] }> ;
+
   titleDocumentsGroup = '';
 
   sectionData: SectionModel = {
-    title: 'Documents',
+    title: 'Documentos',
     background: 'https://i.imgur.com/yg3Qdqv.jpg'
   };
 
@@ -38,14 +41,21 @@ export class DocumentsGroupComponent implements OnInit, OnDestroy {
     this.documentSubscription = this.route.paramMap.subscribe(
       (params: ParamMap) => {
         this.dgHttpService.getDocuments(params.get('id')).subscribe(
-          (documents: DocumentModel[]) => {
-            this.dataSource = documents;
-            this.srcSelected = documents[0].src;
-            this.titleDocumentsGroup = params.get('id');
+          (documentSources: { title: string, documents: DocumentModel[] }) => {
+            this.dataSource = documentSources.documents;
+            this.srcSelected = documentSources.documents[0].src;
+            this.titleDocumentsGroup = documentSources.title;
           }
         );
       });
   }
+
+  // getDocuments(): void {
+  //   this.documentSources$ = this.route.paramMap.pipe(
+  //     switchMap((params: ParamMap) =>
+  //       this.dgHttpService.getDocuments(params.get('id')))
+  //     );
+  // }
 
   ngOnDestroy() {
     this.documentSubscription.unsubscribe();

@@ -1,44 +1,47 @@
-[
-  {
-    "name": "Decrees 1",
-    "size": "150kb",
-    "createdat": "Wed Jan 01 2020 19:29:47 GMT-0500 (hora estándar de Colombia)",
-    "src": "18p_1QT2WOt2fchFjTX_VsQmdhhg_BR4R",
-    "iconType": "picture_as_pdf"
-  },
-  {
-    "name": "Decrees 2",
-    "size": "150kb",
-    "createdat": "Wed Jan 01 2020 19:29:47 GMT-0500 (hora estándar de Colombia)",
-    "src": "18p_1QT2WOt2fchFjTX_VsQmdhhg_BR4R",
-    "iconType": "picture_as_pdf"
-  },
-  {
-    "name": "Decrees 3",
-    "size": "150kb",
-    "createdat": "Wed Jan 01 2020 19:29:47 GMT-0500 (hora estándar de Colombia)",
-    "src": "18p_1QT2WOt2fchFjTX_VsQmdhhg_BR4R",
-    "iconType": "picture_as_pdf"
-  },
-  {
-    "name": "Decrees 4",
-    "size": "150kb",
-    "createdat": "Wed Jan 01 2020 19:29:47 GMT-0500 (hora estándar de Colombia)",
-    "src": "18p_1QT2WOt2fchFjTX_VsQmdhhg_BR4R",
-    "iconType": "picture_as_pdf"
-  },
-  {
-    "name": "Decrees 5",
-    "size": "150kb",
-    "createdat": "Wed Jan 01 2020 19:29:47 GMT-0500 (hora estándar de Colombia)",
-    "src": "18p_1QT2WOt2fchFjTX_VsQmdhhg_BR4R",
-    "iconType": "picture_as_pdf"
-  },
-  {
-    "name": "Decrees 6",
-    "size": "150kb",
-    "createdat": "Wed Jan 01 2020 19:29:47 GMT-0500 (hora estándar de Colombia)",
-    "src": "18p_1QT2WOt2fchFjTX_VsQmdhhg_BR4R",
-    "iconType": "picture_as_pdf"
-  }
-]
+{
+  "title": "Decretos Municipales",
+  "documents": [
+    {
+      "name": "Decrees 1",
+      "size": "150kb",
+      "createdat": "Wed Jan 01 2020 19:29:47 GMT-0500 (hora estándar de Colombia)",
+      "src": "18p_1QT2WOt2fchFjTX_VsQmdhhg_BR4R",
+      "iconType": "picture_as_pdf"
+    },
+    {
+      "name": "Decrees 2",
+      "size": "150kb",
+      "createdat": "Wed Jan 01 2020 19:29:47 GMT-0500 (hora estándar de Colombia)",
+      "src": "18p_1QT2WOt2fchFjTX_VsQmdhhg_BR4R",
+      "iconType": "picture_as_pdf"
+    },
+    {
+      "name": "Decrees 3",
+      "size": "150kb",
+      "createdat": "Wed Jan 01 2020 19:29:47 GMT-0500 (hora estándar de Colombia)",
+      "src": "18p_1QT2WOt2fchFjTX_VsQmdhhg_BR4R",
+      "iconType": "picture_as_pdf"
+    },
+    {
+      "name": "Decrees 4",
+      "size": "150kb",
+      "createdat": "Wed Jan 01 2020 19:29:47 GMT-0500 (hora estándar de Colombia)",
+      "src": "18p_1QT2WOt2fchFjTX_VsQmdhhg_BR4R",
+      "iconType": "picture_as_pdf"
+    },
+    {
+      "name": "Decrees 5",
+      "size": "150kb",
+      "createdat": "Wed Jan 01 2020 19:29:47 GMT-0500 (hora estándar de Colombia)",
+      "src": "18p_1QT2WOt2fchFjTX_VsQmdhhg_BR4R",
+      "iconType": "picture_as_pdf"
+    },
+    {
+      "name": "Decrees 6",
+      "size": "150kb",
+      "createdat": "Wed Jan 01 2020 19:29:47 GMT-0500 (hora estándar de Colombia)",
+      "src": "18p_1QT2WOt2fchFjTX_VsQmdhhg_BR4R",
+      "iconType": "picture_as_pdf"
+    }
+  ]
+}

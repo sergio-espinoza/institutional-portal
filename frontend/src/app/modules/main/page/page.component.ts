@@ -7,8 +7,8 @@ import { PageService } from '../../../core/services/page/page.service';
   styleUrls: ['./page.component.css']
 })
 export class PageComponent implements OnInit {
-  pageTitle = 'Page Module';
-  pageSubtitle = 'Page Module';
+  pageTitle = 'Páginas';
+  pageSubtitle = 'Módulo de Páginas';
 
   constructor(
     public pageService: PageService
@@ -17,7 +17,7 @@ export class PageComponent implements OnInit {
   ngOnInit() {
   }
 
-  setPageData(sectionTitleOfChild: string) {
-    this.pageTitle = `sample of ${sectionTitleOfChild}`;
-  }
+  // setPageData(sectionTitleOfChild: string) {
+  //   this.pageTitle = `Sección de ${sectionTitleOfChild}`;
+  // }
 }

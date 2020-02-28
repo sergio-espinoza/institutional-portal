@@ -11,7 +11,7 @@ export const headerLinks: LinkListModel[] = [
 export const infoMenu: MenuItemModel[] = [
   { title: 'Visión y Misión', path: '/main/page/vission-mission', routeActiveExact: false },
   { title: 'Símbolos Oficiales', path: '/main/page/official-symbol', routeActiveExact: false },
-  { title: 'Estructura Orgánica', path: '/main/news', routeActiveExact: false },
+  { title: 'Estructura Orgánica', path: '/main/group/documents/organic-structure', routeActiveExact: false },
   { title: 'Gobernador Municipal', path: '/main/page', routeActiveExact: true },
   { title: 'Registro Municipal', children: [
     { title: 'Directorio de Regidores', path: '/main/page/directory-council', routeActiveExact: false },

@@ -15,7 +15,7 @@ export class GoalComponent implements OnInit {
   ];
 
   sectionMissionData: SectionModel = {
-    title: 'Our Mission',
+    title: 'Objetivos y Metas',
     background: ''
   };
 

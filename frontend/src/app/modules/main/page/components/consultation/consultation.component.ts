@@ -10,7 +10,7 @@ import { SectionModel } from 'src/app/shared/models';
 })
 export class ConsultationComponent implements OnInit {
   sectionData: SectionModel = {
-    title: 'Consultation',
+    title: 'Consulta de Expediente SIAF',
     background: 'https://i.imgur.com/CNEp4ur.png'
   };
 

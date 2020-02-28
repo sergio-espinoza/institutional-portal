@@ -9,8 +9,8 @@ export class DocumentsGroupHttpService {
   constructor(
     private http: HttpClient) { }
 
-  getDocuments(src: string): Observable<Array<DocumentModel>> {
-    return this.http.get<Array<DocumentModel>>(
+  getDocuments(src: string): Observable<{ title: string, documents: DocumentModel[] }> {
+    return this.http.get<{ title: string, documents: DocumentModel[] }>(
       `assets/data/main/group/documents/${src}.json`
     );
   }

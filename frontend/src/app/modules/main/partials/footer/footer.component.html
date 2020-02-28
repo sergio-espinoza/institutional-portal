@@ -8,9 +8,9 @@
     <div>
       <form class="form-subscriber" [formGroup]="formHeader">
         <mat-form-field appearance="outline" [color]="'primary'">
-          <input matInput type="email" formControlName="emailHeader" placeholder="Your Email Address..." />
+          <input matInput type="email" formControlName="emailHeader" placeholder="Ingresar Correo..." />
           <mat-hint>example@gmail.com</mat-hint>
-          <mat-error>Invalid email Address!!!</mat-error>
+          <mat-error>El correo debe tener el formato de : example@gmail.com</mat-error>
         </mat-form-field>
         <button mat-raised-button class="subscribe">SUBSCRIBIRSE</button>
       </form>
@@ -46,12 +46,12 @@
           <mat-label>E-mail</mat-label>
           <input matInput type="email" formControlName="emailContent" />
           <mat-hint>example@gmail.com</mat-hint>
-          <mat-error>Invalid email Address!!!</mat-error>
+          <mat-error>El correo debe tener el formato de : example@gmail.com</mat-error>
         </mat-form-field>
         <mat-form-field appearance="outline">
-          <mat-label>Message for us</mat-label>
+          <mat-label>Mensaje</mat-label>
           <textarea matInput formControlName="messageContent"></textarea>
-          <mat-error> Message is required!!!</mat-error>
+          <mat-error>El Mensaje no puede estar vacío!!!</mat-error>
         </mat-form-field>
         <div class="submit">
           <button mat-raised-button>SUBMIT</button>

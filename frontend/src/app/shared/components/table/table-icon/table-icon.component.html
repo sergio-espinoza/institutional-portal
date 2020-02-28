@@ -1,10 +1,10 @@
 <div class="table-container">
   <mat-form-field appearance="outline">
-    <mat-label>Filter</mat-label>
+    <mat-label>Búsqueda por Filtro</mat-label>
     <input
       matInput
       (keyup)="applyFilter($event.target.value)"
-      placeholder="Filter" />
+      placeholder="Escribe lo que deseas hallar..." />
   </mat-form-field>
   <table mat-table [dataSource]="data" matSort>
     <ng-container matColumnDef="n">

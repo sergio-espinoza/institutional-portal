@@ -1,4 +1,13 @@
-[
+{
+  "title": "Directorio Municipal",
+  "format": [
+    "dependence",
+    "representative",
+    "email",
+    "phone",
+    "annexes"
+  ],
+  "links": [
   {
     "dependence": "dependence 1",
     "representative": "representative 1",
@@ -38,3 +47,4 @@
 
   }
 ]
+}

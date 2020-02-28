@@ -1,44 +1,47 @@
-[
-  {
-    "name": "Audit Report 1",
-    "size": "150kb",
-    "createdat": "Wed Jan 01 2020 19:29:47 GMT-0500 (hora estándar de Colombia)",
-    "src": "18p_1QT2WOt2fchFjTX_VsQmdhhg_BR4R",
-    "iconType": "picture_as_pdf"
-  },
-  {
-    "name": "Audit Report 2",
-    "size": "150kb",
-    "createdat": "Wed Jan 01 2020 19:29:47 GMT-0500 (hora estándar de Colombia)",
-    "src": "18p_1QT2WOt2fchFjTX_VsQmdhhg_BR4R",
-    "iconType": "picture_as_pdf"
-  },
-  {
-    "name": "Audit Report 3",
-    "size": "150kb",
-    "createdat": "Wed Jan 01 2020 19:29:47 GMT-0500 (hora estándar de Colombia)",
-    "src": "18p_1QT2WOt2fchFjTX_VsQmdhhg_BR4R",
-    "iconType": "picture_as_pdf"
-  },
-  {
-    "name": "Audit Report 4",
-    "size": "150kb",
-    "createdat": "Wed Jan 01 2020 19:29:47 GMT-0500 (hora estándar de Colombia)",
-    "src": "18p_1QT2WOt2fchFjTX_VsQmdhhg_BR4R",
-    "iconType": "picture_as_pdf"
-  },
-  {
-    "name": "Audit Report 5",
-    "size": "150kb",
-    "createdat": "Wed Jan 01 2020 19:29:47 GMT-0500 (hora estándar de Colombia)",
-    "src": "18p_1QT2WOt2fchFjTX_VsQmdhhg_BR4R",
-    "iconType": "picture_as_pdf"
-  },
-  {
-    "name": "Audit Report 6",
-    "size": "150kb",
-    "createdat": "Wed Jan 01 2020 19:29:47 GMT-0500 (hora estándar de Colombia)",
-    "src": "18p_1QT2WOt2fchFjTX_VsQmdhhg_BR4R",
-    "iconType": "picture_as_pdf"
-  }
-]
+{
+  "title": "Informes de Auditoría",
+  "documents": [
+    {
+      "name": "Audit Report 1",
+      "size": "150kb",
+      "createdat": "Wed Jan 01 2020 19:29:47 GMT-0500 (hora estándar de Colombia)",
+      "src": "18p_1QT2WOt2fchFjTX_VsQmdhhg_BR4R",
+      "iconType": "picture_as_pdf"
+    },
+    {
+      "name": "Audit Report 2",
+      "size": "150kb",
+      "createdat": "Wed Jan 01 2020 19:29:47 GMT-0500 (hora estándar de Colombia)",
+      "src": "18p_1QT2WOt2fchFjTX_VsQmdhhg_BR4R",
+      "iconType": "picture_as_pdf"
+    },
+    {
+      "name": "Audit Report 3",
+      "size": "150kb",
+      "createdat": "Wed Jan 01 2020 19:29:47 GMT-0500 (hora estándar de Colombia)",
+      "src": "18p_1QT2WOt2fchFjTX_VsQmdhhg_BR4R",
+      "iconType": "picture_as_pdf"
+    },
+    {
+      "name": "Audit Report 4",
+      "size": "150kb",
+      "createdat": "Wed Jan 01 2020 19:29:47 GMT-0500 (hora estándar de Colombia)",
+      "src": "18p_1QT2WOt2fchFjTX_VsQmdhhg_BR4R",
+      "iconType": "picture_as_pdf"
+    },
+    {
+      "name": "Audit Report 5",
+      "size": "150kb",
+      "createdat": "Wed Jan 01 2020 19:29:47 GMT-0500 (hora estándar de Colombia)",
+      "src": "18p_1QT2WOt2fchFjTX_VsQmdhhg_BR4R",
+      "iconType": "picture_as_pdf"
+    },
+    {
+      "name": "Audit Report 6",
+      "size": "150kb",
+      "createdat": "Wed Jan 01 2020 19:29:47 GMT-0500 (hora estándar de Colombia)",
+      "src": "18p_1QT2WOt2fchFjTX_VsQmdhhg_BR4R",
+      "iconType": "picture_as_pdf"
+    }
+  ]
+}
