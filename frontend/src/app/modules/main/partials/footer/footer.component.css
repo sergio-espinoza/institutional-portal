@@ -105,6 +105,14 @@ button {
   color: #ffffff;
 }
 
+.comments-button:disabled, .subscribe:disabled {
+  color: #ffffff;
+}
+
+.subscribe:disabled {
+  margin-left: -1px;
+}
+
 .footer {
   justify-content: space-between;
   align-items: center;

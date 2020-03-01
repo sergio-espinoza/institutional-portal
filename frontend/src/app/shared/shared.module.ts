@@ -71,6 +71,6 @@ const ENTRY_COMPONENTS = [
   exports: [MaterialModule, ...COMPONENTS, ...PIPES, ReactiveFormsModule, FormsModule],
   declarations: [...COMPONENTS, ...PIPES],
   entryComponents: [...ENTRY_COMPONENTS],
-  providers: [],
 })
 export class SharedModule { }
+

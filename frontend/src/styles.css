@@ -2615,7 +2615,7 @@ th.mat-header-cell {
 }
 
 .mat-form-field-appearance-outline .mat-form-field-outline {
-  color: rgba(255, 255, 255, .6);
+  color: #1976d2cc;
 }
 
 .social-links {
@@ -2645,4 +2645,27 @@ th.mat-header-cell {
   }
 }
 
-
+.bg-primary {
+  background-color: #2196F3;
+  color: #ffffff;
+}
+.bg-danger {
+  background-color: #E91E63;
+  color: #ffffff;
+}
+.bg-secondary {
+  background-color: #F44356;
+  color: #ffffff;
+}
+.bg-success {
+  background-color: #CDDC59;
+  color: #ffffff;
+}
+.bg-warning {
+  background-color: #FFEB2A;
+  color: #ffffff;
+}
+.bg-dark {
+  background-color: #262626;
+  color: #ffffff;
+}

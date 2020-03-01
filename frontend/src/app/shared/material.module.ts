@@ -29,8 +29,6 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { ScrollingModule } from '@angular/cdk/scrolling';
 
 @NgModule({
-  imports: [
-  ],
   exports: [
     MatMenuModule,
     MatSidenavModule,
@@ -59,7 +57,6 @@ import { ScrollingModule } from '@angular/cdk/scrolling';
     MatBottomSheetModule,
     MatProgressSpinnerModule,
 
-  ],
-  providers: [],
+  ]
 })
 export class MaterialModule { }

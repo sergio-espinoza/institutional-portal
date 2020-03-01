@@ -6,13 +6,20 @@
       <p>Mantente Actualizado con nuestras Noticias y Eventos.</p>
     </div>
     <div>
-      <form class="form-subscriber" [formGroup]="formHeader">
+      <form class="form-subscriber" [formGroup]="formHeader" (ngSubmit)="toSubscribe()">
         <mat-form-field appearance="outline" [color]="'primary'">
-          <input matInput type="email" formControlName="emailHeader" placeholder="Ingresar Correo..." />
+          <input
+          matInput
+          type="email"
+          formControlName="emailHeader"
+          placeholder="Ingresar Correo..." />
           <mat-hint>example@gmail.com</mat-hint>
           <mat-error>El correo debe tener el formato de : example@gmail.com</mat-error>
         </mat-form-field>
-        <button mat-raised-button class="subscribe">SUBSCRIBIRSE</button>
+        <button
+          type="submit"
+          mat-raised-button class="subscribe" 
+          [disabled]="!formHeader.valid">SUBSCRIBIRSE</button>
       </form>
     </div>
   </div>
@@ -41,20 +48,24 @@
     <div class="form-content">
       <h2>COMENTARIOS</h2>
       <p>Queremos sus comentarios sobre temas respectivos.</p>
-      <form [formGroup]="formContent">
+      <form [formGroup]="formContent" (ngSubmit)="sendMessage()">
         <mat-form-field appearance="outline">
           <mat-label>E-mail</mat-label>
-          <input matInput type="email" formControlName="emailContent" />
+          <input matInput type="email" formControlName="emailContent" required />
           <mat-hint>example@gmail.com</mat-hint>
           <mat-error>El correo debe tener el formato de : example@gmail.com</mat-error>
         </mat-form-field>
         <mat-form-field appearance="outline">
           <mat-label>Mensaje</mat-label>
-          <textarea matInput formControlName="messageContent"></textarea>
+          <textarea matInput formControlName="messageContent" required></textarea>
           <mat-error>El Mensaje no puede estar vacío!!!</mat-error>
         </mat-form-field>
-        <div class="submit">
-          <button mat-raised-button>SUBMIT</button>
+        <div class="submit"> 
+          <button
+            type="submit"
+            class="comments-button"
+            mat-raised-button
+            [disabled]="!formContent.valid">SUBMIT</button>
         </div>
       </form>
     </div>

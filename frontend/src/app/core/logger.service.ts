@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
 
-@Injectable({providedIn: 'root'})
+@Injectable()
 export class LoggerService {
 
   constructor(
@@ -16,3 +16,4 @@ export class LoggerService {
     });
   }
 }
+

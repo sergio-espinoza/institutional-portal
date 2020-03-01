@@ -15,7 +15,7 @@ import { WINDOW_PROVIDERS } from './core/services/api-local/window.service';
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [WINDOW_PROVIDERS],
   bootstrap: [AppComponent]
