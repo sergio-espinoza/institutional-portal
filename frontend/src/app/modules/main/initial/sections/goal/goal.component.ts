@@ -8,10 +8,26 @@ import { ExpansionModel, SectionModel } from '../../../../../shared/models';
 })
 export class GoalComponent implements OnInit {
   goalData: ExpansionModel[] = [
-    { title: 'Title 1', description: 'Description 1', icon: 'monetization_on' },
-    { title: 'Title 2', description: 'Description 2', icon: 'thumb_up' },
-    { title: 'Title 3', description: 'Description 3', icon: 'group' },
-    { title: 'Title 4', description: 'Description 4', icon: 'search' },
+    {
+      title: 'Desarrollo Económico',
+      description: 'Aumento de la calidad de Vida del Poblador',
+      icon: 'monetization_on'
+    },
+    {
+      title: 'Aprobación del Pueblo',
+      description: 'Satisfacción y comodidad de la comunidad',
+      icon: 'thumb_up'
+    },
+    {
+      title: 'Bienestar',
+      description: 'Velar por la salud e integridad del poblador.',
+      icon: 'group'
+    },
+    {
+      title: 'Mejora Perpetua',
+      description: 'Toda la mejora será de forma permanente.',
+      icon: 'search'
+    },
   ];
 
   sectionMissionData: SectionModel = {

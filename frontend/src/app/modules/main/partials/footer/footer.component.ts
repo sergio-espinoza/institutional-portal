@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, Validators as vl, FormControl, FormBuilder } from '@angular/forms';
+import { FormGroup, Validators as vl, FormBuilder } from '@angular/forms';
 import { LinkModel, LinkListModel, SavageModel } from '../../../../shared/models';
 import { IconService } from '../../../../core/services/icon/icon.service';
 import { LoggerService } from '../../../../core/logger.service';
@@ -12,15 +12,15 @@ import { LoggerService } from '../../../../core/logger.service';
 })
 export class FooterComponent implements OnInit {
 
-  formHeader: FormGroup = this.fb.group({
+  public formHeader: FormGroup = this.fb.group({
     emailHeader: this.fb.control('', [vl.email, vl.required])
   });
-  formContent: FormGroup = this.fb.group({
+  public formContent: FormGroup = this.fb.group({
     emailContent: this.fb.control('', [vl.email, vl.required]),
     messageContent: this.fb.control('', [vl.required])
   });
 
-  contactsLinkData: LinkListModel[] = [
+  public contactsLinkData: LinkListModel[] = [
     { title: 'Plaza Principal Santa Bárbara de Carhuacayán', icon: 'location_on' },
     { title: '(+51) 064 830 006', icon: 'phone' },
     { title: '(+51) 064 811 251', icon: 'phone' },
@@ -28,7 +28,7 @@ export class FooterComponent implements OnInit {
     { title: 'Lunes - Viernes / 9:00AM - 8:00PM', icon: 'schedule' },
   ];
 
-  socialLinkData: { link: LinkModel, icon: SavageModel }[] = [
+  public socialLinkData: { link: LinkModel, icon: SavageModel }[] = [
     {
       link: { color: 'rgba(255, 255, 255, 0.7)', path: 'https://facebook.com' },
       icon: { fill: '#262626', d: IconService.getIcon('facebook') }
@@ -52,20 +52,20 @@ export class FooterComponent implements OnInit {
     private loggerService: LoggerService,
   ) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
   }
 
-  toSubscribe(): void {
+  public toSubscribe(): void {
     this.sendFromForm(
       `Usuario con email ${this.formHeader.get('emailHeader').value} suscrito!!`,
       this.formHeader);
   }
 
-  sendMessage(): void {
+  public sendMessage(): void {
     this.sendFromForm('Mensaje Enviado', this.formContent);
   }
 
-  sendFromForm(message: string, form: FormGroup): void {
+  public sendFromForm(message: string, form: FormGroup): void {
     this.loggerService.log(message, 'mat-primary');
     form.reset();
   }

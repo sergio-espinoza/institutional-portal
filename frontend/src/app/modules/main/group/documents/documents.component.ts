@@ -43,7 +43,7 @@ export class DocumentsGroupComponent implements OnInit, OnDestroy {
         this.dgHttpService.getDocuments(params.get('id')).subscribe(
           (documentSources: { title: string, documents: DocumentModel[] }) => {
             this.dataSource = documentSources.documents;
-            this.srcSelected = documentSources.documents[0].src;
+            this.srcSelected = documentSources.documents[0] ? documentSources.documents[0].src : '';
             this.titleDocumentsGroup = documentSources.title;
           }
         );

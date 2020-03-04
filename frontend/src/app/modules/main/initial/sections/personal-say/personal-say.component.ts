@@ -17,8 +17,8 @@ export class SectionMayorComponent implements OnInit {
 
   personalSayData: PersonalSayModel = new PersonalSayModel(
     'https://i.imgur.com/lnpPfU1.png',
-    'Mayor Icon', 'Mensaje del Alcalde',
-    'Juan Carlos Llacza Alcantara',
+    'Mayor Icon', 'El trabajo de todas las autoridades en equipo contribuye al desarrollo del distrito',
+    'Juan Carlos Llacza Alcántara',
     'Alcalde del Distrito');
 
   constructor() { }

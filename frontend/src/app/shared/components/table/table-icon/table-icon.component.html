@@ -18,7 +18,7 @@
       <td mat-cell *matCellDef="let element; index as i">
         <span class="mobile-label">Type:</span>
         <a mat-icon-button
-          [href]="'https://docs.google.com/file/d/'+dataSource[i].src+'/view'"
+          [href]="'https://docs.google.com/file/d/'+dataSource[i]?.src+'/view'"
           matTooltip="Abrir en otra Ventana"
           matTooltipPosition="before"
           target="_blank">
@@ -62,7 +62,7 @@
               mat-icon-button
               matTooltip="Abrir en esta Ventana"
               matTooltipPosition="after"
-              (click)="openDocumentDirectly(element.src)">
+              (click)="openDocumentDirectly(element?.src)">
               <mat-icon>find_in_page</mat-icon>
             </button>
           </div>

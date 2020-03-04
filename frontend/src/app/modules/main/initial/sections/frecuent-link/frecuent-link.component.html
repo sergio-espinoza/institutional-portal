@@ -3,7 +3,8 @@
   <div class="links">
     <div 
       class="link mat-elevation-z2"
-      *ngFor="let link of frecuentLinks">
+      *ngFor="let link of frecuentLinks"
+      [routerLink]="link.path">
       <app-review
         [reviewData]="link" className="center"></app-review>
     </div>

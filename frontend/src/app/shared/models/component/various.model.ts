@@ -64,6 +64,7 @@ export class ExpansionModel {
   title?: string;
   description?: string;
   icon?: string;
+  path?: string;
 }
 
 export class SectionModel {

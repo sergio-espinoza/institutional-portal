@@ -2645,6 +2645,17 @@ th.mat-header-cell {
   }
 }
 
+.date-with-event .mat-calendar-body-cell-content {
+  background-color: #00ff00;
+  opacity: .8;
+}
+
+.date-with-event .mat-calendar-body-cell-content:hover {
+  background-color: #1976d2 !important;
+  opacity: 1;
+  color: #ffffffaa;
+}
+
 .bg-primary {
   background-color: #2196F3;
   color: #ffffff;

@@ -5,7 +5,7 @@
 	[displayedColumns]="displayedColumns"
 	(changeIndexDocument)="srcSelected = $event">
 </app-table-icon>
-<div class="frame-container">
+<div class="frame-container" *ngIf="dataSource.length > 0">
 	<iframe
 	[src]="'https://drive.google.com/file/d/'+srcSelected+'/preview' | satinizer: 'resourceUrl'"
 	allowfullscreen

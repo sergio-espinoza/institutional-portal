@@ -17,7 +17,7 @@ export class TransparencyDocumentComponent implements OnInit {
       description: 'Total 10 de esta Sección',
       icon: 'public' },
     { title: 'DOCUMENTOS DE GESTIÓN',
-      description: 'Total 14 de esta Sección',
+      description: 'Total 16 de esta Sección',
       icon: 'apartment' },
     { title: 'NORMATIVIDAD LEGAL',
       description: 'Total 8 de esta Sección',

@@ -1,2 +1,29 @@
-<div class="content-menu-basic"></div>
-<p>schedule works!</p>
+<div id="page-section" class="header-image-wrapper">
+  <div class="header-image"></div>
+  <div class="theme-container">
+    <mat-card class="main-content-header">
+      <div class="content-schedule">
+        <mat-calendar 
+          [dateClass]="dateClass"
+          (selectedChange)="onSelectChange(setLocale($event))"></mat-calendar>
+        <div class="event-view">
+          <h3>Calendario de Eventos de la Municipalidad</h3>
+          <p>Fecha Seleccionada: {{ selectedDate }}</p>
+          <ng-container *ngIf="selectCalendar; else nothingEvent;">
+            <!-- {{ selectCalendar | json }} -->
+            <div class="content-image">
+              <img [src]="selectCalendar.image" alt="event image" />
+            </div>
+          </ng-container>
+          <ng-template #nothingEvent>
+            <h4>No Existe Evento en esta Fecha</h4>
+            <div class="content-image">
+              <img src="https://i.imgur.com/JkDJJlf.jpg" alt="nothing event Image" />
+
+            </div>
+          </ng-template>
+        </div>
+      </div>
+    </mat-card>
+  </div>
+</div>

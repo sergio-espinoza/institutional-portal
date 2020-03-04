@@ -24,7 +24,7 @@ export const infoMenu: MenuItemModel[] = [
     { title: 'Agenda de Sesiones Extraordinarias', path: '/main/group/documents/extraordinary-agenda', routeActiveExact: false },
   ]},
   { title: 'Coordinacion de Regidore', path: '/main/page/coordination-council', routeActiveExact: false },
-  { title: 'Agendas Muncipales', path: '/auth', routeActiveExact: false }, // changelink
+  { title: 'Agendas Muncipales', path: '/main/schedule', routeActiveExact: false }
 ];
 
 export const managementMenu: MenuItemModel[] = [

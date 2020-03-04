@@ -16,7 +16,7 @@ export class ConsultationComponent implements OnInit {
 
   dataSource: any[] = consultationData;
 
-  srcSelected: string = this.dataSource[0].src;
+  srcSelected: string = this.dataSource[0] ? this.dataSource[0].src : '';
 
   displayedColumns: string[] = [ 'name', 'size' ];
   constructor(

@@ -1,4 +1,4 @@
-import { Component, OnInit, Inject } from '@angular/core';
+import { Component, OnInit, Inject, HostListener } from '@angular/core';
 import { MAT_DIALOG_DATA} from '@angular/material/dialog';
 import { IImgurResponseData } from '../../../models';
 
@@ -29,6 +29,14 @@ export class ItemDetailComponent implements OnInit {
 
   getCorrectDate(incorretDate: number): number {
     return incorretDate * 1000;
+  }
+
+  @HostListener('window:keyup.ArrowRight', ['$event']) ar(e: KeyboardEvent) {
+    this.next();
+  }
+
+  @HostListener('window:keyup.ArrowLeft', ['$event']) al(e: KeyboardEvent) {
+    this.before();
   }
 
 

@@ -27,6 +27,7 @@ import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 import { ScrollingModule } from '@angular/cdk/scrolling';
+import { MatNativeDateModule } from '@angular/material/core';
 
 @NgModule({
   exports: [
@@ -56,7 +57,7 @@ import { ScrollingModule } from '@angular/cdk/scrolling';
     ScrollingModule,
     MatBottomSheetModule,
     MatProgressSpinnerModule,
-
+    MatNativeDateModule
   ]
 })
 export class MaterialModule { }

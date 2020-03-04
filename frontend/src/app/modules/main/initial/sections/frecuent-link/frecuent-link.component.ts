@@ -8,10 +8,11 @@ import { ExpansionModel } from '../../../../../shared/models';
 })
 export class FrecuentLinkComponent implements OnInit {
   frecuentLinks: ExpansionModel[] = [
-    { title: 'Link 1', description: 'Description 1', icon: 'monetization_on' },
-    { title: 'Link 2', description: 'Description 2', icon: 'thumb_up' },
-    { title: 'Link 3', description: 'Description 3', icon: 'group' },
-    { title: 'Link 4', description: 'Description 4', icon: 'search' },
+    { title: 'Visión y Mision', description: 'Vínculo a la vista de Visión y Mision', icon: 'monetization_on' , path: '/main/page/vission-mission'},
+    { title: 'Estructura Orgánica', description: 'Vínculo a la vista de Visión y Mision', icon: 'thumb_up' , path: '/main/group/documents/organic-structure'},
+    { title: 'Mensaje del Alcalde', description: 'Vínculo a la página del Mensaje del Alcalde.', icon: 'group' , path: '/main/page'},
+    { title: 'Coordinación de Regidores', description: 'Vínculo a la página del Coordinación de Regidores.', icon: 'search' ,
+      path: '/main/page/coordination-council' },
   ];
 
   constructor() { }
