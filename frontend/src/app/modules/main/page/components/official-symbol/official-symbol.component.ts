@@ -7,15 +7,16 @@ import { SectionModel } from '../../../../../shared/models';
   styleUrls: ['./official-symbol.component.css']
 })
 export class OfficialSymbolComponent implements OnInit {
-  sectionData: SectionModel = {
+  public sectionData: SectionModel = {
     title: 'Símbolos Oficiales',
     background: 'https://i.imgur.com/JeKDyf6.jpg'
   };
 
+  constructor(
 
-  constructor() { }
+  ) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
   }
 
 }

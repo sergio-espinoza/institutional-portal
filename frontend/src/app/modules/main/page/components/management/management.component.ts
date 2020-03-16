@@ -9,16 +9,16 @@ import { functionsData } from './management.data';
   styleUrls: ['./management.component.css']
 })
 export class ManagementComponent implements OnInit {
-  sectionData: SectionModel = new SectionModel(
-    'Gerencia General', 'https://i.imgur.com/yg3Qdqv.jpg');
+  public sectionData: SectionModel = new SectionModel(
+    'Gerencia General', 'https://i.imgur.com/hombPA3.jpg');
 
-  functionsData: string[] = functionsData;
+  public functionsData: string[] = functionsData;
 
   constructor(
     private pageService: PageService
   ) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
   }
 
 }

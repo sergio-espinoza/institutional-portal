@@ -7,7 +7,9 @@ export class IconService {
     return icons[name];
   }
 
-  constructor() { }
+  constructor(
+
+  ) { }
 
 }
 

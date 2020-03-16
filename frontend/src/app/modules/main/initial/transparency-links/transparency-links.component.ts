@@ -35,7 +35,7 @@ export class TransparencyLinksComponent implements OnInit {
 
   ngOnInit() { }
 
-  dismissBottomSheetTransparency() {
+  public dismissBottomSheetTransparency(): void {
     if (this.bottomSheetRef) {
       this.bottomSheetRef.dismiss();
     }

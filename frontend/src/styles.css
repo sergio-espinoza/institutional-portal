@@ -2594,6 +2594,12 @@ th.mat-header-cell {
     box-shadow: -13px 20px 0 rgba(0, 82, 236, 0.2), 13px 20px 0 rgba(0, 82, 236, 0.2), 13px 46px 0 rgba(0, 82, 236, 0.2), -13px 46px 0 #1976d2; }
 }
 
+.icon-line {
+  display: flex;
+  align-items: center;
+  word-break: break-all;
+}
+
 .toolbar-filter {
   background: #ffffff50;
 }

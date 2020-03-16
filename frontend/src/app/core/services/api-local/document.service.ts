@@ -3,6 +3,7 @@ import { DOCUMENT } from '@angular/common';
 
 @Injectable({ providedIn: 'root' })
 export class DocumentService {
-  constructor(@Inject(DOCUMENT) public document: Document) {
-  }
+  constructor(
+    @Inject(DOCUMENT) public document: Document
+  ) { }
 }

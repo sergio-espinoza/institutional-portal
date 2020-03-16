@@ -8,16 +8,16 @@ import { SectionModel } from 'src/app/shared/models';
   styleUrls: ['./labor.component.css']
 })
 export class LaborComponent implements OnInit {
-  sectionData: SectionModel = {
+  public sectionData: SectionModel = {
     title: 'Oportunidades Laborales',
-    background: 'https://i.imgur.com/yg3Qdqv.jpg'
+    background: 'https://i.imgur.com/hombPA3.jpg'
   };
 
   constructor(
     private pageService: PageService
   ) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
   }
 
 }

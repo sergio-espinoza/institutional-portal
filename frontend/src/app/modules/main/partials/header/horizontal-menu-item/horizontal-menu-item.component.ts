@@ -12,7 +12,9 @@ export class HorizontalMenuItemComponent implements OnInit {
 
   @Input() items: MenuItemModel[] = [];
 
-  constructor() { }
+  constructor(
+
+  ) { }
 
   ngOnInit(): void {
   }

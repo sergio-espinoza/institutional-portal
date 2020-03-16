@@ -22,7 +22,7 @@ const routes: Routes = [
       { path: 'official-symbol', component: OfficialSymbolComponent},
       { path: 'coordination-council', component: CoordinationCouncilComponent },
       { path: 'consultation', component: ConsultationComponent },
-      { path: 'directory', component: DirectoryComponent },
+      { path: 'directory/:id', component: DirectoryComponent },
       { path: 'labor', component: LaborComponent },
       { path: 'management', component: ManagementComponent },
       { path: 'prosecutor', component: ProsecutorComponent },

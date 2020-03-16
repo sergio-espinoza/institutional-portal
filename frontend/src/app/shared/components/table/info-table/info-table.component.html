@@ -1,0 +1,34 @@
+<div class="table-container">
+  <mat-form-field appearance="outline">
+    <mat-label>Búsqueda por Filtro</mat-label>
+    <input
+      matInput
+      (keyup)="applyFilter($event.target.value)"
+      placeholder="Escribe lo que deseas Encontrar..." />
+  </mat-form-field>
+  <table mat-table [dataSource]="data" matSort>
+    <ng-container matColumnDef="n">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>N°</th>
+      <td mat-cell *matCellDef="let element;index as i">
+        <span class="mobile-label">Position:</span>
+        {{ i + 1 }}</td>
+    </ng-container>
+    <ng-container
+      *ngFor="let displayedColumn of displayedColumns;"
+      [matColumnDef]="displayedColumn">
+      <th
+        mat-header-cell
+        *matHeaderCellDef
+        mat-sort-header>{{ displayedColumn | titlecase }}</th>
+      <td
+        mat-cell
+        *matCellDef="let element">
+        <span class="mobile-label">{{ displayedColumn | titlecase }}:</span>
+        {{ element[displayedColumn] }}</td>
+    </ng-container>
+    <tr mat-header-row *matHeaderRowDef="columns;sticky:true"></tr>
+    <tr mat-row *matRowDef="let row; columns:columns;">
+    </tr>
+  </table>
+  <mat-paginator [pageSizeOptions]="pageSizeOptions"></mat-paginator>
+</div>

@@ -9,21 +9,19 @@ import { SectionModel } from 'src/app/shared/models';
   styleUrls: ['./consultation.component.css']
 })
 export class ConsultationComponent implements OnInit {
-  sectionData: SectionModel = {
+  public sectionData: SectionModel = {
     title: 'Consulta de Expediente SIAF',
     background: 'https://i.imgur.com/CNEp4ur.png'
   };
+  public dataSource: any[] = consultationData;
+  public srcSelected: string = this.dataSource[0] ? this.dataSource[0].src : '';
+  public displayedColumns: string[] = [ 'name', 'size' ];
 
-  dataSource: any[] = consultationData;
-
-  srcSelected: string = this.dataSource[0] ? this.dataSource[0].src : '';
-
-  displayedColumns: string[] = [ 'name', 'size' ];
   constructor(
     private pageService: PageService,
   ) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
   }
 
 }

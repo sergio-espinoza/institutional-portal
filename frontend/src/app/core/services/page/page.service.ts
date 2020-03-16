@@ -2,12 +2,15 @@ import { Injectable } from '@angular/core';
 
 @Injectable({ providedIn: 'root' })
 export class PageService {
-  titlePage = 'Page';
-  subtitlePage = 'This is Page Module';
+  public titlePage = 'Page';
+  public subtitlePage = 'This is Page Module';
 
-  constructor() {
+  constructor(
+
+  ) {
   }
-  setPageDataSubtitle(externatSubtitle: string) {
+
+  public setPageDataSubtitle(externatSubtitle: string) {
     this.subtitlePage = externatSubtitle;
   }
 

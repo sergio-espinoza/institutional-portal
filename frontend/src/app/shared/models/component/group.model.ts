@@ -21,7 +21,7 @@ export class DirectoryModel {
   ) { }
 }
 
-export class AddressesModel {
+export class AddressModel {
   constructor(
     public id?: number,
     public name?: string,
@@ -30,6 +30,12 @@ export class AddressesModel {
       url: string
     }
   ) { }
+}
+
+export interface IAddressHttpModel {
+  title: string;
+  format: ['id', 'name', 'createdat', 'url'],
+  addresses: AddressModel[]
 }
 
 export class DocumentGroupServiceModel {
@@ -48,7 +54,7 @@ export class DocumentGroupServiceModel {
 
 export class LinkGroupServiceModel {
   constructor(
-    public addresses?: AddressesModel[],
+    public addresses?: AddressModel[],
     public directory?: DirectoryModel[],
   ) { }
 }

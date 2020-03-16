@@ -9,20 +9,18 @@ import { DirectoryCouncilModel, directoryCouncilList } from './directory-council
   styleUrls: ['./directory-council.component.css']
 })
 export class DirectoryCouncilComponent implements OnInit {
-
-  sectionData: SectionModel = {
+  public sectionData: SectionModel = {
     title: 'Directorio de Regidores',
-    background: 'https://i.imgur.com/yg3Qdqv.jpg'
+    background: 'https://i.imgur.com/hombPA3.jpg'
   }
 
-  directoryCouncilList: DirectoryCouncilModel[] = directoryCouncilList;
-
+  public directoryCouncilList: DirectoryCouncilModel[] = directoryCouncilList;
 
   constructor(
     private pageService: PageService
   ) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
   }
 
 }

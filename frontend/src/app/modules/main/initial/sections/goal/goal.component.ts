@@ -7,7 +7,7 @@ import { ExpansionModel, SectionModel } from '../../../../../shared/models';
   styleUrls: ['./goal.component.css']
 })
 export class GoalComponent implements OnInit {
-  goalData: ExpansionModel[] = [
+  public goalData: ExpansionModel[] = [
     {
       title: 'Desarrollo Económico',
       description: 'Aumento de la calidad de Vida del Poblador',
@@ -30,14 +30,16 @@ export class GoalComponent implements OnInit {
     },
   ];
 
-  sectionMissionData: SectionModel = {
+  public sectionMissionData: SectionModel = {
     title: 'Objetivos y Metas',
     background: ''
   };
 
-  constructor() { }
+  constructor(
 
-  ngOnInit() {
+  ) { }
+
+  ngOnInit(): void {
   }
 
 }

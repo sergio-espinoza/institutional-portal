@@ -14,9 +14,11 @@ export class LinkComponent implements OnInit {
     path: 'https://www.google.com'
   };
 
-  constructor() { }
+  constructor(
 
-  ngOnInit() {
+  ) { }
+
+  ngOnInit(): void {
 
   }
 

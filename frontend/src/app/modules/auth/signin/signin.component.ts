@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./signin.component.css']
 })
 export class SigninComponent implements OnInit {
-  loginForm: FormGroup = this.fb.group({
+  public loginForm: FormGroup = this.fb.group({
     username: this.fb.control('', [val.required]),
     password: this.fb.control('', [val.required])
   })
@@ -22,11 +22,11 @@ export class SigninComponent implements OnInit {
 
   ) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.documentRef.getElementById('preloader').className = 'hide';
   }
 
-  login() {
+  public login(): void {
     this.documentRef.getElementById('preloader').className = 'content-spinner';
     this.router.navigate(['/main']);
   }

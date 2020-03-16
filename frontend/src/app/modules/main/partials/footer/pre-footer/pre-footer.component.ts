@@ -7,10 +7,11 @@ import { LinkListModel } from '../../../../../shared/models';
   styleUrls: ['./pre-footer.component.css']
 })
 export class PreFooterComponent {
-  contactLinkData: LinkListModel = {
+  public contactLinkData: LinkListModel = {
     icon: 'phone',
     title: '(+51) 064 782 341',
     subtitle: 'Llamar Ahora' };
 
-  fontSize = { icon: 48, title: 21, subtitle: 14 };
+  public fontSize: { icon: number, title: number, subtitle: number } = {
+    icon: 48, title: 21, subtitle: 14 };
 }

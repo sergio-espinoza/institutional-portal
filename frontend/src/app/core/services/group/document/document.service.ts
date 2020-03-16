@@ -4,11 +4,13 @@ import { DocumentGroupServiceModel } from '../../../../shared/models/component/g
 
 @Injectable({ providedIn: 'root' })
 export class DocumentService {
-  documentsPageData: DocumentGroupServiceModel = documentsPageData;
+  public documentsPageData: DocumentGroupServiceModel = documentsPageData;
 
-  constructor() { }
+  constructor(
 
-  getGroupModuleData(selector: string) {
+  ) { }
+
+  public getGroupModuleData(selector: string) {
 
   }
 

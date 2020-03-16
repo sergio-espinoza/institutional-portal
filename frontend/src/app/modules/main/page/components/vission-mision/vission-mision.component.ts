@@ -8,14 +8,14 @@ import { SectionModel } from '../../../../../shared/models';
 })
 export class VissionMisionComponent implements OnInit {
 
-  sectionData: SectionModel = {
+  public sectionData: SectionModel = {
     title: 'Visión y Misión',
-    background: 'https://i.imgur.com/38bUjFd.jpg'
+    background: 'https://i.imgur.com/JZzafkz.jpg'
   };
 
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit(): void {
   }
 
 }

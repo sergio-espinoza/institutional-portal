@@ -7,14 +7,16 @@ import { SectionModel } from '../../../../../shared/models';
   styleUrls: ['./coordination-council.component.css']
 })
 export class CoordinationCouncilComponent implements OnInit {
-  sectionData: SectionModel = {
+  public sectionData: SectionModel = {
     background: 'https://i.imgur.com/B6frbJo.jpg',
     title: 'COORDINACIÓN DE REGIDORES'
   };
 
-  constructor() { }
+  constructor(
 
-  ngOnInit() {
+  ) { }
+
+  ngOnInit(): void {
   }
 
 }

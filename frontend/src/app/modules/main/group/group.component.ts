@@ -7,17 +7,17 @@ import { PageService } from '../../../core/services/page/page.service';
   styleUrls: ['./group.component.css']
 })
 export class GroupComponent implements OnInit {
-  groupTitle = 'Módulo de Grupo';
-  groupSubtitle = 'Alojamiento de Documentos y Links';
+  public groupTitle = 'Módulo de Grupo';
+  public groupSubtitle = 'Alojamiento de Documentos y Links';
 
   constructor(
     public pageService: PageService
   ) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
   }
 
-  setPageData(sectionTitleOfChild: string) {
+  public setPageData(sectionTitleOfChild: string): void {
     this.groupTitle = sectionTitleOfChild;
   }
 

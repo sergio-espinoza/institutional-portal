@@ -19,11 +19,11 @@ export class OverlayService {
     private overlay: Overlay
   ) { }
 
-  createOverlay(config: OverlayConfig): OverlayRef {
+  public createOverlay(config: OverlayConfig): OverlayRef {
     return this.overlay.create(config);
   }
 
-  attachTemplatePortal(
+  public attachTemplatePortal(
     overlayRef: OverlayRef,
     templateRef: TemplateRef<any>,
     vcRef: ViewContainerRef) {
@@ -32,7 +32,7 @@ export class OverlayService {
     overlayRef.attach(templatePortal);
   }
 
-  positionGloballyCenter(): PositionStrategy {
+  public positionGloballyCenter(): PositionStrategy {
     return this.overlay.position()
       .global()
       .centerVertically()

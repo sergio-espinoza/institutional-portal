@@ -10,28 +10,26 @@ import { ActivatedRoute, ParamMap } from '@angular/router';
   styleUrls: ['./links.component.css']
 })
 export class LinksGroupComponent implements OnInit, OnDestroy {
-  dataSource: any[];
-  srcSelected: string;
-  documentSubscription: Subscription;
-
-  titleDocumentsGroup = '';
-
-  sectionData: SectionModel = {
+  public dataSource: any[];
+  public srcSelected: string;
+  public documentSubscription: Subscription;
+  public titleDocumentsGroup = '';
+  public sectionData: SectionModel = {
     title: 'Enlaces',
-    background: 'https://i.imgur.com/yg3Qdqv.jpg'
+    background: 'https://i.imgur.com/hombPA3.jpg'
   };
+  public displayedColumns: string[] = [ 'name', 'size' ];
 
-  displayedColumns: string[] = [ 'name', 'size' ];
   constructor(
     private dgHttpService: LinksGroupHttpService,
     private route: ActivatedRoute
   ) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
     // this.getDocuments();
   }
 
-  // getDocuments() {
+  // private getDocuments(): void {
   //   this.documentSubscription = this.route.paramMap.subscribe(
   //     (params: ParamMap) => {
   //       this.dgHttpService.getLinks(params.get('id')).subscribe(
@@ -44,7 +42,7 @@ export class LinksGroupComponent implements OnInit, OnDestroy {
   //     });
   // }
 
-  ngOnDestroy() {
+  ngOnDestroy(): void {
     this.documentSubscription.unsubscribe();
   }
 }

@@ -7,8 +7,8 @@ import { IImgurResponse, IImgurResponseData } from '../../../shared/models';
 @Injectable({ providedIn: 'root' })
 export class ImgurService {
   private url = 'https://api.imgur.com/3/album/5D3FxFw';
-  private clientId = '49a37f3c7c1eeff';
-  private accessToken = 'ae6c716865806157b6c4ddfb6720c932800b5743';
+  private clientId = '8fb0022acdeccd2';
+  private accessToken = '93d221072951599e242fab73fb4e3f19ee0e4cb6';
   private headersAccess = new HttpHeaders({
     Authorization: `Bearer ${this.accessToken}`
   });
@@ -17,7 +17,7 @@ export class ImgurService {
     private http: HttpClient
   ) { }
 
-  getImages(): Observable<IImgurResponseData[]> {
+  public getImages(): Observable<IImgurResponseData[]> {
     return this.http.get<IImgurResponse>(
       `${this.url}/images`, { headers: this.headersAccess }).pipe(
         tap((imageSource: IImgurResponse) => console.log(imageSource)),

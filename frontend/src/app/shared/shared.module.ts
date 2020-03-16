@@ -12,6 +12,8 @@ import {
   LinkListComponent,
   MinimizedViewComponent,
   TableIconComponent,
+  ContactLinkComponent,
+  InfoTableComponent,
   PdfViewComponent,
   LinkComponent,
   LogoComponent,
@@ -23,7 +25,6 @@ import {
   PersonalSayComponent,
   ReviewComponent,
   ProfileComponent,
-  ContactLinkComponent,
 } from './components';
 
 import {
@@ -37,6 +38,7 @@ const COMPONENTS = [
   LinkListComponent,
   MinimizedViewComponent,
   TableIconComponent,
+  InfoTableComponent,
   PdfViewComponent,
   LinkComponent,
   LogoComponent,

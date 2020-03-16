@@ -32,7 +32,7 @@ export const managementMenu: MenuItemModel[] = [
   { title: 'Gerencias Municipales', path: '/main/page/management', routeActiveExact: false },  // changelink
   { title: 'Procuraduría Pública Muncipal', path: '/main/page/prosecutor', routeActiveExact: false },
   { title: 'Direcciones Muncipales', path: '/main/page/management', routeActiveExact: false }, // changelink
-  { title: 'Directorio Muncipal', path: '/main/page/directory', routeActiveExact: false },
+  // { title: 'Directorio Muncipal', path: '/main/page/directory/addresses', routeActiveExact: false },
 ];
 
 export const servicesMenu: MenuItemModel[] = [

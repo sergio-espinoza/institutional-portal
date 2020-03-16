@@ -4,7 +4,7 @@ import { Observable, of } from 'rxjs';
 
 @Injectable({ providedIn: 'root' })
 export class HandleErrorService {
-  handleError<T>(
+  public handleError<T>(
     operation = 'operation',
     result?: T, logger?: LoggerService) {
       return (error: any): Observable<T> => {

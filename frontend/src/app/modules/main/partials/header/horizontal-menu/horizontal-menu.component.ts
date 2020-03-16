@@ -13,14 +13,16 @@ import {
   styleUrls: ['./horizontal-menu.component.css']
 })
 export class HorizontalMenuComponent implements OnInit {
-  classSticky = 'no-sticky';
+  public classSticky = 'no-sticky';
 
-  infoMenu: MenuItemModel[] = externalInfoMenu;
-  managementMenu: MenuItemModel[] = externalManagementMenu;
-  servicesMenu: MenuItemModel[] = externalServicesMenu;
-  imageMenu: MenuItemModel[] = externalImageMenu;
+  public infoMenu: MenuItemModel[] = externalInfoMenu;
+  public managementMenu: MenuItemModel[] = externalManagementMenu;
+  public servicesMenu: MenuItemModel[] = externalServicesMenu;
+  public imageMenu: MenuItemModel[] = externalImageMenu;
 
-  constructor() { }
+  constructor(
+
+  ) { }
 
   ngOnInit(): void {
   }

@@ -9,16 +9,16 @@ import { ProfileModel, SectionModel } from '../../../../../shared/models';
   styleUrls: ['./profiles.component.css']
 })
 export class ProfilesComponent implements OnInit {
-  sectionData: SectionModel = {
+  public sectionData: SectionModel = {
     title: 'Regidores',
     background: 'https://i.imgur.com/TZ8lanL.jpg'
   }
 
-  profilesList: ProfileModel[] = profilesData;
+  public profilesList: ProfileModel[] = profilesData;
 
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit(): void {
   }
 
 }

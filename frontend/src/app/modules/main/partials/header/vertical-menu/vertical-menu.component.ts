@@ -17,17 +17,19 @@ import {
 export class VerticalMenuComponent implements OnInit {
   @Output() closeChange = new EventEmitter<void>();
 
-  infoMenu: MenuItemModel[] = externalInfoMenu;
-  managementMenu: MenuItemModel[] = externalManagementMenu;
-  servicesMenu: MenuItemModel[] = externalServicesMenu;
-  imageMenu: MenuItemModel[] = externalImageMenu;
+  public infoMenu: MenuItemModel[] = externalInfoMenu;
+  public managementMenu: MenuItemModel[] = externalManagementMenu;
+  public servicesMenu: MenuItemModel[] = externalServicesMenu;
+  public imageMenu: MenuItemModel[] = externalImageMenu;
 
-  constructor() { }
+  constructor(
+
+  ) { }
 
   ngOnInit(): void {
   }
 
-  close(): void {
+  public close(): void {
     this.closeChange.emit();
   }
 

@@ -2,7 +2,7 @@ mat-card {
   display: flex;
   flex-flow: row wrap;
   width: 80vw;
-  height: 70%;
+  min-height: 70%;
   box-sizing: border-box;
   padding: 0;
 }

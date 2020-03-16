@@ -55,7 +55,7 @@ export class ProfileComponent implements OnInit {
   constructor(
   ) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
   }
 
 }

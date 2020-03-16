@@ -5,6 +5,8 @@ import { MainGeneralService } from '../../core/services/main/general.service';
 import { InfoService } from '../../core/services/shared/info.service';
 import { WINDOW } from '../../core/services/api-local/window.service';
 import { Subscription } from 'rxjs';
+import { IconService } from '../../core/services/icon/icon.service';
+import { SavageModel } from '../../shared/models';
 
 @Component({
   selector: 'app-main',
@@ -12,21 +14,26 @@ import { Subscription } from 'rxjs';
   styleUrls: ['./main.component.css']
 })
 export class MainComponent implements OnInit, OnDestroy {
-  viewTransparencyButton = false;
+  public viewTransparencyButton = false;
 
-  bottomSheetSubscription: Subscription;
+  public iconNotifications: SavageModel = {
+    fill: '#ffffff',
+    d: IconService.getIcon('facebook')
+  };
+
+  private bottomSheetSubscription: Subscription;
 
   constructor(
     private bottomSheet: MatBottomSheet,
     public mainGeneralService: MainGeneralService,
     @Inject(WINDOW) private windowRef: Window,
-    private infoService: InfoService
+    private infoService: InfoService,
   ) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
   }
 
-  openTransparencyMenu() {
+  public openTransparencyMenu(): void {
     this.bottomSheetSubscription = this.bottomSheet.open(TransparencyDocumentComponent
       ).afterDismissed().subscribe(
       _ => {
@@ -38,11 +45,11 @@ export class MainComponent implements OnInit, OnDestroy {
     );
   }
 
-  toggleTransparencyMenu(childViewTransparencyButton: boolean | undefined) {
+  public toggleTransparencyMenu(childViewTransparencyButton: boolean | undefined): void {
     this.viewTransparencyButton = childViewTransparencyButton;
   }
 
-  ngOnDestroy() {
+  ngOnDestroy(): void {
     if (this.bottomSheetSubscription) this.bottomSheetSubscription.unsubscribe();
   }
 }

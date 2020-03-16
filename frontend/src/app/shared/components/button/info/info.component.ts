@@ -16,7 +16,7 @@ export class InfoComponent {
     private infoService: InfoService,
   ) { }
 
-  sendIndexParent(event: MouseEvent) {
+  public sendIndexParent(event: MouseEvent): void {
     if (this.indexParent === 99) {
       return;
     }

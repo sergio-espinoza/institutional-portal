@@ -1,19 +1,18 @@
-import { Component, OnInit, Input, ViewChild, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Input, ViewChild } from '@angular/core';
+import { PageSizeService } from '../../../../core/services/shared/page-size.service';
+import { MatTableDataSource } from '@angular/material/table';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
-import { MatTableDataSource } from '@angular/material/table';
-import { MatDialog } from '@angular/material/dialog';
-import { PdfViewComponent } from '../../modal';
-import { PageSizeService } from '../../../../core/services/shared/page-size.service';
 
 @Component({
-  selector: 'app-table-icon',
-  templateUrl: './table-icon.component.html',
-  styleUrls: ['./table-icon.component.css']
+  selector: 'app-info-table',
+  templateUrl: './info-table.component.html',
+  styleUrls: ['./info-table.component.css']
 })
-export class TableIconComponent implements OnInit {
-  @Input() displayedColumns: string[];
+export class InfoTableComponent implements OnInit {
   @Input() viewIcons = true;
+  @Input() displayedColumns: string[];
+
   @Input() set dataSource(externalDataSource: any[]) {
     this.getData(externalDataSource);
     this.internalDataSource = externalDataSource;
@@ -21,8 +20,6 @@ export class TableIconComponent implements OnInit {
   get dataSource(): any[] {
     return this.internalDataSource;
   }
-
-  @Output() changeIndexDocument = new EventEmitter<string>();
 
   public pageSizeOptions: number[] = this.psService.getPageSizeOptions();
   private internalDataSource: any[];
@@ -33,14 +30,12 @@ export class TableIconComponent implements OnInit {
   @ViewChild(MatSort, { static: true }) sort: MatSort;
 
   constructor(
-    public dialog: MatDialog,
     private psService: PageSizeService
-  ) {
-  }
+  ) { }
 
   ngOnInit(): void {
     this.getData(this.dataSource);
-    this.columns = ['n', 'type', ...this.displayedColumns, 'createdat', 'actions'];
+    this.columns = ['n', ...this.displayedColumns];
   }
 
   public applyFilter(filterValue: string): void {
@@ -54,20 +49,6 @@ export class TableIconComponent implements OnInit {
     this.data = new MatTableDataSource(externalData);
     this.data.paginator = this.paginator;
     this.data.sort = this.sort;
-  }
-
-  public openDocumentInModal(element: { src: string, name: string }): void {
-    const dialogRef = this.dialog.open(PdfViewComponent, {
-      panelClass: 'complete',
-      data: {
-        url: `https://drive.google.com/file/d/${element.src}/preview`,
-        name: element.name
-      }
-    });
-  }
-
-  public openDocumentDirectly(src: string): void {
-    this.changeIndexDocument.emit(src);
   }
 
 }

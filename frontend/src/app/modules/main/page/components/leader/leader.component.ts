@@ -7,15 +7,16 @@ import { SectionModel } from '../../../../../shared/models';
   styleUrls: ['./leader.component.css']
 })
 export class LeaderComponent implements OnInit {
-  sectionData: SectionModel = {
+  public sectionData: SectionModel = {
     background: 'https://i.imgur.com/B6frbJo.jpg',
     title: 'Alcalde del Distrito de Santa Bárbara de Carhuacayán'
   };
 
+  constructor(
 
-  constructor() { }
+  ) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
   }
 
 }

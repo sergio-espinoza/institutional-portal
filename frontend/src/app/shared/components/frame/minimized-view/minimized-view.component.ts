@@ -15,7 +15,7 @@ export class MinimizedViewComponent implements OnInit {
   constructor(
   ) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
   }
 
 }

@@ -14,30 +14,27 @@ import { switchMap } from 'rxjs/operators';
   styleUrls: ['./documents.component.css']
 })
 export class DocumentsGroupComponent implements OnInit, OnDestroy {
-  dataSource: any[];
-  srcSelected: string;
-  documentSubscription: Subscription;
-
-  documentSources$: Observable< {title: string, documents: DocumentModel[] }> ;
-
-  titleDocumentsGroup = '';
-
-  sectionData: SectionModel = {
+  public dataSource: any[];
+  public srcSelected: string;
+  public documentSubscription: Subscription;
+  public documentSources$: Observable< {title: string, documents: DocumentModel[] }> ;
+  public titleDocumentsGroup = '';
+  public sectionData: SectionModel = {
     title: 'Documentos',
-    background: 'https://i.imgur.com/yg3Qdqv.jpg'
+    background: 'https://i.imgur.com/hombPA3.jpg'
   };
+  public displayedColumns: string[] = [ 'name', 'size' ];
 
-  displayedColumns: string[] = [ 'name', 'size' ];
   constructor(
     private dgHttpService: DocumentsGroupHttpService,
     private route: ActivatedRoute
   ) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.getDocuments();
   }
 
-  getDocuments() {
+  private getDocuments(): void {
     this.documentSubscription = this.route.paramMap.subscribe(
       (params: ParamMap) => {
         this.dgHttpService.getDocuments(params.get('id')).subscribe(
@@ -50,14 +47,14 @@ export class DocumentsGroupComponent implements OnInit, OnDestroy {
       });
   }
 
-  // getDocuments(): void {
+  // private getDocuments(): void {
   //   this.documentSources$ = this.route.paramMap.pipe(
   //     switchMap((params: ParamMap) =>
   //       this.dgHttpService.getDocuments(params.get('id')))
   //     );
   // }
 
-  ngOnDestroy() {
+  ngOnDestroy(): void {
     this.documentSubscription.unsubscribe();
   }
 

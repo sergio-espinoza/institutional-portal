@@ -9,16 +9,16 @@ import { PageService } from '../../../../../core/services/page/page.service';
   styleUrls: ['./prosecutor.component.css']
 })
 export class ProsecutorComponent implements OnInit {
-  sectionData: SectionModel = new SectionModel(
-    'Procuraduría Pública', 'https://i.imgur.com/yg3Qdqv.jpg');
+  public sectionData: SectionModel = new SectionModel(
+    'Procuraduría Pública', 'https://i.imgur.com/hombPA3.jpg');
 
-  functionsData: string[] = functionsData;
+  public functionsData: string[] = functionsData;
 
   constructor(
     private pageService: PageService
   ) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
   }
 
 }

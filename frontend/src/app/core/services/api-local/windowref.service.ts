@@ -6,7 +6,7 @@ export class WindowRefsService {
   constructor() {
   }
 
-  getWindow(): Window {
+  public getWindow(): Window {
     return window;
   }
 }

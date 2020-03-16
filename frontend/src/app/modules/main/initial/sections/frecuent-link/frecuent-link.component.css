@@ -1,25 +1,23 @@
 .links {
-  width: 90vw;
-  height: 75vh;
+  min-width: 90vw;
+  min-height: 75vh;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   flex-flow: row wrap;
+  padding-bottom: 10px;
 }
 .link {
-  width: 40%;
-  height: 40%;
+  min-width: 35%;
+  max-width: 85%;
+  min-height: 30%;
+  max-height: 50%;
+  margin: 5px;
   background-color: #ffffff;
   text-align: center;
   z-index: 3;
   cursor: pointer;
 
-}
-
-app-review {
-  width: 100%;
-  display: flex;
-  justify-content: center;
 }
 
 .link:hover {

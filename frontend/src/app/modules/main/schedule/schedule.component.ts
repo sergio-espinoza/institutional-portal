@@ -23,7 +23,9 @@ export class ScheduleComponent implements OnInit {
 
   ) { }
 
-  ngOnInit(): void { }
+  ngOnInit(): void {
+
+  }
 
   public dateClass = (d: Date): MatCalendarCellCssClasses => {
     let classData = '';
@@ -36,7 +38,7 @@ export class ScheduleComponent implements OnInit {
     return classData;
   }
 
-  public onSelectChange(localeDate: string) {
+  public onSelectChange(localeDate: string): void {
     this.selectedDate = localeDate;
     this.selectCalendar = this.calendarData[localeDate];
   }

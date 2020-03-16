@@ -3,10 +3,9 @@
   "format": [
     "id",
     "name",
-    "createdat",
-    "url"
+    "createdat"
   ],
-  "links": [
+  "addresses": [
     {
       "id": 1,
       "name": "Address 1",

@@ -12,7 +12,7 @@ export class ExpansionComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit(): void {
   }
 
 }

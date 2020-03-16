@@ -2,12 +2,14 @@ import { Injectable } from '@angular/core';
 
 @Injectable({ providedIn: 'root' })
 export class InfoService {
-  selectedIndex: number;
-  isBrowsing = false;
+  public selectedIndex: number;
+  public  isBrowsing = false;
 
-  constructor() { }
+  constructor(
 
-  setSelectedIndex(indexInserted: number) {
+  ) { }
+
+  public setSelectedIndex(indexInserted: number): void {
     this.selectedIndex = indexInserted;
   }
 

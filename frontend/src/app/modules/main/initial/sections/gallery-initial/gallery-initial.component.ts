@@ -12,10 +12,9 @@ import { Subscriber } from 'rxjs';
 })
 
 export class GalleryInitialComponent implements OnInit, OnDestroy {
-
-  imagesSourceSubscriber: Subscriber<IImgurResponseData>;
-  imagesSource: IImgurResponseData[];
-  imagesSourceToDisplay: IImgurResponseData[];
+  public imagesSourceSubscriber: Subscriber<IImgurResponseData>;
+  public imagesSource: IImgurResponseData[];
+  public imagesSourceToDisplay: IImgurResponseData[];
 
 
   constructor(
@@ -23,11 +22,11 @@ export class GalleryInitialComponent implements OnInit, OnDestroy {
     private imgurService: ImgurService
   ) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.getImagesFromImgur();
   }
 
-  openDetail(index: number): void {
+  public openDetail(index: number): void {
     const dialogRef = this.dialog.open(ItemDetailComponent, {
       panelClass: 'complete',
       data: {
@@ -40,7 +39,7 @@ export class GalleryInitialComponent implements OnInit, OnDestroy {
     });
   }
 
-  getImagesFromImgur(): void {
+  private getImagesFromImgur(): void {
     this.imgurService.getImages().subscribe(
       (imagesSource: IImgurResponseData[]) => {
         this.imagesSource = imagesSource;
@@ -48,7 +47,7 @@ export class GalleryInitialComponent implements OnInit, OnDestroy {
       });
   }
 
-  ngOnDestroy() {
+  ngOnDestroy(): void {
     if (this.imagesSourceSubscriber) this.imagesSourceSubscriber.unsubscribe();
   }
 }

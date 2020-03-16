@@ -4,7 +4,7 @@ import { ExpansionModel } from '../../../../shared/models';
 @Component({
   selector: 'app-review',
   template: `
-    <div class="goal" [className]="className">
+    <div [className]="className">
       <mat-icon>{{ reviewData.icon }}</mat-icon>
       <h2>{{ reviewData.title }}</h2>
       <p>{{ reviewData.description }}</p>
@@ -14,6 +14,9 @@ import { ExpansionModel } from '../../../../shared/models';
     .goal {
       width: 40%;
       height: 40%;
+    }
+    .link {
+      min-width: 300px;
     }
     mat-icon {
       font-size: 48px;
@@ -35,9 +38,9 @@ export class ReviewComponent implements OnInit {
     description: 'Description 1'
   };
 
-  @Input() className = '';
+  @Input() className = 'goal';
 
   constructor() { }
 
-  ngOnInit() { }
+  ngOnInit(): void { }
 }

@@ -8,7 +8,11 @@
   <mat-drawer-content>
     <app-header (menuChange)="menuDrawer.toggle()"></app-header>
     <button mat-icon-button class="notifications" (click)="drawer.toggle()">
-      <mat-icon>settings</mat-icon>
+      <svg>
+        <path
+          [attr.fill]="iconNotifications.fill"
+          [attr.d]="iconNotifications.d" />
+      </svg>      
     </button>
     <button
       *ngIf="viewTransparencyButton === undefined? true: viewTransparencyButton" 

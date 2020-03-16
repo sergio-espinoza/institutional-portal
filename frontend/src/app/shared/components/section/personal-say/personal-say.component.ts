@@ -4,7 +4,9 @@ import { PersonalSayModel } from '../../../../shared/models';
 @Component({
   selector: 'app-personal-say',
   template: `
-  <img [src]="personalSayData.src" [alt]="personalSayData.alt" />
+  <div>
+    <img [src]="personalSayData.src" [alt]="personalSayData.alt" />
+  </div>
   <div class="container-description">
     <div class="quote start">“</div>
     <p>{{ personalSayData.message }}</p>
@@ -21,5 +23,5 @@ export class PersonalSayComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() { }
+  ngOnInit(): void { }
 }

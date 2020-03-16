@@ -8,7 +8,7 @@ export class LoggerService {
     private snackbar: MatSnackBar
   ) { }
 
-  log(msg: string, pClass?: string): void {
+  public log(msg: string, pClass?: string): void {
     console.log(msg);
     this.snackbar.open(msg, '✔️', {
       duration: 5000,

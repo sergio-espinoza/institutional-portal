@@ -10,9 +10,9 @@ import { InfoService } from '../../../../core/services/shared/info.service';
 })
 
 export class TransparencyDocumentComponent implements OnInit {
-  groupLinkSelected: number;
+  public groupLinkSelected: number;
 
-  transparencyData: ExpansionModel[] = [
+  public transparencyData: ExpansionModel[] = [
     { title: 'TRANSPARENCIA',
       description: 'Total 10 de esta Sección',
       icon: 'public' },
@@ -30,12 +30,12 @@ export class TransparencyDocumentComponent implements OnInit {
       icon: 'post_add' },
   ];
 
-  infoDataTransparency: InfoModel[][] = infoDataTransparency;
+  public infoDataTransparency: InfoModel[][] = infoDataTransparency;
 
   constructor(
     public infoService: InfoService
   ) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
   }
 }

@@ -17,7 +17,7 @@ export class VerticalMenuItemComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onNavigate(): void {
+  public onNavigate(): void {
     this.closeChange.emit();
   }
 

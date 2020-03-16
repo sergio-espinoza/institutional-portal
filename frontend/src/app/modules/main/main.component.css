@@ -32,15 +32,31 @@ mat-drawer-content {
   left: calc(50% - 20px);
 }
 
-.notifications mat-icon {
-  font-size: 24px;
-  color: #ffffff;
-  animation: 8s linear infinite spin;
+.notifications svg {
+  width: 24px;
+  height: 24px;
+  -webkit-animation: vibrate 2s cubic-bezier(.36, .07, .19, .97) infinite;
+  animation: vibrate 2s cubic-bezier(.36, .07, .19, .97) infinite;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 300px;
+  perspective: 300px;
 }
 
-@keyframes spin {
-  100% {
-    transform: rotate(360deg);
+@keyframes vibrate {
+  0%, 8%, 16% {
+    -webkit-transform: translate3d(-5px, -5px, 0);
+            transform: translate3d(-5px, -5px, 0);
+  }
+  4%, 12% {
+    -webkit-transform: translate3d(5px, 5px, 0);
+            transform: translate3d(5px, 5px, 0);
+  }
+  20%, 100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
   }
 }
 

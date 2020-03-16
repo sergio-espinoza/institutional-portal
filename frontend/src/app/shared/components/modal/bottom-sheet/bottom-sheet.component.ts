@@ -9,7 +9,7 @@ export class BottomSheetComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit(): void {
   }
 
 }

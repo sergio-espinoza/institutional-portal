@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewChild, HostListener, Output, EventEmitter } from '@angular/core';
 import { headerLinks } from './data.header';
-import { LinkListModel } from '../../../../shared/models';
+import { LinkListModel, SavageModel } from '../../../../shared/models';
 import { HorizontalMenuComponent } from './horizontal-menu/horizontal-menu.component';
 import { IconService } from '../../../../core/services/icon/icon.service';
 
@@ -12,10 +12,10 @@ import { IconService } from '../../../../core/services/icon/icon.service';
 export class HeaderComponent implements OnInit {
   @Output() menuChange = new EventEmitter<void>();
 
-  headerLinks: LinkListModel[] = headerLinks;
-  scEl = 'scrollingElement';
+  public headerLinks: LinkListModel[] = headerLinks;
+  private scEl = 'scrollingElement';
 
-  linkIcons: any[] = [
+  public linkIcons: any[] = [
     { fill: '#1976d2', d: IconService.getIcon('facebook'),
       path: 'https://facebook.com' },
     { fill: '#1976d2', d: IconService.getIcon('twitter'),
@@ -30,7 +30,7 @@ export class HeaderComponent implements OnInit {
   constructor(
   ) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
   }
 
   @HostListener('window:scroll', ['$event']) actionInScroll($event: Event) {
@@ -41,7 +41,7 @@ export class HeaderComponent implements OnInit {
     }
   }
 
-  onMenuChange() {
+  public onMenuChange(): void {
     this.menuChange.emit();
   }
 }

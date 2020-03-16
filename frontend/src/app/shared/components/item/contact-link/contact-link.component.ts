@@ -25,9 +25,11 @@ export class ContactLinkComponent implements OnInit {
     subtitle: 'rgba(0, 0, 0, 0.87);'
   };
 
-  constructor() { }
+  constructor(
 
-  ngOnInit() {
+  ) { }
+
+  ngOnInit(): void {
   }
 
 }

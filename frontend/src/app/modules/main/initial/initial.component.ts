@@ -7,21 +7,20 @@ import { WINDOW } from '../../../core/services/api-local/window.service';
   styleUrls: ['./initial.component.css']
 })
 export class InitialComponent implements OnInit, OnDestroy {
-  backgroundOne = 'hidden';
-  viewTransparencyButton = false;
+  public backgroundOne = 'hidden';
+  public viewTransparencyButton = false;
 
   constructor(
     @Inject(WINDOW) private windowRef: Window
   ) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
   }
 
-  ngOnDestroy() {
-  }
-
-  loadMainBackground() {
+  public loadMainBackground(): void {
     this.backgroundOne = 'visible';
   }
 
+  ngOnDestroy(): void {
+  }
 }

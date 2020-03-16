@@ -9,17 +9,17 @@ import { WINDOW } from '../../../../core/services/api-local/window.service';
 export class SidebarComponent implements OnInit {
   @Output() closeChange = new EventEmitter<void>();
 
-  heightSocial: number;
+  public heightSocial: number;
 
   constructor(
     @Inject(WINDOW) private windowRef: Window
   ) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.heightSocial = this.windowRef.innerHeight - 80;
   }
 
-  close() {
+  public close(): void {
     this.closeChange.emit();
   }
 
