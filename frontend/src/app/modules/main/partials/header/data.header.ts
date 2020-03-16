@@ -1,8 +1,8 @@
 import { LinkListModel, MenuItemModel } from '../../../../shared/models';
 
 export const headerLinks: LinkListModel[] = [
-  { title: '(+51) 064 830 006', icon: 'phone', path: '/main' },
-  { title: 'Carhuacayan, Yauli, Junín, PERU', icon: 'room', path: '/main' },
+  { title: '(+51) 935003576', icon: 'phone', path: '/main' },
+  { title: 'Huancayo, Junin, PERU', icon: 'room', path: '/main' },
 ];
 
 

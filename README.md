@@ -8,3 +8,7 @@
  - Angular 8^
  - Angular Material 8^
  - NestJS 6^
+
+### Main View
+
+![alt text](https://i.imgur.com/XepyFwc.jpg)
