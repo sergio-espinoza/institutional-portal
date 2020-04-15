@@ -1,12 +1,9 @@
 .links {
   min-width: 90vw;
   min-height: 75vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-flow: row wrap;
   padding-bottom: 10px;
 }
+
 .link {
   min-width: 35%;
   max-width: 85%;
@@ -17,7 +14,6 @@
   text-align: center;
   z-index: 3;
   cursor: pointer;
-
 }
 
 .link:hover {

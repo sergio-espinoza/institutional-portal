@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ExpansionModel } from '../../../../../shared/models';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-frecuent-link',
@@ -16,10 +17,14 @@ export class FrecuentLinkComponent implements OnInit {
   ];
 
   constructor(
-
+    private router: Router
   ) { }
 
   ngOnInit(): void {
+  }
+
+  goToLink(path: string): void {
+    this.router.navigateByUrl(path);
   }
 
 }

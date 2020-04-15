@@ -45,19 +45,3 @@ section {
   background-position: center;
   opacity: .15;
 }
-
-h3 {
-  font-size: 25px;
-  text-transform: uppercase;
-  word-wrap: break-word;
-  text-align: center;
-}
-
-h3::after {
-  content: "";
-  display: block;
-  width: 40%;
-  margin: 2px auto 2vh;
-  background-color: rgb(25, 118, 210);
-  height: 3px;
-}

@@ -1,8 +1,10 @@
 <div class="content-frame">
   <h3>{{ data.name }}</h3>
   <iframe
-  [src]="data.url | satinizer: 'resourceUrl'"
+  [src]="base | satinizer: 'resourceUrl'"
   allowfullscreen
+  frameBorder="0"
+  (load)="log($event)"
   width="95%"
   height="95%"></iframe>
 </div>

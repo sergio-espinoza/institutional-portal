@@ -1,21 +1,21 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
-import { SectionModel, LinkModel } from '../../../../shared/models';
-import { Subscription } from 'rxjs';
+import { Component, OnInit } from '@angular/core';
+import { SectionModel, IAddressHttpModel } from '../../../../shared/models';
+import { Observable } from 'rxjs';
 import { LinksGroupHttpService } from '../../../../core/http/group/links/links.http.service';
 import { ActivatedRoute, ParamMap } from '@angular/router';
+import { map, switchMap } from 'rxjs/operators';
 
 @Component({
   selector: 'app-links',
   templateUrl: './links.component.html',
   styleUrls: ['./links.component.css']
 })
-export class LinksGroupComponent implements OnInit, OnDestroy {
-  public dataSource: any[];
-  public srcSelected: string;
-  public documentSubscription: Subscription;
-  public titleDocumentsGroup = '';
+export class LinksGroupComponent implements OnInit {
+
+  public addressSources$: Observable<IAddressHttpModel>;
+  public srcSelected = '';
   public sectionData: SectionModel = {
-    title: 'Enlaces',
+    title: 'Direcciones',
     background: 'https://i.imgur.com/hombPA3.jpg'
   };
   public displayedColumns: string[] = [ 'name', 'size' ];
@@ -26,23 +26,14 @@ export class LinksGroupComponent implements OnInit, OnDestroy {
   ) { }
 
   ngOnInit(): void {
-    // this.getDocuments();
+    this.getAddresses();
   }
 
-  // private getDocuments(): void {
-  //   this.documentSubscription = this.route.paramMap.subscribe(
-  //     (params: ParamMap) => {
-  //       this.dgHttpService.getLinks(params.get('id')).subscribe(
-  //         (links: LinkModel[]) => {
-  //           this.dataSource = links;
-  //           this.srcSelected = links[0].path;
-  //           this.titleDocumentsGroup = params.get('id');
-  //         }
-  //       );
-  //     });
-  // }
-
-  ngOnDestroy(): void {
-    this.documentSubscription.unsubscribe();
+  private getAddresses(): void {
+    this.addressSources$ = this.route.paramMap.pipe(
+      map((params: ParamMap) => params.get('id')),
+      switchMap((id: string) => this.dgHttpService.getAddresses(id))
+    );
   }
+
 }

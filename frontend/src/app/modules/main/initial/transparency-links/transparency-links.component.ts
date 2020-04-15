@@ -14,15 +14,7 @@ import { TransparencyDocumentComponent } from '../transparency-document/transpar
         (infoChange)="dismissBottomSheetTransparency()"
       ></app-info>
     </div>
-  `,
-  styles: [`
-    .links {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      flex-flow: row wrap;
-    }
-  `]
+  `
 })
 
 export class TransparencyLinksComponent implements OnInit {

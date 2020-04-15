@@ -1,16 +1,5 @@
-h3 {
+h3.title {
   font-size: 19px;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-h3::after {
-  content: "";
-  display: block;
-  width: 40%;
-  margin: 2px auto 2vh;
-  background-color: rgb(25, 118, 210);
-  height: 3px;
 }
 
 .frame-container {

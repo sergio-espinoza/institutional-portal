@@ -4,7 +4,7 @@
     <div 
       class="link mat-elevation-z2"
       *ngFor="let link of frecuentLinks"
-      [routerLink]="link.path">
+      (click)="goToLink(link.path)">
       <app-review
         [reviewData]="link" className="link"></app-review>
     </div>
