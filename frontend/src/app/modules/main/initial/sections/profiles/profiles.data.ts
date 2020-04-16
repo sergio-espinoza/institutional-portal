@@ -2,17 +2,17 @@ import { ProfileModel } from '../../../../../shared/models';
 import { IconService } from '../../../../../core/services/icon/icon.service';
 
 export let profilesData: ProfileModel[] = [{
-  image: 'https://i.imgur.com/kPbxEdE.png',
-  name: 'William Caparachin Guerrero',
+  image: 'https://i.imgur.com/CgsKzn8.jpg',
+  name: 'Lusia Manuel',
   rating: 0,
-  description: `Perfil del regidor de la Municipalidad Distrital de Santa Bárbara de Carhuacayán.`,
+  description: `Intitutional Portal Profile.`,
   contactLinks: [
-    { title: 'munisantabarbaradecarhuacayan', icon: 'apartment' },
-    { title: 'williamc@munisbc.com', icon: 'email' },
+    { title: 'intituitionalportal', icon: 'apartment' },
+    { title: 'lusiamanuel@intitutionalportal.com', icon: 'email' },
     { title: '(+51)965-201514', icon: 'phone' },
   ],
   socialLinks: [
-    { link: { color: '#ffffff', path: 'https://www.facebook.com/willys.caparaching'},
+    { link: { color: '#ffffff', path: 'https://www.facebook.com/lusiamanuel'},
       icon: { fill: 'rgba(0, 0, 0, .54)',
               d: IconService.getIcon('facebook') },
     },
@@ -34,17 +34,17 @@ export let profilesData: ProfileModel[] = [{
   ],
   path: 'main/document'
 }, {
-  image: 'https://i.imgur.com/9wbrMal.jpg',
-  name: 'Isaías Luis Caparachin Ricapa',
+  image: 'https://i.imgur.com/nvKn8hB.jpg',
+  name: 'Andy Warhol',
   rating: 0,
-  description: `Perfil del regidor de la Municipalidad Distrital de Santa Bárbara de Carhuacayán.`,
+  description: `Intitutional Portal Profile.`,
   contactLinks: [
-    { title: 'munisantabarbaradecarhuacayan', icon: 'apartment' },
-    { title: 'isaias.l@munisbc.com', icon: 'email' },
+    { title: 'intituitionalportal', icon: 'apartment' },
+    { title: 'andywarhol.l@intitutionalportal.com', icon: 'email' },
     { title: '(+51)964-412547', icon: 'phone' },
   ],
   socialLinks: [
-    { link: { color: '#ffffff', path: 'https://www.facebook.com/isaiasluis.caparachinricapa'},
+    { link: { color: '#ffffff', path: 'https://www.facebook.com/andywarhol'},
       icon: { fill: 'rgba(0, 0, 0, .54)',
               d: IconService.getIcon('facebook') },
     },
@@ -66,17 +66,17 @@ export let profilesData: ProfileModel[] = [{
   ],
   path: 'main/document'
 }, {
-  image: 'https://i.imgur.com/oWgs01P.png',
-  name: 'Sandy Lisset Osorio Gerónimo',
+  image: 'https://i.imgur.com/3hFhjv9.jpg',
+  name: 'Teresa Styles',
   rating: 0,
-  description: `Perfil de la regidora de la Municipalidad Distrital de Santa Bárbara de Carhuacayán.`,
+  description: `Institutional Portal Profile`,
   contactLinks: [
-    { title: 'munisantabarbaradecarhuacayan', icon: 'apartment' },
-    { title: 'sandy.l@munisbc.com', icon: 'email' },
+    { title: 'intituitionalportal', icon: 'apartment' },
+    { title: 'teresa.l@intitutionalportal.com', icon: 'email' },
     { title: '(+51)964-475784', icon: 'phone' },
   ],
   socialLinks: [
-    { link: { color: '#ffffff', path: 'https://www.facebook.com/sandylisset.osoriogeronimo'},
+    { link: { color: '#ffffff', path: 'https://www.facebook.com/teresastyles'},
       icon: { fill: 'rgba(0, 0, 0, .54)',
               d: IconService.getIcon('facebook') },
     },
@@ -98,17 +98,17 @@ export let profilesData: ProfileModel[] = [{
   ],
   path: 'main/document'
 }, {
-  image: 'https://i.imgur.com/aPIi5Oi.png',
-  name: 'Gian Marco Gerónimo Fraga',
+  image: 'https://i.imgur.com/Jphrhwv.jpg',
+  name: 'Michael Blair',
   rating: 0,
-  description: `Perfil del regidor de la Municipalidad Distrital de Santa Bárbara de Carhuacayán.`,
+  description: `Intitutional Portal Profile.`,
   contactLinks: [
-    { title: 'munisantabarbaradecarhuacayan', icon: 'apartment' },
-    { title: 'gian.marco@munisbc.com', icon: 'email' },
+    { title: 'intituitionalportal', icon: 'apartment' },
+    { title: 'michaelblair@intitutionalportal.com', icon: 'email' },
     { title: '(+51)964-142578', icon: 'phone' },
   ],
   socialLinks: [
-    { link: { color: '#ffffff', path: 'https://www.facebook.com/people/Gian-Marco-Geronimo-Fraga/100007331057874'},
+    { link: { color: '#ffffff', path: 'https://www.facebook.com/people/michaelblair'},
       icon: { fill: 'rgba(0, 0, 0, .54)',
               d: IconService.getIcon('facebook') },
     },
@@ -130,17 +130,17 @@ export let profilesData: ProfileModel[] = [{
   ],
   path: 'main/document'
 }, {
-  image: 'https://i.imgur.com/FVac0pq.png',
-  name: 'Edith Felicia Rojas Alcántara',
+  image: 'https://i.imgur.com/u1HRjW3.jpg',
+  name: 'Michelle Ormond',
   rating: 0,
-  description: `Perfil de la regidora de la Municipalidad Distrital de Santa Bárbara de Carhuacayán.`,
+  description: `Institutional Portal Profile`,
   contactLinks: [
-    { title: 'munisantabarbaradecarhuacayan', icon: 'apartment' },
-    { title: 'edith.f@munisbc.com', icon: 'email' },
+    { title: 'intituitionalportal', icon: 'apartment' },
+    { title: 'edith.f@intitutionalportal.com', icon: 'email' },
     { title: '(+51)964-147857', icon: 'phone' },
   ],
   socialLinks: [
-    { link: { color: '#ffffff', path: 'https://facebook.com'},
+    { link: { color: '#ffffff', path: 'https://facebook.com/michelleormon'},
       icon: { fill: 'rgba(0, 0, 0, .54)',
               d: IconService.getIcon('facebook') },
     },

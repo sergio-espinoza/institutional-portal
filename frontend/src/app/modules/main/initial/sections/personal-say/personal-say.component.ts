@@ -12,14 +12,14 @@ import { SectionModel, PersonalSayModel } from '../../../../../shared/models';
 
 export class SectionMayorComponent implements OnInit {
   public sectionData: SectionModel = {
-    title: 'Mensaje para la Comunidad',
+    title: 'Main Message',
     background: 'https://i.imgur.com/47Oq4M5.jpg' };
 
   public personalSayData: PersonalSayModel = new PersonalSayModel(
-    'https://i.imgur.com/xQVBgaw.png',
-    'Mayor Icon', 'El trabajo de todas las autoridades en equipo contribuye al desarrollo del distrito',
-    'Juan Carlos Llacza Alcántara',
-    'Alcalde del Distrito');
+    'https://i.imgur.com/lY20KmG.png', 'Mayor Icon',
+    'Donec molestie turpis ut mollis efficitur. Nam fringilla libero vel dictum vulputate. In malesuada, ligula non ornare consequat, augue nibh luctus nisl, et lobortis justo ipsum nec velit. Praesent lacinia quam ut nulla gravida, at viverra libero euismod.',
+    'BRUNO VESPA',
+    'Principal Director');
 
   constructor(
 

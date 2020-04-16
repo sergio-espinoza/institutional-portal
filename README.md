@@ -1,13 +1,14 @@
 # Institutional Portal
 
- [Angular](https://angular.io/) | [NestJS](https://nestjs.com/) | [Angular Material](https://material.angular.io/)
-
-
 ### Include:
 
- - Angular 8^
- - Angular Material 8^
- - NestJS 6^
+ #### [Angular 9^](https://angular.io/)
+ ![alt text](./assetsgit/angular.svg)
+ #### [NestJS 7^](https://nestjs.com/)
+ ![alt text](./assetsgit/nestjs.svg)
+ #### [Angular Material 9^](https://material.angular.io/)
+ ![alt text](./assetsgit/angular-material.svg)
+
 
 ### Main View
 

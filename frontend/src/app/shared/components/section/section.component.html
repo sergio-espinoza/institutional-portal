@@ -1,8 +1,6 @@
 <section [className]="className">
-  <div class="container">
-    <div
-      class="container-background"
-      [style.backgroundImage]="'url('+sectionData.background+')'"></div>
+  <div class="container background-container" 
+    [style]="'--bg-image: url('+sectionData.background+')'">
     <h3 class="title">{{ sectionData.title }}</h3>
     <ng-content></ng-content>
   </div>

@@ -21,11 +21,11 @@ export class FooterComponent implements OnInit {
   });
 
   public contactsLinkData: LinkListModel[] = [
-    { title: 'Plaza Principal Santa Bárbara de Carhuacayán', icon: 'location_on' },
-    { title: '(+51) 064 830 006', icon: 'phone' },
-    { title: '(+51) 064 811 251', icon: 'phone' },
-    { title: 'webmaster@munisantabarbaradecarhuacayan.gob.pe', icon: 'email' },
-    { title: 'Lunes - Viernes / 9:00AM - 8:00PM', icon: 'schedule' },
+    { title: 'Main place Institutional Portal', icon: 'location_on' },
+    { title: '(+51) 935 003 576', icon: 'phone' },
+    { title: '(+51) 975 810 578', icon: 'phone' },
+    { title: 'webmaster@institutionalportal.com', icon: 'email' },
+    { title: 'Monday - Friday / 9:00AM - 8:00PM', icon: 'schedule' },
   ];
 
   public socialLinkData: { link: LinkModel, icon: SavageModel }[] = [

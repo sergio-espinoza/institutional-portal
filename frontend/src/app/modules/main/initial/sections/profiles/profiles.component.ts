@@ -10,7 +10,7 @@ import { ProfileModel, SectionModel } from '../../../../../shared/models';
 })
 export class ProfilesComponent implements OnInit {
   public sectionData: SectionModel = {
-    title: 'Regidores',
+    title: 'MEET OUR COLLABORATORS',
     background: 'https://i.imgur.com/TZ8lanL.jpg'
   }
 
