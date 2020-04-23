@@ -1,6 +1,7 @@
 .content {
   width: 75vw;
   margin-bottom: 5px;
+  z-index: 1;
 }
 
 mat-card {

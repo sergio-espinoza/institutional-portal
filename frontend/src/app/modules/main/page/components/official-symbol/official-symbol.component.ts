@@ -8,9 +8,15 @@ import { SectionModel } from '../../../../../shared/models';
 })
 export class OfficialSymbolComponent implements OnInit {
   public sectionData: SectionModel = {
-    title: 'Símbolos Oficiales',
-    background: 'https://i.imgur.com/JeKDyf6.jpg'
+    title: 'OFFICIAL SYMBOLS',
+    background: 'https://i.imgur.com/JpIt1ya.jpg'
   };
+
+  public symbols: string[] = [
+    'https://i.imgur.com/Q5JMSZE.jpg',
+    'https://i.imgur.com/AxIlNba.png',
+    'https://i.imgur.com/LkhSmoM.png'
+  ];
 
   constructor(
 

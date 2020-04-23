@@ -36,6 +36,7 @@ section {
 
 .container.background-container::before {
   background-image: var(--bg-image);
+  z-index: 1;
 }
 
 .container:before {

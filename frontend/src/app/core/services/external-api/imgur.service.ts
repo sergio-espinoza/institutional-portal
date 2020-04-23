@@ -6,7 +6,7 @@ import { IImgurResponse, IImgurResponseData } from '../../../shared/models';
 
 @Injectable({ providedIn: 'root' })
 export class ImgurService {
-  private url = 'https://api.imgur.com/3/album/5D3FxFw';
+  private url = 'https://api.imgur.com/3/album/MvbhfnP';
   private clientId = '8fb0022acdeccd2';
   private accessToken = '93d221072951599e242fab73fb4e3f19ee0e4cb6';
   private headersAccess = new HttpHeaders({

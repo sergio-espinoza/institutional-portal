@@ -7,7 +7,12 @@ import { SectionModel, PersonalSayModel } from '../../../../../shared/models';
     <app-section [sectionData]="sectionData" className="initial complete">
       <app-personal-say [personalSayData]="personalSayData"></app-personal-say>
     </app-section>
-  `
+  `,
+  styles: [`
+    app-personal-say {
+      z-index: 1;
+    }
+  `]
 })
 
 export class SectionMayorComponent implements OnInit {

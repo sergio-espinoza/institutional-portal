@@ -8,7 +8,7 @@ import { SectionModel } from '../../../../../shared/models';
 })
 export class LeaderComponent implements OnInit {
   public sectionData: SectionModel = {
-    background: 'https://i.imgur.com/B6frbJo.jpg',
+    background: 'https://i.imgur.com/qVFFRJs.jpg',
     title: 'Alcalde del Distrito de Santa Bárbara de Carhuacayán'
   };
 

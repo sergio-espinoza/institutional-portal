@@ -3,6 +3,7 @@
   flex-direction: row;
   justify-content: space-evenly;
   flex-flow: row wrap;
+  z-index: 1;
 }
 
 .notifications {

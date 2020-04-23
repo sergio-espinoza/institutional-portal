@@ -1,6 +1,8 @@
 <app-section [sectionData]="sectionData">
   <mat-card>
-    <img src="https://i.imgur.com/B6frbJo.jpg" alt="symbol"
+    <img 
+      *ngFor="let symbol of symbols"
+      [src]="symbol" alt="symbol"
       width="300" height="300" />
   </mat-card>
 </app-section>
