@@ -1,0 +1,47 @@
+{
+  "title": "Directorios Municipales",
+  "format": [
+    "id",
+    "name",
+    "createdat"
+  ],
+  "addresses": [
+    {
+      "id": 1,
+      "name": "Address 1",
+      "createdat": "Wed Jan 01 2020 19:29:47 GMT-0500 (hora estándar de Colombia)",
+      "urlIcon": {
+        "icon": "link",
+        "url": "https://google.com"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Address 2",
+      "createdat": "Wed Jan 01 2020 19:29:47 GMT-0500 (hora estándar de Colombia)",
+      "urlIcon": {
+        "icon": "link",
+        "url": "https://google.com"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Address 1",
+      "createdat": "Wed Jan 01 2020 19:29:47 GMT-0500 (hora estándar de Colombia)",
+      "urlIcon": {
+        "icon": "link",
+        "url": "https://google.com"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Address 1",
+      "createdat": "Wed Jan 01 2020 19:29:47 GMT-0500 (hora estándar de Colombia)",
+      "urlIcon": {
+        "icon": "link",
+        "url": "https://google.com"
+      }
+    },
+    {}
+  ]
+}

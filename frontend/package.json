@@ -7,7 +7,8 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "build:doc": "ng build --prod --base-href=https://sergio-espinoza.github.io/institutional-portal/"
   },
   "private": true,
   "dependencies": {
