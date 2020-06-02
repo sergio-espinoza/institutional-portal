@@ -1,29 +1,48 @@
-<div class="image-selected">
-  <div
-    class="background"
-    [style.backgroundImage]="'url('+data.imagesSource[currentIndex]?.link+')'">
-  <button mat-icon-button class="navigate left" 
-    [disabled]="currentIndex === 0 ? true : null">
-    <mat-icon (click)="before()">navigate_before</mat-icon>
-  </button>
-  <mat-chip class="date-sticker" *ngIf="data.imagesSource[currentIndex].datetime">
-    <mat-icon>schedule</mat-icon>
-    {{ getCorrectDate(data.imagesSource[currentIndex]?.datetime) | date }}</mat-chip>
-  <button mat-icon-button class="navigate right"
-    [disabled]="currentIndex === total - 1 ? true : null">
-    <mat-icon (click)="next()">navigate_next</mat-icon>
-  </button>
+<div class="item-detail-container">
+  <div class="gallery-container">
+    <mat-chip
+      class="date-sticker"
+      *ngIf="data.imagesSource[currentIndex].datetime">
+      <mat-icon>schedule</mat-icon>
+      {{ getCorrectDate(data.imagesSource[currentIndex]?.datetime) | date }}
+    </mat-chip>
+    <div class="button-content">
+      <button mat-icon-button
+        [disabled]="currentIndex === 0"
+        (click)="currentIndex = currentIndex - 1">
+        <mat-icon>navigate_before</mat-icon>
+      </button>
+      <button mat-icon-button
+        [disabled]="currentIndex === total - 1"
+        (click)="currentIndex = currentIndex + 1">
+        <mat-icon>navigate_next</mat-icon>
+      </button>
+    </div>
+    <div class="gallery-content"
+    [ngStyle]="{ 'width': total + '00%',
+    'right': currentIndex + '00%' }">
+      <div *ngFor="let image of data.imagesSource"
+        class="image-content"
+        [style.width]="(100 / total) + '%'">
+        <img
+          class="image"
+          loading="lazy"
+          [src]="image.link"
+          alt="Image" />
+      </div>
+    </div>
+    <div class="description">
+      <h3>{{ data.imagesSource[currentIndex]?.title }}</h3>
+      <p>{{ data.imagesSource[currentIndex]?.description }}</p>
+    </div>              
   </div>
-  <div class="description">
-    <h4>{{data.imagesSource[currentIndex]?.title}}</h4>
-    <p>{{data.imagesSource[currentIndex]?.description}}</p>
-  </div>
-</div>
-<div class="image-list">
-  <div 
-    class="gallery" [class.selected]="currentIndex === i" 
-    *ngFor="let image of data.imagesSource; index as i">
-    <img [src]="image.link" alt="List of Images" (click)="currentIndex = i" />
+  <div class="image-link-container">
+    <div [class.selected]="currentIndex === i"
+      class="image-link-content"
+      *ngFor="let imageLink of data.imagesSource; index as i">
+      <img class="image-link" 
+        [src]="imageLink.link" alt="List of Images" (click)="currentIndex = i" />
+    </div>
   </div>
 </div>
 

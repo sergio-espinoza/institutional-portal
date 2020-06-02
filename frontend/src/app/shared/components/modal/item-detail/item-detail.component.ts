@@ -8,8 +8,17 @@ import { IImgurResponseData } from '../../../models';
   styleUrls: ['./item-detail.component.css']
 })
 export class ItemDetailComponent implements OnInit {
-  public currentIndex = this.data.selectedIndex;
   public total = this.data.imagesSource.length;
+
+  private internalCurrentIndex = this.data.selectedIndex;
+  public set currentIndex(externalIndex: number) {
+    this.internalCurrentIndex = Math.max(
+      0, Math.min(externalIndex, this.total - 1)
+    );
+  }
+  public get currentIndex(): number {
+    return this.internalCurrentIndex;
+  }
 
   constructor(
     @Inject(MAT_DIALOG_DATA) public data: { selectedIndex: number, imagesSource: IImgurResponseData[] }
@@ -18,18 +27,11 @@ export class ItemDetailComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  public next(): void {
-    this.currentIndex = Math.min(++this.currentIndex, this.total - 1);
-  }
-  public before(): void {
-    this.currentIndex = Math.max(--this.currentIndex, 0);
-  }
-
   @HostListener('window:keyup.ArrowRight', ['$event']) ar(e: KeyboardEvent): void {
-    this.next();
+    this.currentIndex++;
   }
   @HostListener('window:keyup.ArrowLeft', ['$event']) al(e: KeyboardEvent): void {
-    this.before();
+    this.currentIndex--;
   }
 
   public getCorrectDate(incorretDate: number): number {

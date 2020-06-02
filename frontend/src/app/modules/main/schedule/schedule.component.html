@@ -8,7 +8,7 @@
           [dateClass]="dateClass"
           (selectedChange)="onSelectChange(setLocale($event))"></mat-calendar>
         <div class="event-view">
-          <h3 class="title">Calendario de Eventos de la Municipalidad</h3>
+          <h3 class="title">Calendario de Eventos de la Institutionalidad</h3>
           <p>Fecha Seleccionada: {{ selectedDate }}</p>
           <ng-container *ngIf="selectCalendar; else nothingEvent;">
             <!-- {{ selectCalendar | json }} -->

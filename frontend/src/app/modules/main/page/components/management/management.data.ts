@@ -2,7 +2,7 @@ export const functionsData: string[] = [
   `Dirigir, coordinar y supervisar las actividades administrativas de los órganos y/o unidades orgánicas
   del Gobierno Muncipal, que se encuentran bajo su dependencia jerárquica.`,
   `Coordinar, monitorear y supervisar la formulación del Plan de Desarrollo Muncipal Concertado y el Presupuesto
-  Participativo, elevándolo al Gobernador Muncipal para su aprobación por el Regidor Municipal.`,
+  Participativo, elevándolo al Gobernador Muncipal para su aprobación por el Regidor Institutional.`,
   `Supervisar, monitorear y evaluar la ejecución de los programas y proyectos municipales, incluidos
   en el Plan de Desarrollo Muncipal Concertado, Estratégico Institucional y Operativo Institucional del Gobierno Muncipal Junín.`,
   `Supervisar y coordinar con las unidades orgánicas competentes, la ejecución de los recursos presupuestales  del Gobierno Muncipal.`,

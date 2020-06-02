@@ -12,12 +12,12 @@ export const infoMenu: MenuItemModel[] = [
   { title: 'Visión y Misión', path: '/main/page/vission-mission', routeActiveExact: false },
   { title: 'Símbolos Oficiales', path: '/main/page/official-symbol', routeActiveExact: false },
   { title: 'Estructura Orgánica', path: '/main/group/documents/organic-structure', routeActiveExact: false },
-  { title: 'Gobernador Municipal', path: '/main/page', routeActiveExact: true },
-  { title: 'Registro Municipal', children: [
+  { title: 'Gobernador Institutional', path: '/main/page', routeActiveExact: true },
+  { title: 'Registro Institutional', children: [
     { title: 'Directorio de Regidores', path: '/main/page/directory-council', routeActiveExact: false },
     { title: 'Reglamento Interno de Regidores', path: '/main/group/documents/regulations', routeActiveExact: false },
     { title: 'Ordenanzas Muncipales', path: '/main/group/documents/ordinances', routeActiveExact: false },
-    { title: 'Acuerdos Municipales', path: '/main/group/documents/agreements', routeActiveExact: false },
+    { title: 'Acuerdos Institutionales', path: '/main/group/documents/agreements', routeActiveExact: false },
     { title: 'Actas de Sesiones Ordinarias', path: '/main/group/documents/ordinary-minutes', routeActiveExact: false },
     { title: 'Actas de Sesiones Extraordinarias', path: '/main/group/documents/extraordinary-minutes', routeActiveExact: false },
     { title: 'Agenda de Sesiones Ordinarias', path: '/main/group/documents/ordinary-agenda', routeActiveExact: false },
@@ -29,7 +29,7 @@ export const infoMenu: MenuItemModel[] = [
 
 export const managementMenu: MenuItemModel[] = [
   { title: 'Gerencia General Muncipal', path: '/main/page/management', routeActiveExact: false },
-  { title: 'Gerencias Municipales', path: '/main/page/management', routeActiveExact: false },  // changelink
+  { title: 'Gerencias Institutionales', path: '/main/page/management', routeActiveExact: false },  // changelink
   { title: 'Procuraduría Pública Muncipal', path: '/main/page/prosecutor', routeActiveExact: false },
   { title: 'Direcciones Muncipales', path: '/main/page/management', routeActiveExact: false }, // changelink
   // { title: 'Directorio Muncipal', path: '/main/page/directory/addresses', routeActiveExact: false },

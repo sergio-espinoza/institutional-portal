@@ -1,93 +1,73 @@
-:host {
+.item-detail-container, .image-link-container,
+.image-link-content, .image, .image-link {
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-flow: row wrap;
 }
 
-.image-selected {
+.item-detail-container {
+  display: grid;
+  grid-template-columns: 75% 25%;
+}
+
+.gallery-container {  
   position: relative;
-  width: 80%;
+  overflow: hidden;
+  height: 100%;
 }
 
-.image-selected .background {
-  height: 70%;
-  width: 95%;
-  background-size: 100% 100%;
-}
-
-.image-selected button {
+.button-content {
   position: absolute;
-  top: 30%;
+  display: flex;
+  justify-content: space-between;
+  left: 0;
+  top: calc(50% - 20px);
+  z-index: 10;
+  width: 100%;
 }
 
-.image-selected .left {
-  left: 1%;
-}
-.image-selected .right {
-  right: 6%;
-}
-
-.navigate {
-  background: #1976d2;
+.button-content button {
+  background-color: #1972d6;
   color: #ffffff;
 }
 
-.navigate:disabled {
-  opacity: .5;
-  color: #ffffff;
+.button-content button[disabled] {
+  background-color: #1972d650;
+  color: #ffffff50;
 }
 
-.image-selected .date-sticker {
+.gallery-content {
+  position: relative;
+  top: 0;
+  transition: right 1.25s;
+  height: 70%;
+}
+
+.date-sticker {
   position: absolute;
   top: 15px;
-  right: 3%;
-  font-size: 11px;
+  right: 15px;
+  z-index: 10;
 }
 
-.image-selected .date-sticker mat-icon {
-  padding-right: 5px;
+.image-content {
+  display: inline-block;
+  height: 100%;
 }
 
-h4 {
-  padding: 5px 0;
-  font-size: 15px;
+.description {
+  height: 25%;
+  width: 100%;
 }
 
-.image-selected .description {
-  width: 95%;
-  padding-top: 2%;
-  max-height: 30%;
+.image-link-container {
   overflow-y: auto;
 }
 
-
-.image-list {
-  width: 20%;
-  height: 100%;
-  overflow-x: auto;
-  cursor: grab;
+.image-link-content {
+  display: inline-block;
+  height: 20%;
 }
 
-.image-list .gallery {
-  height: 16%;
-  margin: 5%;
-  width: 90%;
-}
-
-.image-list img {
-  width: 100%;
-  height: 100%;
-  box-sizing: border-box;
-  opacity: 0.3;
-}
-
-.image-list .selected img {
-  border: 5px solid #1976d2;
-  opacity: 1;
-}
 
 @media screen and (max-width: 850px) {
   .image-list {
