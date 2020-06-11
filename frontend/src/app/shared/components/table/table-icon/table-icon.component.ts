@@ -58,7 +58,7 @@ export class TableIconComponent implements OnInit {
 
   public openDocumentInModal(element: { src: string, name: string }): void {
     const dialogRef = this.dialog.open(PdfViewComponent, {
-      panelClass: 'complete',
+      panelClass: 'dialog-complete',
       data: {
         url: `https://drive.google.com/file/d/${element.src}/preview`,
         name: element.name

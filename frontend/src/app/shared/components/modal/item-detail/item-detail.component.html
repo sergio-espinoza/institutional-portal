@@ -8,6 +8,7 @@
     </mat-chip>
     <div class="button-content">
       <button mat-icon-button
+        class="mat-elevation-z7"
         [disabled]="currentIndex === 0"
         (click)="currentIndex = currentIndex - 1">
         <mat-icon>navigate_before</mat-icon>
@@ -22,7 +23,7 @@
     [ngStyle]="{ 'width': total + '00%',
     'right': currentIndex + '00%' }">
       <div *ngFor="let image of data.imagesSource"
-        class="image-content"
+        class="image-content mat-elevation-z3"
         [style.width]="(100 / total) + '%'">
         <img
           class="image"
@@ -31,17 +32,25 @@
           alt="Image" />
       </div>
     </div>
-    <div class="description">
-      <h3>{{ data.imagesSource[currentIndex]?.title }}</h3>
-      <p>{{ data.imagesSource[currentIndex]?.description }}</p>
-    </div>              
+    <div class="description-container">
+      <mat-card class="description-content">
+        <mat-card-header>
+          <mat-card-title>
+            {{ data.imagesSource[currentIndex]?.title }}
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <span>{{ data.imagesSource[currentIndex]?.description }}</span>
+        </mat-card-content>
+      </mat-card>              
+    </div>
   </div>
   <div class="image-link-container">
-    <div [class.selected]="currentIndex === i"
+    <div *ngFor="let imageLink of data.imagesSource; index as i"
       class="image-link-content"
-      *ngFor="let imageLink of data.imagesSource; index as i">
-      <img class="image-link" 
-        [src]="imageLink.link" alt="List of Images" (click)="currentIndex = i" />
+      [class.image-link-content-selected]="currentIndex === i">
+      <img class="image-link" [src]="imageLink.link" 
+        alt="List of Images" (click)="currentIndex = i" />
     </div>
   </div>
 </div>

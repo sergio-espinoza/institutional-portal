@@ -28,7 +28,7 @@ export class GalleryInitialComponent implements OnInit, OnDestroy {
 
   public openDetail(index: number): void {
     const dialogRef = this.dialog.open(ItemDetailComponent, {
-      panelClass: 'complete',
+      panelClass: 'dialog-complete',
       data: {
         selectedIndex: index,
         imagesSource: this.imagesSource
